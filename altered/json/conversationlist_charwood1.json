@@ -1,0 +1,31 @@
+[
+    {
+        "id":"khorailla1",
+        "message":"Thank you so much for finding our missing people!",
+        "replies":[
+            {
+                "text":"Do you have anything to trade?",
+                "nextPhraseID":"khorailla2"
+            },
+			{ "nextPhraseID":"guynmart_key_sideroom_180", 
+			  "requires":[{ "requireType":"questProgress", "requireID":"guynmart_wise", "value":30 }] 
+			},
+            {
+                "text":"You're welcome.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"khorailla_cheddar",
+		"switchToNPC":"khorailla_cheddar",
+        "message":"Ah, you really know what's good.",
+        "replies":[
+            {
+                "nextPhraseID":"S",
+                "text":"Please sell me some of your famous Cheddar."
+            }
+        ]
+	}
+
+]

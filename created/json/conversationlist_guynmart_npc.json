@@ -1,0 +1,2365 @@
+[
+  {
+    "id":"guynmart_guard_10",
+    "message":"Go away, kid."
+  },
+  
+  {
+    "id":"guynmart_guard_guide_10",
+    "message":"Hi, kid. Wanna visit Guynmart Castle? Ancient walls, and sometimes a ghost at midnight?",
+    "replies":[	{ "nextPhraseID":"X", "text":"No, thank you." },
+				{ "nextPhraseID":"guynmart_guard_guide_20",
+				  "text":"Might be interesting. And an easy way to get in..." }]
+  },
+  {
+    "id":"guynmart_guard_guide_20",
+    "message":"Great choice, you won't regret. Adults 20 gold, kids 12 gold. Bilingual guide would be 3 gold extra.",
+    "replies":[	{ "nextPhraseID":"guynmart_guard_guide_30",
+				  "text":"Ok, one kid, without guide, please.",
+				  "requires":[{ "requireType":"inventoryRemove", "requireID":"gold", "value":12 }] },
+				{ "nextPhraseID":"guynmart_guard_guide_32", 
+				  "text":"One kid and this guide, please.",
+				  "requires":[{ "requireType":"inventoryRemove", "requireID":"gold", "value":15 }] },
+				{ "nextPhraseID":"X", "text":"I changed my mind. Bye." }]
+  },
+  {
+    "id":"guynmart_guard_guide_30",
+    "rewards":[	{ "rewardType":"questProgress", "rewardID":"guynmart", "value":16 },
+				{ "rewardType":"removeSpawnArea", "mapName":"guynmart", "rewardID":"guynmart_guard_guide" }],
+    "replies":[{ "nextPhraseID":"guynmart_guard_guide_40" }]
+  },
+  {
+    "id":"guynmart_guard_guide_32",
+    "rewards":[{ "rewardType":"questProgress", "rewardID":"guynmart", "value":18 },
+				{ "rewardType":"removeSpawnArea", "mapName":"guynmart", "rewardID":"guynmart_guard_guide" }],
+    "replies":[{ "nextPhraseID":"guynmart_guard_guide_40" }]
+  },
+  {
+    "id":"guynmart_guard_guide_40",
+    "message":"[Gold taken]\nHAHAHA! Again some stupid with more money than brain! HAHAHA!",
+    "replies":[{ "nextPhraseID":"R", "text":"Hey!" }]
+  },
+
+  { "id":"guynmart_gguard_10",
+    "replies":[
+      { "nextPhraseID":"guynmart_gguard_919",
+        "requires":[{ "requireType":"questProgress", "requireID":"guynmart_quest_gguard", "value":1 }] 
+      },
+      { "nextPhraseID":"guynmart_gguard_400",
+        "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":170 },
+					{ "requireType":"questProgress", "requireID":"guynmart_nondisplay", "value":2 }]
+      },
+      { "nextPhraseID":"guynmart_gguard_220",
+        "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":70 }]
+      },
+      { "nextPhraseID":"guynmart_gguard_20" }]
+  },
+
+  {
+    "id":"guynmart_gguard_20",
+    "message":"No trespassing! Especially for kids!",
+    "replies":[
+      { "nextPhraseID":"guynmart_gguard_900", "text":"Here are 100 gold.",
+        "requires":[
+          { "requireType":"questProgress", "requireID":"guynmart", "value":30 },
+          { "requireType":"inventoryRemove", "requireID":"gold", "value":100 }]
+      },
+      { "nextPhraseID":"guynmart_gguard_30", "text":"Who are you?" },
+      { "nextPhraseID":"guynmart_gguard_40", "text":"What are you doing here?" },
+      { "nextPhraseID":"guynmart_gguard_22", "text":"I just want to pass through." },
+      { "nextPhraseID":"guynmart_gguard_50", "text":"May I pick some rose?" }]
+  },
+  {
+    "id":"guynmart_gguard_22",
+    "message":"I am not allowed to let anyone in or out. And I am incorruptable below 100 pieces of gold.",
+    "replies":[
+      { "nextPhraseID":"guynmart_gguard_900", "text":"Here are 100 gold.",
+        "requires":[{ "requireType":"inventoryRemove", "requireID":"gold", "value":100 }]
+      },
+      { "nextPhraseID":"X", "text":"Well, I think I will look for another entrance." },
+      { "nextPhraseID":"guynmart_gguard_930", "text":"I'm sorry, I don't have so much gold with me." }]
+  },
+  {
+    "id":"guynmart_gguard_30",
+    "message":"Mind your own business. I hate kids. Just disappear!",
+    "replies":[
+      { "nextPhraseID":"guynmart_gguard_20", "text":"Wait!" },
+      { "nextPhraseID":"X", "text":"Ok, I'll leave." }]
+  },
+  {
+    "id":"guynmart_gguard_40",
+    "message":"I stand my legs in the stomach and answer stupid questions.",
+    "replies":[
+      { "nextPhraseID":"guynmart_gguard_900", "text":"Here are 100 gold.",
+        "requires":[
+          { "requireType":"questProgress", "requireID":"guynmart", "value":30 },
+          { "requireType":"inventoryRemove", "requireID":"gold", "value":100 }]
+      },
+      { "nextPhraseID":"guynmart_gguard_30", "text":"Who are you?" },
+      { "nextPhraseID":"guynmart_gguard_40", "text":"What are you doing here?" },
+      { "nextPhraseID":"guynmart_gguard_22", "text":"I want to pass through" },
+      { "nextPhraseID":"guynmart_gguard_50", "text":"May I pick some rose?" }]
+  },
+  {
+    "id":"guynmart_gguard_50",
+    "message":"Pick? A rose? You?? No way! All flowers in this garden are personal property of Lady Hannah.",
+    "replies":[
+      { "nextPhraseID":"guynmart_gguard_60", "text":"Who is Lady Hannah?" },
+      { "nextPhraseID":"guynmart_gguard_70", "text":"Come on. In so many plants she will not miss a single flower." }]
+  },
+  {
+    "id":"guynmart_gguard_60",
+    "message":"Hannah is Guynmarts daughter.",
+    "replies":[	{ "nextPhraseID":"guynmart_gguard_50", "text":"May I pick some rose?" },
+				{ "nextPhraseID":"guynmart_gguard_90", "text":"And Guynmart is ...?" },
+				{ "nextPhraseID":"guynmart_gguard_100", "text":"Guynmart has a daughter?" }]
+  },
+  {
+    "id":"guynmart_gguard_70",
+    "message":"Hannah knows every single plant in her garden. Nobody but herself and the old Nuik may touch the plants.",
+    "replies":[{ "nextPhraseID":"guynmart_gguard_80", "text":"Who is Nuik again?" }]
+  },
+  {
+    "id":"guynmart_gguard_80",
+    "message":"Nuik is a gardener here since I can think. And now disappear!",
+    "replies":[	{ "nextPhraseID":"guynmart_gguard_10", "text":"I have another question." },
+				{ "nextPhraseID":"X", "text":"Ok, ok, I'll leave." }]
+  },
+  {
+    "id":"guynmart_gguard_90",
+    "message":"What do you actually know? Guynmart has been Lord on Guynmart Keep for countless years. His wife died early, at the birth of her daughter.",
+    "replies":[{ "nextPhraseID":"guynmart_gguard_100", "text":"Guynmart has a daughter?" }]
+  },
+  {
+    "id":"guynmart_gguard_100",
+    "message":"Hannah's beauty is well known all over the country. Many young men asked to marry her. But she only has eyes for Lovis.",
+    "replies":[	{ "nextPhraseID":"guynmart_gguard_110", "text":"Ah." },
+				{ "nextPhraseID":"guynmart_gguard_110", "text":"And who is Lovis?" },
+				{ "nextPhraseID":"guynmart_gguard_110", "text":"It's getting boring." }]
+  },
+  {
+    "id":"guynmart_gguard_110",
+    "message":"Lovis is a good boy. I have not seen him yet for a while.",
+    "replies":[	{ "nextPhraseID":"guynmart_gguard_120", "text":"So so." },
+				{ "nextPhraseID":"guynmart_gguard_120", "text":"La la la ...  I don't listen anymore ..." }]
+  },
+  {
+    "id":"guynmart_gguard_120",
+    "message":"But when Lovis is back, I am sure he will marry Hannah on the spot.",
+    "replies":[{ "nextPhraseID":"guynmart_gguard_130", "text":"This is all very interesting. Are you letting me through now?" }]
+  },
+  {
+    "id":"guynmart_gguard_130",
+    "message":"What? No, of course not!",
+    "replies":[{ "nextPhraseID":"guynmart_gguard_10", "text":"N" }]
+  },
+  {
+    "id":"guynmart_gguard_220",
+    "message":"No trespassing! Especially for kids!",
+    "replies":[
+      { "nextPhraseID":"guynmart_gguard_248",
+        "text":"Here are 100 gold."
+      },
+      { "nextPhraseID":"guynmart_gguard_242",
+        "text":"Do you not know me anymore? I've already given you enough gold."
+      },
+      { "nextPhraseID":"guynmart_gguard_250",
+        "text":"I would like to pass through again."
+      },
+      { "nextPhraseID":"guynmart_gguard_350"
+	  , "text":"May I pick some rose?",
+        "requires":[{ "requireType":"inventoryKeep", "requireID":"guynmart_rose", "value":"1", "negate":true },
+					{ "requireType":"questProgress", "requireID":"guynmart", "value":100, "negate":true }]
+      }]
+  },
+  {
+    "id":"guynmart_gguard_242",
+    "message":"Gold can never be enough. So it is 200 pieces of gold now.",
+    "replies":[{ "nextPhraseID":"guynmart_gguard_244", "text":"N" }]
+  },
+  {
+    "id":"guynmart_gguard_244",
+    "message":"So what is now? Do you want to go through or not?",
+    "replies":[
+      { "nextPhraseID":"guynmart_gguard_900",
+        "text":"Outrages! But ok, here are 200 gold.",
+        "requires":[{ "requireType":"inventoryRemove", "requireID":"gold", "value":"200" }]
+      },
+      { "nextPhraseID":"X", "text":"I have to think about it." }]
+  },
+  {
+    "id":"guynmart_gguard_248",
+    "message":"Well, everything is getting more expensive nowadays. So 200 pieces of gold, please.",
+    "replies":[
+      { "nextPhraseID":"guynmart_gguard_900",
+        "text":"Here are 200 gold.",
+        "requires":[{ "requireType":"inventoryRemove", "requireID":"gold", "value":"200" }]
+      },
+      { "nextPhraseID":"X", "text":"Forget it. This is outrageous." 
+	  }]
+  },
+  {
+	"id":"guynmart_gguard_250",
+    "message":"I am not allowed to let anyone in or out. And I am incorruptable below 200 pieces of gold.",
+    "replies":[
+      { "nextPhraseID":"guynmart_gguard_900",
+        "text":"Here are 200 gold.",
+        "requires":[{ "requireType":"inventoryRemove", "requireID":"gold", "value":"200" }]
+      },
+      { "nextPhraseID":"X",
+        "text":"Well, I will look for another entrance really now."
+      },
+      { "nextPhraseID":"guynmart_gguard_248",
+        "text":"200 gold? Last time it was 100 gold."
+      },
+      { "nextPhraseID":"guynmart_gguard_930",
+        "text":"I'm sorry, I don't have so much gold with me."
+      }]
+  },
+
+  {
+    "id":"guynmart_gguard_350",
+    "message":"Pick? A rose? You?? No way! All flowers in this garden are personal property of Lady Hannah.",
+    "replies":[
+      { "nextPhraseID":"guynmart_gguard_70",
+        "text":"Come on. In so many plants she will not miss a single flower."
+      },
+	  { "nextPhraseID":"guynmart_gguard_360",
+        "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":132, "negate":true }],
+        "text":"But Lady Hannah herself told me to get her one."
+      }]
+  },
+  {
+    "id":"guynmart_gguard_360",
+    "message":"Anyone could say so. But maybe ...",
+    "replies":[{ "nextPhraseID":"guynmart_gguard_362", "text":"Yes?" }]
+  },
+  {
+    "id":"guynmart_gguard_362",
+    "replies":[	{ "nextPhraseID":"guynmart_gguard_370",
+				  "requires":[{ "requireType":"inventoryKeep", "requireID":"gold", "value":"100" }] },
+				{ "nextPhraseID":"guynmart_gguard_364" }]
+  },
+  {
+    "id":"guynmart_gguard_364",
+    "message":"Nothing. You seem to have not enough money. Forget it.",
+    "replies":[{ "nextPhraseID":"X", "text":"Oh." }]
+  },
+  {
+    "id":"guynmart_gguard_370",
+	"message":"for 100 gold ...",
+    "replies":[	{ "nextPhraseID":"guynmart_gguard_380",
+				  "text":"I understand. Here, 100 gold.",
+				  "requires":[{ "requireType":"inventoryRemove", "requireID":"gold", "value":"100" }] },
+				{ "nextPhraseID":"X",
+				  "text":"Oh you greedy, filthy, ..." }]
+  },
+  {
+    "id":"guynmart_gguard_380",
+	"rewards":[{ "rewardType":"dropList", "rewardID":"guynmart_drp_gguard_rose", "value":1 },
+			   { "rewardType":"questProgress", "rewardID":"guynmart_quest_gguard", "value":82 }],
+	"message":"And here is the rose. Don't tell anybody that you have it from me.",
+	"replies":[{ "nextPhraseID":"X", "text":"Ok." },
+			   { "nextPhraseID":"X", "text":"Hm, we will see." }]
+  },
+  
+  {
+    "id":"guynmart_gguard_400",
+    "message":"No trespassing! Especially for kids!",
+    "replies":[{ "nextPhraseID":"guynmart_gguard_410", "text":"Tell me, did many people pass by today?" }]
+  },
+  {
+    "id":"guynmart_gguard_410",
+    "message":"Now that you mention it - not a single one. Bad business today.",
+    "replies":[{ "nextPhraseID":"guynmart_gguard_420", "text":"No wonder with the main gate open." }]
+  },
+  {
+    "id":"guynmart_gguard_420",
+    "message":"Ah, that is why. Ok. I am not allowed to let anyone in or out. And I am incorruptable below 2 pieces of gold.",
+    "replies":[
+      { "nextPhraseID":"guynmart_gguard_900",
+        "text":"Here are 2 gold.",
+        "requires":[{ "requireType":"inventoryRemove", "requireID":"gold", "value":"2" }]
+      },
+      { "nextPhraseID":"X",
+        "text":"You'll never give up, do you?"
+      }]
+  },
+
+  { "id":"guynmart_gguard_900",
+    "rewards":[{ "rewardType":"questProgress", "rewardID":"guynmart_quest_gguard", "value":1 },
+			   { "rewardType":"questProgress", "rewardID":"guynmart", "value":30 }],
+    "replies":[	{ "nextPhraseID":"guynmart_gguard_902",
+				  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart", "value":10, "negate":true },
+								{ "requireType":"questProgress", "requireID":"guynmart", "value":32, "negate":true }] },
+				{ "nextPhraseID":"guynmart_gguard_910" }]
+  },
+  {
+    "id":"guynmart_gguard_902",
+    "rewards":[{ "rewardType":"questProgress", "rewardID":"guynmart", "value":32 }],
+    "message":"[Gold taken]\nVery good. Before you enter maybe you should also know the family names: Lord Guynmart, his beautiful but complicate daughter Hannah and his annoying son Rob. Got it?",
+    "replies":[{ "nextPhraseID":"guynmart_gguard_904", "text":"N" }]
+  },
+  {
+    "id":"guynmart_gguard_904",
+    "message":"Rob is always playing some stupid game, and Hannah is always having problems. See?",
+    "replies":[{ "nextPhraseID":"guynmart_gguard_906", "text":"Aha." }]
+  },
+  {
+    "id":"guynmart_gguard_906",
+    "message":"Now enough talk. No trespassing! I close my eyes now and count to 10.",
+    "replies":[{ "nextPhraseID":"guynmart_gguard_911", "text":"N" }]
+  },
+  {
+    "id":"guynmart_gguard_910",
+    "message":"[Gold taken]\nVery good. I close my eyes now and count to 10.",
+    "replies":[
+      { "nextPhraseID":"guynmart_gguard_911", "text":"N" }]
+  },
+  { "id":"guynmart_gguard_911", "message":"... one ...", 	"replies":[{ "nextPhraseID":"guynmart_gguard_912", "text":"N" }] },
+  { "id":"guynmart_gguard_912", "message":"... two ...", 	"replies":[{ "nextPhraseID":"guynmart_gguard_913", "text":"N" }] },
+  { "id":"guynmart_gguard_913", "message":"... three ...", 	"replies":[{ "nextPhraseID":"guynmart_gguard_914", "text":"N" }] },
+  { "id":"guynmart_gguard_914", "message":"... four ...", 	"replies":[{ "nextPhraseID":"guynmart_gguard_915", "text":"N" }] },
+  { "id":"guynmart_gguard_915", "message":"... five ...", 	"replies":[{ "nextPhraseID":"guynmart_gguard_916", "text":"N" }] },
+  { "id":"guynmart_gguard_916", "message":"... six ...", 	"replies":[{ "nextPhraseID":"guynmart_gguard_917", "text":"N" }] },
+  { "id":"guynmart_gguard_917", "message":"... eh, now seven, I think ...", "replies":[{ "nextPhraseID":"guynmart_gguard_918", "text":"N" }] },
+  { "id":"guynmart_gguard_918", "message":"... eight ...", 	"replies":[{ "nextPhraseID":"guynmart_gguard_919", "text":"N" }] },
+  { "id":"guynmart_gguard_919", "message":"... nine ...", 	"replies":[{ "nextPhraseID":"guynmart_gguard_919", "text":"N" }] },
+
+  {
+    "id":"guynmart_gguard_930",
+    "message":"Hm, you may have not enough money. But you have some nice things with you, I might give you a good price.",
+    "replies":[
+      { "nextPhraseID":"S",
+        "text":"We'll see. Let's have a look at my belongings."
+      },
+      {
+        "nextPhraseID":"X",
+        "text":"I rather starve here on the spot than give you a single thing."
+      }]
+  },
+
+ 
+  {
+	"id":"guynmart_player_02", 
+	"rewards":[{ "rewardType":"questProgress",  "rewardID":"guynmart", "value":70 }]
+  },
+  { 
+	"id":"guynmart_player_04", 
+	"rewards":[{ "rewardType":"removeQuestProgress",  
+	"rewardID":"guynmart", "value":70 }]
+  },
+
+  { 
+	"id":"guynmart_player_10",
+	 "message":"Hi kid! Like some game?",
+	 "replies":[
+		{ "nextPhraseID":"guynmart_player_20", "text":"Sure!" },
+		{ "nextPhraseID":"X", "text":"No, not today!" },
+		{ "nextPhraseID":"X", "text":"No, thanks, I really should not start such bad habits." }]
+	},
+  {
+	"id":"guynmart_player_20",
+	 "message":"We always play card color guessing. Dou you have money?",
+	 "replies":[
+		{ "nextPhraseID":"guynmart_player_80", 
+		  "text":"Of course I have.",
+		  "requires":[{ "requireType":"inventoryKeep", "requireID":"gold", "value":100 }] },
+		{ "nextPhraseID":"X", "text":"I would never play for money." },
+		{ "nextPhraseID":"guynmart_player_30", "text":"Please explain the rules to me." }]
+  },
+  {
+	"id":"guynmart_player_30",
+	 "message":"I will draw a card, and you should guess whether it is Red or Black.",
+	 "replies":[{ "nextPhraseID":"guynmart_player_32", "text":"N" }]
+  },
+  {
+	"id":"guynmart_player_32",
+	 "message":"If you have it right, I will give you 100 coins. If your guess is wrong, you owe me 100.",
+	 "replies":[
+		{ "nextPhraseID":"guynmart_player_80", "text":"Ok, got it." },
+		{ "nextPhraseID":"guynmart_player_30", "text":"Eh, could you explain once more?" }]
+  },
+  
+  { "id":"guynmart_player_80",
+	 "message":"Ok. I have drawn a card. Which color is it?",
+	 "replies":[	{ "nextPhraseID":"guynmart_player_84", "text":"Red" },
+					{ "nextPhraseID":"guynmart_player_86", "text":"Black" },
+					{ "nextPhraseID":"guynmart_player_82", "text":"Blue",
+					  "requires":[{ "requireType":"questProgress", "requireID":"guynmart_q1", "value":1 },
+								  { "requireType":"questProgress", "requireID":"guynmart_q2", "value":3 }] },
+					{ "nextPhraseID":"guynmart_player_82", "text":"Blue",
+					  "requires":[{ "requireType":"questProgress", "requireID":"guynmart_q1", "value":2 },
+								  { "requireType":"questProgress", "requireID":"guynmart_q2", "value":7 }] }
+				]
+	},
+	{ 	"id":"guynmart_player_82", 
+		"message":"Oh dear. Just Red or Black. Please try to remember. Sigh.",
+		"replies":[{ "nextPhraseID":"guynmart_player_80", "text":"Yes. Sorry." }]
+	},
+ 	{	"id":"guynmart_player_84",
+		"rewards":[	{ "rewardType":"questProgress", "rewardID":"guynmart_q1", "value":1 },
+					{ "rewardType":"removeQuestProgress", "rewardID":"guynmart_q1", "value":2 }],
+		"replies":[{ "nextPhraseID":"guynmart_player_90" }]
+	},
+ 	{	"id":"guynmart_player_86",
+		"rewards":[	{ "rewardType":"questProgress", "rewardID":"guynmart_q1", "value":2 },
+					{ "rewardType":"removeQuestProgress", "rewardID":"guynmart_q1", "value":1 }],
+		"replies":[	{ "nextPhraseID":"guynmart_player_90" } ]
+	},
+ 	{	"id":"guynmart_player_90",
+		"rewards":[	{ "requireType":"inventoryRemove", "requireID":"gold", "value":100 }],
+		"replies":[	{ "nextPhraseID":"guynmart_player_112", "requires":[{ "requireType":"questProgress", "requireID":"guynmart_q2", "value":12 }] },
+					{ "nextPhraseID":"guynmart_player_111", "requires":[{ "requireType":"questProgress", "requireID":"guynmart_q2", "value":11 }] },
+					{ "nextPhraseID":"guynmart_player_110", "requires":[{ "requireType":"questProgress", "requireID":"guynmart_q2", "value":10 }] },
+					{ "nextPhraseID":"guynmart_player_109", "requires":[{ "requireType":"questProgress", "requireID":"guynmart_q2", "value":9 }] },
+					{ "nextPhraseID":"guynmart_player_108", "requires":[{ "requireType":"questProgress", "requireID":"guynmart_q2", "value":8 }] },
+					{ "nextPhraseID":"guynmart_player_107", "requires":[{ "requireType":"questProgress", "requireID":"guynmart_q2", "value":7 }] },
+					{ "nextPhraseID":"guynmart_player_106", "requires":[{ "requireType":"questProgress", "requireID":"guynmart_q2", "value":6 }] },
+					{ "nextPhraseID":"guynmart_player_105", "requires":[{ "requireType":"questProgress", "requireID":"guynmart_q2", "value":5 }] },
+					{ "nextPhraseID":"guynmart_player_104", "requires":[{ "requireType":"questProgress", "requireID":"guynmart_q2", "value":4 }] },
+					{ "nextPhraseID":"guynmart_player_103", "requires":[{ "requireType":"questProgress", "requireID":"guynmart_q2", "value":3 }] },
+					{ "nextPhraseID":"guynmart_player_102", "requires":[{ "requireType":"questProgress", "requireID":"guynmart_q2", "value":2 }] },
+					{ "nextPhraseID":"guynmart_player_101", "requires":[{ "requireType":"questProgress", "requireID":"guynmart_q2", "value":1 }] },
+					{ "nextPhraseID":"guynmart_player_100" }]
+	},
+
+	
+ 	{ "id":"guynmart_player_100",
+		"rewards":[	{ "rewardType":"questProgress", "rewardID":"guynmart_q2", "value":1 } ],
+		"replies":[	{ "nextPhraseID":"guynmart_player_161",
+					  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_q1", "value":1 },
+									{ "requireType":"inventoryRemove", "requireID":"gold", "value":-100 }] },
+					{ "nextPhraseID":"guynmart_player_162",
+					  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_q1", "value":2 },
+									{ "requireType":"inventoryRemove", "requireID":"gold", "value":-100 }] }]
+	},
+ 	{ "id":"guynmart_player_101",
+		"rewards":[	{ "rewardType":"removeQuestProgress", "rewardID":"guynmart_q2", "value":1 },	
+					{ "rewardType":"questProgress", "rewardID":"guynmart_q2", "value":2 } ],
+		"replies":[	{ "nextPhraseID":"guynmart_player_151",
+					  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_q1", "value":1 },
+									{ "requireType":"inventoryRemove", "requireID":"gold", "value":100 }] },
+					{ "nextPhraseID":"guynmart_player_152",
+					  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_q1", "value":2 },
+									{ "requireType":"inventoryRemove", "requireID":"gold", "value":100 }] }]
+	},
+ 	{ "id":"guynmart_player_102",
+		"rewards":[	{ "rewardType":"removeQuestProgress", "rewardID":"guynmart_q2", "value":2 },	
+					{ "rewardType":"questProgress", "rewardID":"guynmart_q2", "value":3 } ],
+		"replies":[	{ "nextPhraseID":"guynmart_player_151",
+					  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_q1", "value":1 },
+									{ "requireType":"inventoryRemove", "requireID":"gold", "value":100 }] },
+					{ "nextPhraseID":"guynmart_player_152",
+					  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_q1", "value":2 },
+									{ "requireType":"inventoryRemove", "requireID":"gold", "value":100 }] }]
+	},
+ 	{ "id":"guynmart_player_103",
+		"rewards":[	{ "rewardType":"removeQuestProgress", "rewardID":"guynmart_q2", "value":3 },	
+					{ "rewardType":"questProgress", "rewardID":"guynmart_q2", "value":4 } ],
+		"replies":[	{ "nextPhraseID":"guynmart_player_161",
+					  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_q1", "value":1 },
+									{ "requireType":"inventoryRemove", "requireID":"gold", "value":-100 }] },
+					{ "nextPhraseID":"guynmart_player_162",
+					  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_q1", "value":2 },
+									{ "requireType":"inventoryRemove", "requireID":"gold", "value":-100 }] }]
+	},
+ 	{ "id":"guynmart_player_104",
+		"rewards":[	{ "rewardType":"removeQuestProgress", "rewardID":"guynmart_q2", "value":4 },	
+					{ "rewardType":"questProgress", "rewardID":"guynmart_q2", "value":5 } ],
+		"replies":[	{ "nextPhraseID":"guynmart_player_151",
+					  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_q1", "value":1 },
+									{ "requireType":"inventoryRemove", "requireID":"gold", "value":100 }] },
+					{ "nextPhraseID":"guynmart_player_152",
+					  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_q1", "value":2 },
+									{ "requireType":"inventoryRemove", "requireID":"gold", "value":100 }] }]
+	},
+ 	{ "id":"guynmart_player_105",
+		"rewards":[	{ "rewardType":"removeQuestProgress", "rewardID":"guynmart_q2", "value":5 },	
+					{ "rewardType":"questProgress", "rewardID":"guynmart_q2", "value":6 } ],
+		"replies":[	{ "nextPhraseID":"guynmart_player_161",
+					  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_q1", "value":1 },
+									{ "requireType":"inventoryRemove", "requireID":"gold", "value":-100 }] },
+					{ "nextPhraseID":"guynmart_player_162",
+					  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_q1", "value":2 },
+									{ "requireType":"inventoryRemove", "requireID":"gold", "value":-100 }] }]
+	},
+ 	{ "id":"guynmart_player_106",
+		"rewards":[	{ "rewardType":"removeQuestProgress", "rewardID":"guynmart_q2", "value":6 },	
+					{ "rewardType":"questProgress", "rewardID":"guynmart_q2", "value":7 } ],
+		"replies":[	{ "nextPhraseID":"guynmart_player_151",
+					  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_q1", "value":1 },
+									{ "requireType":"inventoryRemove", "requireID":"gold", "value":100 }] },
+					{ "nextPhraseID":"guynmart_player_152",
+					  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_q1", "value":2 },
+									{ "requireType":"inventoryRemove", "requireID":"gold", "value":100 }] }]
+	},
+ 	{ "id":"guynmart_player_107",
+		"rewards":[	{ "rewardType":"removeQuestProgress", "rewardID":"guynmart_q2", "value":7 },	
+					{ "rewardType":"questProgress", "rewardID":"guynmart_q2", "value":8 } ],
+		"replies":[	{ "nextPhraseID":"guynmart_player_151",
+					  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_q1", "value":1 },
+									{ "requireType":"inventoryRemove", "requireID":"gold", "value":100 }] },
+					{ "nextPhraseID":"guynmart_player_152",
+					  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_q1", "value":2 },
+									{ "requireType":"inventoryRemove", "requireID":"gold", "value":100 }] }]
+	},
+ 	{ "id":"guynmart_player_108",
+		"rewards":[	{ "rewardType":"removeQuestProgress", "rewardID":"guynmart_q2", "value":8 },	
+					{ "rewardType":"questProgress", "rewardID":"guynmart_q2", "value":9 } ],
+		"replies":[	{ "nextPhraseID":"guynmart_player_161",
+					  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_q1", "value":1 },
+									{ "requireType":"inventoryRemove", "requireID":"gold", "value":-100 }] },
+					{ "nextPhraseID":"guynmart_player_162",
+					  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_q1", "value":2 },
+									{ "requireType":"inventoryRemove", "requireID":"gold", "value":-100 }] }]
+	},
+ 	{ "id":"guynmart_player_109",
+		"rewards":[	{ "rewardType":"removeQuestProgress", "rewardID":"guynmart_q2", "value":9 },	
+					{ "rewardType":"questProgress", "rewardID":"guynmart_q2", "value":10 } ],
+		"replies":[	{ "nextPhraseID":"guynmart_player_161",
+					  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_q1", "value":1 },
+									{ "requireType":"inventoryRemove", "requireID":"gold", "value":-100 }] },
+					{ "nextPhraseID":"guynmart_player_162",
+					  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_q1", "value":2 },
+									{ "requireType":"inventoryRemove", "requireID":"gold", "value":-100 }] }]
+	},
+ 	{ "id":"guynmart_player_110",
+		"rewards":[	{ "rewardType":"removeQuestProgress", "rewardID":"guynmart_q2", "value":10 },	
+					{ "rewardType":"questProgress", "rewardID":"guynmart_q2", "value":11 } ],
+		"replies":[	{ "nextPhraseID":"guynmart_player_151",
+					  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_q1", "value":1 },
+									{ "requireType":"inventoryRemove", "requireID":"gold", "value":100 }] },
+					{ "nextPhraseID":"guynmart_player_152",
+					  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_q1", "value":2 },
+									{ "requireType":"inventoryRemove", "requireID":"gold", "value":100 }] }]
+	},
+ 	{ "id":"guynmart_player_111",
+		"rewards":[	{ "rewardType":"removeQuestProgress", "rewardID":"guynmart_q2", "value":11 },	
+					{ "rewardType":"questProgress", "rewardID":"guynmart_q2", "value":12 } ],
+		"replies":[	{ "nextPhraseID":"guynmart_player_151",
+					  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_q1", "value":1 },
+									{ "requireType":"inventoryRemove", "requireID":"gold", "value":100 }] },
+					{ "nextPhraseID":"guynmart_player_152",
+					  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_q1", "value":2 },
+									{ "requireType":"inventoryRemove", "requireID":"gold", "value":100 }] }]
+	},
+ 	{ "id":"guynmart_player_112",
+		"rewards":[	{ "rewardType":"removeQuestProgress", "rewardID":"guynmart_q2", "value":12 },	
+					{ "rewardType":"questProgress", "rewardID":"guynmart_q2", "value":1 } ],
+		"replies":[	{ "nextPhraseID":"guynmart_player_161",
+					  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_q1", "value":1 },
+									{ "requireType":"inventoryRemove", "requireID":"gold", "value":-100 }] },
+					{ "nextPhraseID":"guynmart_player_162",
+					  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_q1", "value":2 },
+									{ "requireType":"inventoryRemove", "requireID":"gold", "value":-100 }] }]
+	},
+
+  {	"id":"guynmart_player_151",
+	"message":"I have Black! Sorry for you, kid. I get 100 now.\n[Gold taken]\nLet's have another card.",
+	"replies":[	{ "nextPhraseID":"guynmart_player_80", "text":"N" }]
+  },
+  {	"id":"guynmart_player_152", 
+	"message":"I have Red! Sorry for you, kid. I get 100.\n[Gold taken]\nLet's have another card.",
+	"replies":[	{ "nextPhraseID":"guynmart_player_80", "text":"N" }]
+  },
+  {	"id":"guynmart_player_161", 
+	"message":"Red! How did you know? Here you have 100 again.\n[Gold received]\nCan you do this again?",
+	"replies":[	{ "nextPhraseID":"guynmart_player_80", "text":"N" }]
+  },
+  {	"id":"guynmart_player_162", 
+	"message":"Black! You guessed it right again. Here you have 100 gold.\n[Gold received]\nLet's have another card.",
+	"replies":[	{ "nextPhraseID":"guynmart_player_80", "text":"N" }]
+  },
+
+  
+  {
+    "id":"guynmart_guard_arms_10",
+    "message":"You are too young to be here. Sharp swords are storaged in this room."
+  },
+  
+  
+ 	{ "id":"guynmart_hannah_10",
+		"rewards":[	{ "rewardType":"removeSpawnArea", "mapName":"guynmart_main_1", "rewardID":"guynmart_steward" },
+					{ "rewardType":"removeSpawnArea", "mapName":"guynmart_main_2", "rewardID":"guynmart_steward2" },
+					  { "rewardType":"questProgress", "rewardID":"guynmart_nondisplay", "value":34 }],
+		"replies":[	{ "nextPhraseID":"guynmart_hannah_110",
+					  "requires":[{ "requireType":"inventoryKeep", "requireID":"guynmart_rose", "value":1 }] },
+					{ "nextPhraseID":"guynmart_hannah_12", 
+					  "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":70 }] },
+					{ "nextPhraseID":"guynmart_hannah_20" }]
+	},
+	{ "id":"guynmart_hannah_12",
+      "message":"Go away, kid. I want to be alone. I can not think clearly without the smell of another fresh, fragrant rose.",
+      "replies":[{ "nextPhraseID":"X", "text":"I will bring your rose now." },
+				 { "nextPhraseID":"X", 
+				   "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":70 }],
+				   "text":"You and your stupid rose." }]
+	},
+ 	{ "id":"guynmart_hannah_20",
+		"message":"I can not think clearly ... I need a rose! A fresh, fragrant rose! Please bring me a rose of my garden ...",
+		"rewards":[	{ "rewardType":"questProgress", "rewardID":"guynmart", "value":70 },
+					{ "rewardType":"spawnAll", "rewardID":"guynmart_steward3", "mapName":"guynmart" },
+					{ "rewardType":"removeQuestProgress",  "rewardID":"guynmart_quest_olav", "value":1 },
+					{ "rewardType":"questProgress",  	   "rewardID":"guynmart_quest_olav", "value":7 }],
+		"replies":[	{ "nextPhraseID":"guynmart_hannah_30",
+					  "text":"I have some delicious lunch for you.",
+					  "requires":[{ "requireType":"inventoryKeep", "requireID":"guynmart_lunch", "value":1 }] },
+					{ "nextPhraseID":"X", "text":"I am going to ask Nuik." }]
+	},
+	{ "id":"guynmart_hannah_30",
+      "message":"How can you think of eating and drinking! My love has gone - I will never eat again! Take it for yourself or throw it away.\nAnd leave me alone now.\nA rose... I need my rose...",
+      "replies":[{ "nextPhraseID":"X", "text":"I will bring your rose now." }]
+	},
+ 	{ "id":"guynmart_hannah_110",
+		"message":"Oh, what a lovely rose you found for me!",
+		"replies":[	{ "nextPhraseID":"guynmart_hannah_112", "text":"N" }]
+	},
+ 	{ "id":"guynmart_hannah_112",
+		"message":"Ah - beautiful. Just look!",
+		"replies":[	{ "nextPhraseID":"guynmart_hannah_114", 
+					  "requires":[{ "requireType":"inventoryRemove", "requireID":"guynmart_rose", "value":1 }],
+					  "text":"N" }]
+	},
+ 	{ "id":"guynmart_hannah_114",
+		"rewards":[	{ "rewardType":"questProgress", "rewardID":"guynmart", "value":90 }],
+		"message":"[Hannah takes the rose]\nNow. I feel better again. Thank you.",
+		"replies":[	{ "nextPhraseID":"guynmart_hannah_120", "text":"N" }]
+	},
+ 	{ "id":"guynmart_hannah_120",
+		"replies":[	{ "nextPhraseID":"guynmart_hannah_122", 
+					  "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":100 }] },
+					{ "nextPhraseID":"guynmart_hannah_140" }]
+	},
+ 	{ "id":"guynmart_hannah_122",
+		"message":"Did you find him already?",
+		"replies":[{ "nextPhraseID":"X", "text":"No, sorry. Not yet." }]
+	},
+ 	{ "id":"guynmart_hannah_140",
+		"message":"I would like to give you Lovis flute. He used to play for me on it every day. When you find Lovis, show the flute as a token that I sent you.",
+		"replies":[	{ "nextPhraseID":"guynmart_hannah_150", "text":"I will not disappoint you." },
+					{ "nextPhraseID":"X", "text":"No, I changed my mind. Bye." }]
+	},
+ 	{ "id":"guynmart_hannah_150",
+		"rewards":[	{ "rewardType":"questProgress", "rewardID":"guynmart", "value":100 },
+					{ "rewardType":"giveItem", "rewardID":"guynmart_flute", "value":1 },
+					{ "rewardType":"questProgress", "rewardID":"guynmart_qRpl_shutters", "value":1 },
+					{ "rewardType":"removeSpawnArea", "mapName":"guynmart_main_3", "rewardID":"guynmart_rob" },
+					{ "rewardType":"spawnAll", "rewardID":"guynmart_rob3", "mapName":"guynmart_tower_3" }],
+		"message":"So take this flute and take care of it.",
+		"replies":[	{ "nextPhraseID":"X", "text":"I will." }]
+	},
+
+  {
+    "id":"guynmart_hannah2_10",
+    "replies":[	{ "nextPhraseID":"guynmart_hannah2_14", 
+				  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart", "value":"200" }] },
+				{ "nextPhraseID":"guynmart_hannah2_12", 
+				  "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":"210" }] },
+				{ "nextPhraseID":"guynmart_hannah2_20", 
+				  "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":"190" }] },
+				{ "nextPhraseID":"guynmart_hannah2_30" }]
+  },
+  {
+    "id":"guynmart_hannah2_12",
+    "message":"Hello $playername."
+  },
+  {
+    "id":"guynmart_hannah2_14",
+    "message":"$playername - what a joy to see you again."
+  },
+  {
+    "id":"guynmart_hannah2_20",
+    "message":"Now let us hear Lovis.",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis2_30", "text":"N" }]
+  },
+  {
+    "id":"guynmart_hannah2_30",
+	"switchToNPC":"guynmart_hannah2",
+    "message":"Many things have happened. Norgothla came back and Unkorh flew, his men dead or scattered.",
+    "replies":[	{ "nextPhraseID":"guynmart_hannah2_32", "text":"N" }]
+  },
+  {
+    "id":"guynmart_hannah2_32",
+	"switchToNPC":"guynmart_hannah2",
+    "message":"We found Guynmart down in a cell, but it was too late - My beloved father died in my arms.",
+    "replies":[	{ "nextPhraseID":"guynmart_hannah2_34", "text":"N" }]
+  },
+  {
+    "id":"guynmart_hannah2_34",
+	"switchToNPC":"guynmart_hannah2",
+    "message":"And Lovis and I are finally married. In spite of the cruel events, or just to forget them a little, we celebrated a joyous feast.",
+    "replies":[	{ "nextPhraseID":"guynmart_hannah2_40", "text":"N" }]
+  },
+  {
+    "id":"guynmart_hannah2_40",
+	"switchToNPC":"guynmart_hannah2",
+    "message":"If it wasn't for you, Guynmart castle would look different today: dark and gloomy and no place you want to live.",
+    "replies":[	{ "nextPhraseID":"guynmart_hannah2_50", "text":"N" }]
+  },
+  {
+    "id":"guynmart_hannah2_50",
+    "rewards":[ { "rewardType":"questProgress",  "rewardID":"guynmart", "value":190 },
+				{ "rewardType":"giveItem",  "rewardID":"guynmart_rose", "value":1 }],
+    "message":"Take this rose as a token of deepest thanks. May its lovely fragrance lasts forever.",
+    "replies":[	{ "nextPhraseID":"guynmart_hannah2_20", "text":"Thank you, Lady." }]
+  },
+
+  {
+    "id":"guynmart_s_hannah",
+    "replies":[	{ "requires":[{ "requireType":"questProgress", "requireID":"guynmart_nondisplay", "value":63 }],
+				  "nextPhraseID":"guynmart_s_hannah_63" },
+				{ "requires":[{ "requireType":"questProgress", "requireID":"guynmart_nondisplay", "value":62 }],
+				  "nextPhraseID":"guynmart_s_hannah_62" },
+				{ "requires":[{ "requireType":"questProgress", "requireID":"guynmart_nondisplay", "value":61 }],
+				  "nextPhraseID":"guynmart_s_hannah_61" },
+				{ "requires":[{ "requireType":"questProgress", "requireID":"guynmart_nondisplay", "value":60 }],
+				  "nextPhraseID":"guynmart_s_hannah_60" },
+				{ "nextPhraseID":"X" }]
+  },
+  {
+    "id":"guynmart_s_hannah_60",
+	"switchToNPC":"guynmart_hannah3",
+    "rewards":[ { "rewardType":"questProgress",  "rewardID":"guynmart_nondisplay", "value":61 },
+				{ "rewardType":"removeQuestProgress",  "rewardID":"guynmart_nondisplay", "value":60 }],
+    "message":"DON'T COME ANY CLOSER!",
+    "replies":[	{ "nextPhraseID":"guynmart_s_hannah_60_2", "text":"Oops." }]
+  },
+  {
+    "id":"guynmart_s_hannah_60_2",
+    "message":"You promised to bring Lovis back. Where is he? Where?",
+    "replies":[	{ "nextPhraseID":"guynmart_s_hannah_60_3", "text":"N" }]
+  },
+  {
+    "id":"guynmart_s_hannah_60_3",
+    "message":"I should never have trusted you. Go away!"
+  },
+  {
+    "id":"guynmart_s_hannah_61",
+	"switchToNPC":"guynmart_hannah3",
+    "rewards":[ { "rewardType":"questProgress",  "rewardID":"guynmart_nondisplay", "value":62 },
+				{ "rewardType":"removeQuestProgress",  "rewardID":"guynmart_nondisplay", "value":61 }],
+    "message":"You dare to come again! I hate you!",
+    "replies":[	{ "nextPhraseID":"guynmart_s_hannah_61_2", "text":"N" }]
+  },
+  {
+    "id":"guynmart_s_hannah_61_2",
+    "message":"My father is dead! Lovis is gone!",
+    "replies":[	{ "nextPhraseID":"guynmart_s_hannah_61_3", "text":"No, he is ..." }]
+  },
+  {
+    "id":"guynmart_s_hannah_61_3",
+    "message":"No more word! I do not want to hear anything!",
+    "replies":[	{ "nextPhraseID":"guynmart_s_hannah_61_4", "text":"N" }]
+  },
+  {
+    "id":"guynmart_s_hannah_61_4",
+    "message":"You have ruined everything! And now you let Unkorh celebrate you as a hero."
+  },
+  {
+    "id":"guynmart_s_hannah_62",
+	"switchToNPC":"guynmart_hannah3",
+    "rewards":[ { "rewardType":"questProgress",  "rewardID":"guynmart_nondisplay", "value":63 },
+				{ "rewardType":"removeQuestProgress",  "rewardID":"guynmart_nondisplay", "value":62 }],
+    "message":"Leave now, or I will call the guards!"
+  },
+  {
+    "id":"guynmart_s_hannah_63",
+	"switchToNPC":"guynmart_hannah3",
+    "rewards":[ { "rewardType":"questProgress",  "rewardID":"guynmart_nondisplay", "value":60 },
+				{ "rewardType":"removeQuestProgress",  "rewardID":"guynmart_nondisplay", "value":63 }],
+    "message":"You love to watch my misery, don't you? Think I am crazy?",
+    "replies":[	{ "nextPhraseID":"guynmart_s_hannah_63_2", "text":"Of course not. But ..." }]
+  },
+  {
+    "id":"guynmart_s_hannah_63_2",
+    "message":"Unkorh forced me to marry him, and now I sit here in this golden cage all day long.",
+    "replies":[	{ "nextPhraseID":"guynmart_s_hannah_63_3", "text":"N" }]
+  },
+  {
+    "id":"guynmart_s_hannah_63_3",
+    "message":"How I hate this room!",
+    "replies":[	{ "nextPhraseID":"guynmart_s_hannah_63_4", "text":"How can I help you?" }]
+  },
+  {
+    "id":"guynmart_s_hannah_63_4",
+    "message":"Help? You? You've already shown what your help is worth."
+  },
+
+
+	
+	{ "id":"guynmart_rob_10",
+	  "replies":[{ "nextPhraseID":"guynmart_rob_50",
+					"requires":[{ "requireType":"questProgress", "requireID":"guynmart_qRpl_shutters", "value":1 }] },
+				 { "nextPhraseID":"guynmart_rob_12" }]
+	},
+	{ "id":"guynmart_rob_12",
+	  "rewards":[{ "rewardType":"questProgress", "rewardID":"guynmart_qRpl_shutters", "value":1 },
+				 { "rewardType":"questProgress", "rewardID":"guynmart", "value":45 }],
+	  "message":"Hey - you found me at last! That was fun!",
+	  "replies":[{	"nextPhraseID":"guynmart_rob_14", "text":"N" }]
+	},
+	{ "id":"guynmart_rob_14",
+	  "message":"I am Robalyrius, Guynmarts son. But please just call me Rob. And who are you?",
+	  "replies":[{	"nextPhraseID":"guynmart_rob_16", "text":"Hi, I am $playername. I am glad that you are not really a ghost." }]
+	},
+	{ "id":"guynmart_rob_16",
+	  "message":"Wait, I will open the shutters, so we can see each other."
+	},
+	{ "id":"guynmart_rob_50",
+	  "message":"Hi $playername! We could play together in the tower. It is so boring here as only kid.",
+	  "replies":[
+		{ "nextPhraseID":"X", "text":"Hm, maybe later. I must go now." },
+		{ "nextPhraseID":"guynmart_rob_52", "text":"O dear. I am too old to play childish games. Leave me alone." },
+		{ "nextPhraseID":"guynmart_rob_60", "text":"Where is your father?" },
+		{ "nextPhraseID":"guynmart_rob_70", "text":"Where is Hannah?" }]
+	},
+	{ "id":"guynmart_rob_52",
+	  "message":"No problem, see you later.",
+	  "replies":[{ "nextPhraseID":"R", "text":"I hope not" }]
+	},
+	{ "id":"guynmart_rob_60",
+	  "message":"I don't know myself. He is uproad for a week now. But this is not unusual, he often is. I hope that he will take me with him on such missions.",
+	  "replies":[
+		{ "nextPhraseID":"guynmart_rob_70", "text":"And where is Hannah?" }]
+	},
+	{ "id":"guynmart_rob_70",
+	  "message":"My sister is not in her room. Probably she is on the tower platform again, watching for a sign of Lovis.",
+	  "replies":[
+		{ "nextPhraseID":"guynmart_rob_72", "text":"N" }]
+	},
+	{ "id":"guynmart_rob_72",
+	  "message":"They want to marry but some days ago he vanished and did not return. Hannah weeps now all the time. I hope for Lovis that he has a good reason to make my sister so sad.",
+	  "replies":[
+		{ "nextPhraseID":"guynmart_rob_80", "text":"N" }]
+	},
+	{ "id":"guynmart_rob_80",
+	  "message":"Maybe you want to speak to Hannahs maiden? She is in the next room."
+	},
+
+	{ "id":"guynmart_rob2_10",
+	  "message":"I am throwing little pebbles at the guard down there. You want to try too?",
+	  "replies":[
+		{ "nextPhraseID":"X", "text":"You shouldn't do that, naughty boy." },
+		{ "nextPhraseID":"guynmart_rob2_12", "text":"Here, take a few bigger rocks. The guard earns it.",
+		  "requires":[{ "requireType":"inventoryRemove", "requireID":"rock", "value":6 }] }
+		]
+	},
+	{ "id":"guynmart_rob2_12",
+	  "message":"[6 rocks taken]\nGreat! Let's see if I get his helmet off ..."
+	},
+  
+	{ "id":"guynmart_rob3_10",
+	  "message":"What shall we play now?",
+	  "replies":[
+		{ "nextPhraseID":"guynmart_rob3_20", "text":"I want to go into the dungeon." }]
+	},
+	{ "id":"guynmart_rob3_20",
+	  "message":"The guards would not let us. But I could help you.",
+	  "replies":[{	"nextPhraseID":"guynmart_rob3_30", "text":"N" }]
+	},
+	{ "id":"guynmart_rob3_30",
+	  "message":"I will distract the guards, while you slip down the stairways, ok?",
+	  "replies":[{	"nextPhraseID":"guynmart_rob3_40", "text":"Great idea." }]
+	},
+	{ "id":"guynmart_rob3_40",
+	  "rewards":[{ "rewardType":"questProgress", "rewardID":"guynmart", "value":110 },
+				 { "rewardType":"spawnAll", "rewardID":"guynmart_rob4", "mapName":"guynmart_tower_2" },
+				 { "rewardType":"removeSpawnArea", "mapName":"guynmart_tower_3", "rewardID":"guynmart_rob3" }],
+	  "message":"Follow me in a minute - but make no noise.",
+	  "replies":[{ "nextPhraseID":"R", "text":"Ok." }]
+	},
+
+	{ "id":"guynmart_rob4_10",
+	  "message":"Quick! Downstairs!"
+	},
+	
+  {
+    "id":"guynmart_servant_10",
+    "message":"What do you do in my lords rooms?",
+	"replies":[	{ "nextPhraseID":"guynmart_servant_20", "text":"You lie in bed in bright daylight?" }]
+  },
+  {
+    "id":"guynmart_servant_20",
+    "message":"I am checking if the bed of young Robalyrius is still in order."
+  },
+
+  {
+    "id":"guynmart_maid_10",
+    "replies":[	{ "nextPhraseID":"guynmart_maid_11",
+				  "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":"181" }] },
+				{ "nextPhraseID":"guynmart_maid_12",
+				  "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":"180" }] },
+				{ "nextPhraseID":"guynmart_maid_14",
+				  "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":"50" }] },
+				{ "nextPhraseID":"guynmart_maid_20" }]
+  },
+  {
+    "id":"guynmart_maid_11",
+    "message":"Since Lady Hannah is married, she never sings anymore.",
+	"replies":[	{ "nextPhraseID":"X", "text":"So she's finally grown up." },
+				{ "nextPhraseID":"X", "text":"Oh." }]
+  },
+  {
+    "id":"guynmart_maid_12",
+    "message":"Since Lady Hannah is married, she is singing all day long. Thank you for your help.",
+	"replies":[	{ "nextPhraseID":"X", "text":"It is nice that she is happy again." },
+				{ "nextPhraseID":"X", "text":"I do such things all the time." }]
+  },
+  {
+    "id":"guynmart_maid_14",
+    "message":"Could you already help Lady Hannah?",
+	"replies":[	{ "nextPhraseID":"X", "text":"I'm not finished yet." },
+				{ "nextPhraseID":"guynmart_maid_50", "text":"Please tell me again what I should do for Hannah and Lovis." }]
+  },
+  {
+    "id":"guynmart_maid_20",
+    "message":"Hello. What are you doing in Lady Hannahs room?",
+	"replies":[	{ "nextPhraseID":"X", "text":"Oh, sorry, I better go again." },
+				{ "nextPhraseID":"guynmart_maid_50", "text":"I would like to see Lady Hannah. I heard she has problems. Maybe I could help her." }]
+  },
+  {
+    "id":"guynmart_maid_50",
+    "message":"You have heard of Lovis? Where is he? We miss him for almost a week.",
+	"replies":[	{ "nextPhraseID":"guynmart_maid_60", "text":"I could go and find Lovis for her." }]
+  },
+  {
+    "id":"guynmart_maid_60",
+    "message":"You would do this? That is very kind of you.",
+	"replies":[	{ "nextPhraseID":"guynmart_maid_62", "text":"N" }]
+  },
+  {
+    "id":"guynmart_maid_62",
+    "message":"Please go directly to Hannah. She will be on top of the tower again, looking for Lovis.",
+	"replies":[	{ "nextPhraseID":"guynmart_maid_64", "text":"N" }]
+  },
+  {
+    "id":"guynmart_maid_64",
+    "message":"Hm, probably the guard will stop you. Let me think ...",
+	"replies":[	{ "nextPhraseID":"guynmart_maid_66", "text":"N" }]
+  },
+  {
+    "id":"guynmart_maid_66",
+    "rewards":[{ "rewardType":"questProgress", "rewardID":"guynmart", "value":50 }],
+	"message":"Ah yes - tell the cook that I asked you to bring lunch for Lady Hannah. He hates climbing stairs, so he will gladly agree.",
+	"replies":[	{ "nextPhraseID":"X", "text":"Good idea! I will try this immediatly." },
+				{ "nextPhraseID":"X", "text":"No way - I am not your servant." }]
+  },
+  
+  
+  {
+    "id":"guynmart_nuik_10",
+    "replies":[	{ "nextPhraseID":"guynmart_nuik_20",
+				  "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":"200" }] },
+				{ "nextPhraseID":"guynmart_nuik_80",
+				  "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":"64" }] },
+				{ "nextPhraseID":"guynmart_nuik_100",
+				  "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":"62" }] },
+				{ "nextPhraseID":"guynmart_nuik_30" }]
+  },
+  {
+    "id":"guynmart_nuik_20",
+    "message":"Hello $playername! It's a loveley day, isn't it?"
+  },
+  {
+    "id":"guynmart_nuik_30",
+    "message":"Hi Kid. Don't you love flowers as much as I do?",
+    "replies":[
+		{	"nextPhraseID":"guynmart_nuik_40",
+			"text":"Oh yes, I do! Maybe I become a gardener myself."
+		},
+		{	"nextPhraseID":"guynmart_nuik_50", "text":"Lady Hannah asked me to bring her a rose. Please give me the most beautiful one.",
+			"requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":"70" }] 
+		}
+    ]
+  },
+  {
+    "id":"guynmart_nuik_40",
+    "message":"That is nice.",
+    "replies":[	{ "nextPhraseID":"guynmart_nuik_60", "text":"May I pick some flowers?" },
+				{ "nextPhraseID":"guynmart_nuik_70", "text":"Could you sell me one rose?" },
+				{ "nextPhraseID":"X", "text":"Bye" }]
+  },
+  {
+    "id":"guynmart_nuik_50",
+    "message":"No, sorry, anyone could say so. I can not give you any flowers.",
+    "replies":[	{ "nextPhraseID":"guynmart_nuik_60", "text":"May I pick the rose myself?" },
+				{ "nextPhraseID":"X", "text":"Bye"}]
+  },
+  {
+    "id":"guynmart_nuik_60",
+    "message":"No, this is strictly forbidden! The only person who is allowed to pick flowers is Lady Hannah herself.",
+    "replies":[	{ "nextPhraseID":"guynmart_nuik_70", "text":"Could you sell me one rose?" },
+				{ "nextPhraseID":"X", "text":"Bye" }]
+  },
+  {
+    "id":"guynmart_nuik_70",
+    "message":"Are you kidding? These flowers are priceless! You can not pay for them!",
+    "replies":[	{ "nextPhraseID":"guynmart_nuik_60", 
+				  "text":"May I pick the rose myself?" },
+				{ "nextPhraseID":"guynmart_nuik_50", 
+				  "text":"Lady Hannah asked me to bring her a rose. Please give me the most beautiful one.",
+				  "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":"70" }] },
+				{ "nextPhraseID":"X", "text":"Bye" }]
+  },
+  {
+    "id":"guynmart_nuik_80",
+	"message":"Hi kid, where are you going in such a hurry?",
+	"replies":[	{ "nextPhraseID":"X", "text":"Sorry, I have just no time for a talk." }]
+  },
+  {
+    "id":"guynmart_nuik_100",
+	"message":"Hi kid, where are you going in such a hurry?",
+	"replies":[	{ "nextPhraseID":"guynmart_nuik_110", 
+				  "text":"Hofala the cook sent me, I need some herbs for Lady Hannah's lunch." }]
+  },
+  {
+    "id":"guynmart_nuik_110",
+    "rewards":[{ "rewardType":"dropList", "rewardID":"guynmart_drp_nuik", "value":1 }],
+	"message":"You are lucky! I just have gathered wonderful fresh herbs. Take these and bring them to Hofala.",
+	"replies":[	{ "nextPhraseID":"X", "text":"Thanks a lot!" }]
+  },
+  
+  
+  {
+    "id":"guynmart_wizard_10",
+    "replies":[	{ "nextPhraseID":"guynmart_wizard_20",
+				  "requires":[{ "requireType":"questProgress", "requireID":"guynmart_quest_wizard", "value":12 }] },
+				{ "nextPhraseID":"guynmart_wizard_12" }] 
+  },
+  {
+    "id":"guynmart_wizard_12",
+    "message":"It is dangerous here. Please stay outside, in front of the signs on the floor, and wait there. I will be with you in a minute."
+  },
+  {
+    "id":"guynmart_wizard_20",
+    "replies":[	{ "nextPhraseID":"guynmart_wizard_24", 
+				  "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":190444 }] },
+				{ "nextPhraseID":"guynmart_wizard_40", 
+				  "requires":[{ "requireType":"inventoryKeep", "requireID":"ring_shadow0", "value":"1" }] },
+				{ "nextPhraseID":"guynmart_wizard_30", 
+				  "requires":[{ "requireType":"wear", "requireID":"ring_shadow0", "value":"1" }] },
+				{ "nextPhraseID":"guynmart_wizard_21" }]
+  },
+  {
+    "id":"guynmart_wizard_21",
+    "message":"Be welcome, $playername. I am Rorthron, world most famous ringmaker. I used to know Andor, your brother. He sometimes consulted me about newly found rings.",
+    "replies":[	
+		{ "nextPhraseID":"guynmart_wizard_24", 
+		  "text":"I never met a ringmaker." 
+		},
+		{ "nextPhraseID":"guynmart_wizard_28", 
+		  "text":"Andor! Do you know where he was bound to?" 
+		}
+	]
+  },
+  {
+    "id":"guynmart_wizard_22",
+	"message":"A lot. If ever you find one of the strong old rings, come and show me. I might enhance it for you, like I already did for Andor. Don't forget to bring some bonemeal potions as a sign of friendship.",
+    "replies":[
+		{ "nextPhraseID":"guynmart_wizard_24", 
+		  "text":"Thank you. I will remember." 
+		}
+	]
+  },
+  {
+    "id":"guynmart_wizard_24",
+    "message":"Maybe you want to look at my fine collection of rings? Unfortunately I have no ring of real power available just now. But I sell them for a good price.",
+    "replies":[
+      { "nextPhraseID":"S",
+        "text":"Oh, gladly. Show me your rings."
+      },
+      { "nextPhraseID":"X",
+        "text":"Not at the moment, thanks."
+      }
+    ]
+  },
+  {
+    "id":"guynmart_wizard_28",
+	"message":"No, sorry. I tend not to ask too personal things.",
+    "replies":[
+      { "nextPhraseID":"guynmart_wizard_42", 
+	    "text":"What a pity. I am trailing my big brother for quite a while now.",
+		"requires":[{ "requireType":"inventoryKeep", "requireID":"ring_shadow0", "value":"1" }]
+      },
+      { "nextPhraseID":"guynmart_wizard_22", 
+	    "text":"What do you know about magic rings?"
+      }
+    ]
+  },
+  
+  {
+    "id":"guynmart_wizard_30",
+    "message":"Ah - just one thing: I know the power some rings can have, and I would prefer you took yours off in my presence.",
+     "replies":[{ "nextPhraseID":"X", "text":"Ok, just a second." }]
+  },
+
+  {
+    "id":"guynmart_wizard_40",
+    "message":"Be welcome, $playername. I am Rorthron, world most famous ringmaker. I used to know Andor, your brother. He sometimes consulted me about newly found rings.",
+     "replies":[
+      { "nextPhraseID":"guynmart_wizard_42", "text":"You know me? And my brother?"
+      },
+      { "nextPhraseID":"guynmart_wizard_24", "text":"I never met a ringmaker." 
+	  },
+      { "nextPhraseID":"guynmart_wizard_28", "text":"Andor! Do you know where he was bound to?" 
+	  }
+    ]
+  },
+
+  {
+    "id":"guynmart_wizard_42",
+    "message":"You are different than Andor. You will be legendary. Well do I know your deeds! And I even heard rumors that you gained the legends of legends, this mighty Ring of the Lesser Shadows!",
+    "replies":[{ "nextPhraseID":"guynmart_wizard_50", "text":"N" }]
+  },
+  {
+    "id":"guynmart_wizard_50",
+	"message":"With the help of some bonemeal potions I could evolve it to even greater force. The powers will be similar but greater. It will become the\n  ** Ring of Far Lesser Shadows **\nYou are lucky indeed.",
+    "replies":[
+      { "nextPhraseID":"guynmart_wizard_54", "text":"Really?"
+      }
+    ]
+  },
+  {
+    "id":"guynmart_wizard_54",
+    "message":"Really. When my work is done, your ring will be stronger than ever.",
+    "replies":[
+      { "nextPhraseID":"guynmart_wizard_56",
+        "text":"Great! I didn't know that the ring lore is not totally forgotten."
+      },
+      { "nextPhraseID":"X",
+        "text":"Hm, I like my ring the way it is."
+      },
+      { "nextPhraseID":"guynmart_wizard_24",
+        "text":"Do you have any rings on stock?"
+      }
+    ]
+  },
+  {
+    "id":"guynmart_wizard_56",
+    "message":"Eleven should be ok.",
+    "replies":[
+      { "nextPhraseID":"guynmart_wizard_58",
+        "text":"Eleven what?"
+      }
+    ]
+  },
+  {
+    "id":"guynmart_wizard_58",
+    "message":"Eleven bonemeal potions of course. I need these potions for, eh, my work.",
+    "replies":[
+      { "nextPhraseID":"guynmart_wizard_60",
+        "text":"N"
+      }
+    ]
+  },
+  {
+    "id":"guynmart_wizard_60",
+    "message":"Now to work - put the ring into the golden vessel here.",
+    "replies":[
+      { "nextPhraseID":"guynmart_wizard_70",
+        "text":"Thank you, Rorthron, for your offer. Here is The Ring - be careful with it.",
+        "requires":[{ "requireType":"inventoryRemove", "requireID":"ring_shadow0", "value":"1" }]
+      },
+      { "nextPhraseID":"X",
+        "text":"No, never would I give you my ring."
+      }
+    ]
+  },
+  {
+    "id":"guynmart_wizard_70",
+    "message":"Oops!",
+    "rewards":[	{ "rewardType":"dropList",  "rewardID":"guynmart_drp_wizard", "value":1 },
+				{ "rewardType":"questProgress", "rewardID":"guynmart_quest_wizard", "value":1 },
+				{ "rewardType":"questProgress", "rewardID":"guynmart_quest_wizard", "value":2 },
+				{ "rewardType":"questProgress", "rewardID":"guynmart_quest_wizard", "value":100 }],
+	"replies":[{ "nextPhraseID":"guynmart_wizard_72", "text":"Oops? What is oops? Anything went wrong??" }]
+  },
+  {
+    "id":"guynmart_wizard_72",
+    "message":"Oh no, it is nothing. All is ... well, perfect. Yes. Now go, go and leave me, I have work to do. No need to thank me. Farewell.",
+	"replies":[{ "nextPhraseID":"guynmart_wizard_74", "text":"N" }]
+  },
+  {
+    "id":"guynmart_wizard_74",
+    "message":"Forget the bonemeal potions. You owe me nothing. Farewell now."
+  },
+
+  
+  
+  {
+    "id":"guynmart_steward_10",
+    "replies":[{ "nextPhraseID":"guynmart_steward_20" }]
+  },
+  {
+    "id":"guynmart_steward_20",
+    "message":"Hello - I am Unkorh, Steward of Guynmart Castle. I have never seen you here before. What do you look for?",
+	"replies":[	{ "nextPhraseID":"guynmart_steward_30", "text":"I would like to buy something to eat." },
+				{ "nextPhraseID":"guynmart_steward_40", "text":"I have a message for Lord Guynmart." },
+				{ "nextPhraseID":"guynmart_steward_50", "text":"I would like to see Lady Hannah." },
+				{ "nextPhraseID":"guynmart_steward_22", "text":"Eh ... I ..." }]
+  },
+  {
+    "id":"guynmart_steward_22",
+    "message":"Stop stuttering, kid. What do you look for?",
+	"replies":[	{ "nextPhraseID":"guynmart_steward_30", "text":"I would like to buy something to eat." },
+				{ "nextPhraseID":"guynmart_steward_40", "text":"I have a message for Lord Guynmart." },
+				{ "nextPhraseID":"guynmart_steward_50", "text":"I would like to see Lady Hannah." }]
+  },
+  {
+    "id":"guynmart_steward_30",
+	"rewards":[	{ "rewardType":"questProgress", "rewardID":"guynmart", "value":40 }],
+	"message":"The cook shall give you some bread. And he will provide you with further proviant, if you can pay for it.",
+    "replies":[{ "nextPhraseID":"guynmart_steward_32", "text":"N"}]
+  },
+  {
+    "id":"guynmart_steward_32",
+	"message":"Take the left stairways and ask for Hofala, our cook.",
+    "replies":[{ "nextPhraseID":"X", "text":"Thank you. I will go upstairs."}]
+  },
+  {
+	"id":"guynmart_steward_40",
+	"message":"You have a message for our Lord?",
+    "replies":[{ "nextPhraseID":"guynmart_steward_42", "text":"Yes."}]
+  },
+  {
+	"id":"guynmart_steward_42",
+	"message":"Lord Guynmart is uproad in urgent affairs. I expect him back tomorrow.",
+    "replies":[{ "nextPhraseID":"guynmart_steward_44", "text":"N"}]
+  },
+  {
+	"id":"guynmart_steward_44",
+	"message":"Deliver your message to me. I will pass it to Lord Guynmart when he comes back.",
+    "replies":[	{ "nextPhraseID":"guynmart_steward_45", "text":"Eh, Guynmart shall ... he ..."},
+				{ "nextPhraseID":"guynmart_steward_46", "text":"I have order to give it directly to Lord Guynmart."}]
+  },
+  {
+	"id":"guynmart_steward_45",
+	"message":"I don't believe a single word. Don't waste my time. I have important things to do."
+  },
+  {
+	"id":"guynmart_steward_46",
+	"message":"You have? Then you must wait. Leave now and come back tomorrow.",
+    "replies":[{ "nextPhraseID":"guynmart_steward_48", "text":"Wait!"}]
+  },
+  {
+    "id":"guynmart_steward_48",
+    "message":"Yes?",
+	"replies":[	{ "nextPhraseID":"guynmart_steward_30", "text":"I would like to buy something to eat." },
+				{ "nextPhraseID":"guynmart_steward_50", "text":"I would like to see Lady Hannah." }]
+  },
+  {
+	"id":"guynmart_steward_50",
+	"message":"Lady Hannah is not in the mood to receive people. Something else?",
+	"replies":[	{ "nextPhraseID":"guynmart_steward_22", "text":"Eh ... I ..." },
+				{ "nextPhraseID":"guynmart_steward_30", "text":"I would like to buy something to eat." },
+				{ "nextPhraseID":"guynmart_steward_40", "text":"I have a message for Lord Guynmart." },
+				{ "nextPhraseID":"X", "text":"No, thank you, I will leave now." }]
+  },
+
+  {
+    "id":"guynmart_steward3_10",
+    "replies":[{ "nextPhraseID":"guynmart_steward3_20" }]
+  },
+  {
+    "id":"guynmart_steward3_20",
+    "message":"You Dare To Speak To Me!",
+	"replies":[	{ "nextPhraseID":"guynmart_steward3_22", "text":"Hey, what did I do?" }]
+  },
+  {
+    "id":"guynmart_steward3_22",
+    "message":"I Saw You On The Tower! What Did You Do There?",
+	"replies":[	{ "nextPhraseID":"guynmart_steward3_24", "text":"I just talked to Lady Hannah." }]
+  },
+  {
+    "id":"guynmart_steward3_24",
+    "message":"Don't You Dare To Defile Her Lovely Name By Using It!",
+	"replies":[	{ "nextPhraseID":"guynmart_steward3_50", "text":"But ..." }]
+  },
+  {
+    "id":"guynmart_steward3_50",
+    "rewards":[ { "rewardType":"spawnAll", "rewardID":"guynmart_olav", "mapName":"guynmart" },
+				{ "rewardType":"removeSpawnArea", "mapName":"guynmart", "rewardID":"guynmart_steward3" }],
+    "message":"Olav! Come Here!",
+	"replies":[	{ "nextPhraseID":"guynmart_steward3_52", "text":"N" }]
+  },
+  {
+    "id":"guynmart_steward3_52",
+    "rewards":[{ "rewardType":"questProgress", "rewardID":"guynmart", "value":80 }],
+    "message":"Show our - guest - the special exit.",
+	"replies":[	{ "nextPhraseID":"R", "text":"Special exit?" }]
+  },
+
+  {
+    "id":"guynmart_steward4_10",
+    "replies":[	{ "nextPhraseID":"guynmart_steward4_210",
+				  "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":161 }] },
+				{ "nextPhraseID":"guynmart_steward4_12" }]
+  },
+  {
+    "id":"guynmart_steward4_12",
+    "message":"You again!",
+    "replies":[{ "nextPhraseID":"guynmart_steward4_120", 
+				 "text":"Yes, me. And I know what you have done! I talked to Norgothla in the woods and found Lord Guynmart and Lovis here in the dungeons." }]
+  },
+  {
+    "id":"guynmart_steward4_20",
+    "message":"I have enough of you. This will be your end!",
+    "replies":[	{ "nextPhraseID":"guynmart_steward4_30", "text":"Oh dear. Have mercy, please. I am just a little kid." },
+				{ "nextPhraseID":"guynmart_steward4_50", "text":"Do you think so? Traitor!" }]
+  },
+  {
+    "id":"guynmart_steward4_30",
+    "message":"Now you will get what you earned!",
+    "replies":[{ "nextPhraseID":"guynmart_steward4_32", "text":"No, please, please don't hurt me!" }]
+  },
+  {
+    "id":"guynmart_steward4_32",
+    "message":"Disgusting. Then run, and never get under my eyes again!"
+  },
+  {
+    "id":"guynmart_steward4_50",
+    "message":"How did you call me? I'll beat you until you whine for mercy.",
+    "replies":[	{ "nextPhraseID":"guynmart_steward4_60", "text":"Ha! So come and try to do! No? I will put an end to you now." },
+				{ "nextPhraseID":"guynmart_steward4_30", "text":"Oh dear, please forgive my rush words." }]
+  },
+  {
+    "id":"guynmart_steward4_60",
+	"rewards":[	{ "rewardType":"questProgress", "rewardID":"guynmart", "value":162 },
+				{ "rewardType":"removeSpawnArea", "mapName":"guynmart_main_0", "rewardID":"guynmart_steward4" }],
+    "message":"Ok. I go for now. But I will not forget you - fear my revenge! But before I leave, I will stab your beloved Guynmart down ...",
+    "replies":[{ "nextPhraseID":"guynmart_200", "text":"Nooo! What did you do?! Stay, you coward!" }]
+  },
+  {
+    "id":"guynmart_steward4_120",
+    "message":"Indeed. I am surprised to see you here.",
+    "replies":[	{ "nextPhraseID":"guynmart_steward4_122", "text":"N" }]
+  },
+  {
+    "id":"guynmart_steward4_122",
+    "message":"I wanted to keep you out of all this. Surely you have many questions now. I will tell you all now.",
+    "replies":[	{ "nextPhraseID":"guynmart_steward4_130", "text":"I hope you come up with a good reason." },
+				{ "nextPhraseID":"guynmart_steward4_124", "text":"I don't want to hear your lies." }]
+  },
+  {
+    "id":"guynmart_steward4_124",
+    "message":"Please be patient still for a minute. It may be important for you.",
+    "replies":[	{ "nextPhraseID":"guynmart_steward4_20", "text":"No. Never will I believe you unless you let Guynmart go!" },
+				{ "nextPhraseID":"guynmart_steward4_130", "text":"Ok. One minute." }]
+  },
+  {
+    "id":"guynmart_steward4_130",
+    "message":"Until a while ago, everything was fine. Guynmart was a righteous man, open-minded and tolerant. And Hannah was supposed to marry me when she was old enough.",
+    "replies":[	{ "nextPhraseID":"guynmart_steward4_140", "text":"N" }]
+  },
+  {
+    "id":"guynmart_steward4_140",
+    "message":"Then one unfortunate day this Lovis appeared.",
+    "replies":[	{ "nextPhraseID":"guynmart_steward4_142", "text":"N" }]
+  },
+  {
+    "id":"guynmart_steward4_142",
+    "message":"He kept on playing on his probably magical flute and thus stole Hannah's heart.",
+    "replies":[	{ "nextPhraseID":"guynmart_steward4_144", "text":"N" }]
+  },
+  {
+    "id":"guynmart_steward4_144",
+    "message":"Likewise, he began to influence Guynmart more and more. Until Guynmart did not make a single decision without Lovis.",
+    "replies":[	{ "nextPhraseID":"guynmart_steward4_150", "text":"N" }]
+  },
+  {
+    "id":"guynmart_steward4_150",
+    "message":"Shadow meetings were banned. Likewise, the use of bonemeal potions was prohibited.",
+    "replies":[	{ "nextPhraseID":"guynmart_steward4_152", "text":"N" }]
+  },
+  {
+    "id":"guynmart_steward4_152",
+    "message":"People had to hand over all supplies so they would be destroyed. The farms, their inhabitants and even visitors were searched.",
+    "replies":[	{ "nextPhraseID":"guynmart_steward4_160", "text":"N" }]
+  },
+  {
+    "id":"guynmart_steward4_160",
+    "message":"A young man, who was my guest that time, gave me his bonemeal potion box and asked me to take care of it. Otherwise it would have been destroyed too.",
+    "replies":[	{ "nextPhraseID":"guynmart_steward4_162", "text":"N" }]
+  },
+  {
+    "id":"guynmart_steward4_162",
+    "message":"Then I took it to me. Look here.",
+    "replies":[	{ "nextPhraseID":"guynmart_steward4_164", "text":"I know this box - it belongs to my brother Andor!" }]
+  },
+  {
+    "id":"guynmart_steward4_164",
+    "message":"Andor - yes, that was his name. He is your brother? That explains the similarity.",
+    "replies":[	{ "nextPhraseID":"guynmart_steward4_166", "text":"N" }]
+  },
+  {
+    "id":"guynmart_steward4_166",
+	"rewards":[	{ "rewardType":"questProgress", "rewardID":"andor", "value":90 }],
+    "message":"We had long nights of interesting conversation.",
+    "replies":[	{ "nextPhraseID":"guynmart_steward4_170", "text":"N" }]
+  },
+  {
+    "id":"guynmart_steward4_170",
+    "message":"Well, Andor had to go on urgent business and left the castle the same night.",
+    "replies":[	{ "nextPhraseID":"guynmart_steward4_200", "text":"N" }]
+  },
+  {
+    "id":"guynmart_steward4_200",
+    "message":"Enough talk. Now you have to decide if you want to trust me or rather Guynmart.",
+    "replies":[	{ "nextPhraseID":"guynmart_steward4_202", "text":"I think I misjudged you. I will trust you." },
+				{ "nextPhraseID":"guynmart_steward4_202", "text":"You did not convince me. I believe Guynmart more than you." }]
+  },
+  {
+    "id":"guynmart_steward4_202",
+    "message":"Are you sure? Listen to your heart. It is really important.",
+    "replies":[	{ "nextPhraseID":"guynmart_steward4_210", "text":"Yes, I will trust you." },
+				{ "nextPhraseID":"guynmart_steward4_20", "text":"No, I believe Guynmart more than you." }]
+  },
+  {
+    "id":"guynmart_steward4_210",
+	"rewards":[	{ "rewardType":"questProgress", "rewardID":"guynmart", "value":161 },
+				{ "rewardType":"removeSpawnArea", "mapName":"guynmart_main_0", "rewardID":"guynmart_steward4" }],
+    "message":"Watch out! Guynmart ...",
+    "replies":[{ "nextPhraseID":"guynmart_steward4_220", "text":"What?" }]
+  },
+  {
+    "id":"guynmart_steward4_220",
+    "message":"Guynmart tried to get at you from behind. I had to do something quick, but it wasn't necessary. Obviously he stumbled and fell into his own knife.",
+    "replies":[{ "nextPhraseID":"guynmart_steward4_230", "text":"Thank you. Really, I didn't expect this from Lord Guynmart." }]
+  },
+  {
+    "id":"guynmart_steward4_230",
+	"rewards":[	{ "rewardType":"questProgress", "rewardID":"andor", "value":92 },
+				{ "rewardType":"dropList",  "rewardID":"guynmart_drp_steward4", "value":1 }],
+    "message":"Yes, Guynmart had changed much lately. Here, take Andors bonemeal potions box and give it back to him.",
+    "replies":[{ "nextPhraseID":"guynmart_steward4_290", "text":"If only I had finally found him." }]
+  },
+  {
+    "id":"guynmart_steward4_290",
+    "message":"And now stick to your plan. Open the gate. My men will await Norgothla.",
+    "replies":[{ "nextPhraseID":"guynmart_steward4_292", "text":"N" }]
+  },
+  {
+    "id":"guynmart_steward4_292",
+    "message":"Then go to the farm south of here and stay for the night. May The Shadow be with you!",
+    "replies":[{ "nextPhraseID":"R", "text":"Thank you." }]
+  },
+
+  {
+    "id":"guynmart_steward5_10",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis2_450", 
+				  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart", "value":"211" },
+								{ "requireType":"questProgress", "requireID":"guynmart_quest_wizard", "value":"1" }] },
+				{ "nextPhraseID":"guynmart_steward5_12", 
+				  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart", "value":"211" },
+								{ "requireType":"questProgress", "requireID":"guynmart", "value":"200", "negate":true }] },
+				{ "nextPhraseID":"guynmart_steward5_14", 
+				  "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":"211" }] },
+				{ "nextPhraseID":"guynmart_steward5_20", 
+				  "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":"200", "negate":true }] },
+				{ "nextPhraseID":"guynmart_lovis2_120", 
+				  "requires":[{ "requireType":"questProgress", "requireID":"guynmart_nondisplay", "value":"32" }] },
+				{ "nextPhraseID":"guynmart_lovis2_40" }]
+  },
+  {
+    "id":"guynmart_steward5_12",
+    "message":"Hello $playername."
+  },
+  {
+    "id":"guynmart_steward5_14",
+    "message":"Hello $playername - The Shadow be with you."
+  },
+  {
+    "id":"guynmart_steward5_20",
+    "message":"Welcome $playername. You were of great help.",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis2_40", "text":"N" }]
+  },
+
+  {
+    "id":"guynmart_olav_10",
+    "message":"Move on!"
+  },
+  
+  {
+    "id":"guynmart_cook_10",
+    "replies":[	{ "nextPhraseID":"guynmart_cook_14",
+				  "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":170 }] },
+				{ "nextPhraseID":"guynmart_cook_100",
+				  "requires":[{ "requireType":"inventoryRemove", "requireID":"guynmart_herbs", "value":"1" }] },
+				{ "nextPhraseID":"guynmart_cook_22",
+				  "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":62 },
+							  { "requireType":"questProgress", "requireID":"guynmart", "value":64, "negate":true }] },
+				{ "nextPhraseID":"guynmart_cook_20" }]
+  },
+  {
+    "id":"guynmart_cook_12",
+    "replies":[	{ "nextPhraseID":"guynmart_cook_100",
+				  "requires":[{ "requireType":"inventoryKeep", "requireID":"guynmart_herbs", "value":"1" }] },
+				{ "nextPhraseID":"guynmart_cook_20" }]
+  },
+  {
+    "id":"guynmart_cook_14", "message":"I am  glad the feast is over. Hard work it was."
+  },
+  {
+    "id":"guynmart_cook_20",
+    "message":"What do you want? Be quick - I am preparing the meals for a wedding and have little time.",
+	"replies":[	{ "nextPhraseID":"guynmart_cook_60", 
+				  "text":"Hannahs maiden asked me to bring her the lunch.",
+				  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart", "value":50 },
+								{ "requireType":"questProgress", "requireID":"guynmart", "value":62, "negate":true }] },
+				{ "nextPhraseID":"guynmart_cook_30", 
+				  "text":"The steward told me you could give me a piece of bread.",
+				  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart", "value":40 }] },
+				{ "nextPhraseID":"guynmart_cook_40", 
+				  "text":"I would like to see Lady Hannah.",
+				  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart", "value":62, "negate":true }] },
+				{ "nextPhraseID":"guynmart_cook_50", 
+				  "text":"Could I buy some proviant?" }]
+  },
+  {
+    "id":"guynmart_cook_22",
+    "message":"You already bring the herbs for Hannahs lunch?",
+	"replies":[	{ "nextPhraseID":"X", 
+				  "text":"Oh, I knew that I had forgotten something..." },
+				{ "nextPhraseID":"guynmart_cook_30", 
+				  "text":"The steward told me you could give me a piece of bread.",
+				  "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":40 }] },
+				{ "nextPhraseID":"guynmart_cook_50", 
+				  "text":"Could I buy some proviant?" }]
+  },
+  {
+    "id":"guynmart_cook_30",
+	"replies":[	{ "nextPhraseID":"guynmart_cook_32",
+				  "requires":[{ "requireType":"questProgress", "requireID":"guynmart_quest_cook_bread", "value":1 }] },
+				{ "nextPhraseID":"guynmart_cook_34" }]
+  },
+  {
+    "id":"guynmart_cook_32",
+    "message":"Do you think I am stupid? You have already two fine loafs of bread! Out of my kitchen, you scum!",
+	"replies":[	{ "nextPhraseID":"X", "text":"It was worth a try." }]
+  },
+  {
+    "id":"guynmart_cook_34",
+    "message":"Yes, of course. Just a second.",
+	"replies":[	{ "nextPhraseID":"guynmart_cook_36", "text":"N" }]
+  },
+  {
+    "id":"guynmart_cook_36",
+    "message":"Here I have some fresh bread for you. Enjoy it.",
+    "rewards":[	{ "rewardType":"dropList",  "rewardID":"guynmart_drp_cook", "value":1 },
+				{ "rewardType":"questProgress", "rewardID":"guynmart_quest_cook_bread", "value":1 }],
+	"replies":[	{ "nextPhraseID":"X", "text":"Many thanks. Bye." },
+				{ "nextPhraseID":"guynmart_cook_40", "text":"I would like to see Lady Hannah." },
+				{ "nextPhraseID":"guynmart_cook_50", "text":"Could I also buy some proviant?" }]
+  },
+  {
+    "id":"guynmart_cook_40",
+    "message":"Hm, she might be in her room upstairs. Or maybe on the tower again. But you can't see her of course, so it is all the same.",
+	"replies":[	{ "nextPhraseID":"X", "text":"Yes, sure. I will leave now." },
+				{ "nextPhraseID":"guynmart_cook_30", "text":"The steward told me that you could give me a piece of bread.",
+				  "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":40 }] },
+				{ "nextPhraseID":"guynmart_cook_50", "text":"Could I buy some proviant?" }]
+  },
+  {
+    "id":"guynmart_cook_50",
+    "message":"Yes, of course. But be quick, I still have a lot of work to do.",
+	"replies":[	{ "nextPhraseID":"S", "text":"Ok, show me what you have." }]
+  },
+  {
+    "id":"guynmart_cook_60",
+    "message":"Good idea! You carry the lunch the long way up to the tower top, and I have more time to prepare the wedding meal.",
+	"replies":[	{ "nextPhraseID":"guynmart_cook_70", "text":"N" }]
+  },
+  {
+    "id":"guynmart_cook_70",
+    "message":"Oh no, I am running out of Lady Hannahs special herbs. And these are essentiel for her lunch.",
+	"replies":[	{ "nextPhraseID":"guynmart_cook_72", "text":"N" }]
+  },
+  {
+    "id":"guynmart_cook_72",
+    "rewards":[{ "rewardType":"questProgress", "rewardID":"guynmart", "value":62 }],
+	"message":"Quick, run to Nuik, the old gardener. He will give you a fresh portion of the herbs.",
+	"replies":[	{ "nextPhraseID":"X", "text":"Ok. I will get the herbs." },
+				{ "nextPhraseID":"X", "text":"That's enough! Do it yourself." }]
+  },
+ 
+  {
+    "id":"guynmart_cook_100",
+	"message":"Ah, the herbs - good. You are not completely useless. I add them to Lady Hannahs food ...",
+	"replies":[	{ "nextPhraseID":"guynmart_cook_102", "text":"N" }]
+  },
+  {
+    "id":"guynmart_cook_102",
+	"replies":[	{ "nextPhraseID":"guynmart_cook_104", 
+				  "requires":[{ "requireType":"inventoryRemove", "requireID":"guynmart_herbs", "value":"1" }] },
+				{ "nextPhraseID":"guynmart_cook_110" }]
+  },
+  {
+    "id":"guynmart_cook_104",
+	"replies":[	{ "nextPhraseID":"guynmart_cook_104",
+				  "requires":[{ "requireType":"inventoryRemove", "requireID":"guynmart_herbs", "value":"1" }] },
+				{ "nextPhraseID":"guynmart_cook_106" }
+			  ]
+  },
+  {
+    "id":"guynmart_cook_106",
+	"message":"But you should have brought just 1 portion. These herbs must be used fresh. Nevertheless I take all the herbs.\n[all herb portions taken]",
+	"replies":[ { "nextPhraseID":"guynmart_cook_110", "text":"Eh, yes of course." }]
+  },
+
+  {
+    "id":"guynmart_cook_110",
+	"replies":[	{ "nextPhraseID":"guynmart_cook_112",
+				  "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":"64" }] },
+				{ "nextPhraseID":"guynmart_cook_120" }
+			  ]
+  },
+  {
+    "id":"guynmart_cook_112",
+	"message":"Of course you won't get another lunch packet.",
+	"replies":[ { "nextPhraseID":"X", "text":"Eh, yes of course." }]
+  },
+  {
+    "id":"guynmart_cook_120",
+	"rewards":[	{ "rewardType":"dropList", "rewardID":"guynmart_drp_cook_lunch", "value":1 },
+				{ "rewardType":"questProgress", "rewardID":"guynmart", "value":64 },
+				{ "rewardType":"questProgress", "rewardID":"guynmart_quest_cook_lunch", "value":1 }],
+	"message":"... and now it is worthy for her. Hurry now, as long it is still hot!",
+	"replies":[	{ "nextPhraseID":"X", "text":"Ouch! It is really hot!" }]
+  },
+  
+  {
+    "id":"guynmart_drunkard1_10",
+    "message":"Hey, get us some bottles of wine and then take a seat. I could tell you things you wouldn't believe!",
+    "replies":[{ "nextPhraseID":"X", 
+				 "text":"I go for the wine, wait a minute." },
+			   { "nextPhraseID":"X", 
+				 "text":"Ok, I just sit down." },
+			   { "nextPhraseID":"X", 
+				 "text":"You should drink less." }]
+  },
+  
+  {
+    "id":"guynmart_drunkard5_10",
+    "replies":[{ "nextPhraseID":"guynmart_drunkard5_100", 
+			     "requires":[{ "requireType":"inventoryRemove", "requireID":"guynmart_wine", "value":"1" }] },
+			   { "nextPhraseID":"guynmart_drunkard5_12" }]
+  },
+  
+  {
+    "id":"guynmart_drunkard5_12",
+    "message":"I think you have forgotten something...?",
+    "replies":[{ "nextPhraseID":"X", "text":"Oh, yes, of course, I will get some bottles of wine." }]
+  },
+  {
+    "id":"guynmart_drunkard5_14",
+    "message":"Oh, the wine is out. Could you get some more?",
+    "replies":[{ "nextPhraseID":"X", "text":"Oh, yes, of course, I will get some more bottles." }]
+  },
+  
+  {
+    "id":"guynmart_drunkard5_100",
+	"message":"Let's have a sip, then I will tell you my story.",
+    "replies":[ { "nextPhraseID":"guynmart_drunkard5_102", 
+				  "requires":[{ "requireType":"inventoryRemove", "requireID":"guynmart_wine", "value":"1" }],
+				  "text":"Ok."},
+				{ "nextPhraseID":"guynmart_drunkard5_14", "text":"I better let the bottles in my bag." }]
+  },
+  {
+    "id":"guynmart_drunkard5_102",
+    "message":"[He empties a bottle]\nOh yes, I remember well ... It was a dark and stormy night up in the mountains.",
+    "replies":[{ "nextPhraseID":"guynmart_drunkard5_110", "text":"N" }]
+  },
+  {
+    "id":"guynmart_drunkard5_110",
+    "message":"My men and I had been on the road for hours, without a break and without the slightest sign of getting closer to the goal.",
+    "replies":[{ "nextPhraseID":"guynmart_drunkard5_120", "text":"N" }]
+  },
+  {
+    "id":"guynmart_drunkard5_120",
+    "message":"We silently trotted one by one the tortuous path up the steep slope, always beware of the treacherous shadows of the bushes on both sides, and always listening for signs of danger.",
+    "replies":[{ "nextPhraseID":"guynmart_drunkard5_130", "text":"N" }]
+  },
+  {
+    "id":"guynmart_drunkard5_130",
+	"message":"You don't mind if I open another bottle?",
+    "replies":[ { "nextPhraseID":"guynmart_drunkard5_132", 
+				  "requires":[{ "requireType":"inventoryKeep", "requireID":"guynmart_wine", "value":"1" }],
+				  "text":"Help yourself."},
+				{ "nextPhraseID":"guynmart_drunkard5_14", "text":"Not again another bottle?" }]
+  },
+  {
+    "id":"guynmart_drunkard5_132",
+    "message":"[He empties the bottle]\nGornauds are said to be roaming in these mountains. We have not seen any, by the shadow, but already crossed several times their traces.\nAnd there were rumors about even more dangerous creatures - I better name them not.",
+    "replies":[{ "nextPhraseID":"guynmart_drunkard5_140", "text":"N", 
+			     "requires":[{ "requireType":"inventoryRemove", "requireID":"guynmart_wine", "value":"1" }] }]
+  },
+  {
+    "id":"guynmart_drunkard5_140",
+    "message":"A lonely hut came into sight. A friendly light in the midst of this wilderness. There we would ask for a camp for the night. New forces flowed through us, when suddenly the hell broke loose before us.",
+    "replies":[{ "nextPhraseID":"guynmart_drunkard5_150", "text":"N" }]
+  },
+  {
+    "id":"guynmart_drunkard5_150",
+    "message":"Gornauds jumped out behind the rocks, so close that we could clearly see the facial features. Some terrible seconds, I thought, that would be our last seconds.",
+    "replies":[{ "nextPhraseID":"guynmart_drunkard5_160", "text":"N" }]
+  },
+  {
+    "id":"guynmart_drunkard5_160",
+    "replies":[ { "nextPhraseID":"guynmart_drunkard5_162", "requires":[{ "requireType":"inventoryRemove", "requireID":"guynmart_wine", "value":"1" }] },
+				{ "nextPhraseID":"guynmart_drunkard5_14" }]
+  },
+  {
+    "id":"guynmart_drunkard5_162",
+    "message":"[Another bottle]\nBut then we realized that the monsters were looking for an even easier prey. A small figure in front of us on the way - a child? Alone up here?",
+    "replies":[{ "nextPhraseID":"guynmart_drunkard5_170", "text":"N" }]
+  },
+  {
+    "id":"guynmart_drunkard5_170",
+    "message":"Shaken, I closed my eyes, despite the great danger. I did not want to look at this slaughter. The dreadful noise took only a few seconds.",
+    "replies":[{ "nextPhraseID":"guynmart_drunkard5_180", "text":"N" }]
+  },
+  {
+    "id":"guynmart_drunkard5_180",
+    "message":"The ground was soaked with red blood. But - it came from the Gornauds! The child just wiped the weapon clean from blood, gave us a quick glance, and disappeared up the path.",
+    "replies":[{ "nextPhraseID":"guynmart_drunkard5_190", "text":"N" }]
+  },
+  {
+    "id":"guynmart_drunkard5_190",
+    "replies":[ { "nextPhraseID":"guynmart_drunkard5_192", "requires":[{ "requireType":"inventoryRemove", "requireID":"guynmart_wine", "value":"1" }] },
+				{ "nextPhraseID":"guynmart_drunkard5_14" }]
+  },
+  {
+    "id":"guynmart_drunkard5_192",
+    "message":"[Another bottle]\nWe had enough of this cursed march. Panicked, we ran back the way. Tired as we were, we ran without even once, to the inn in the valley, from which we had broken in the morning. ",
+    "replies":[{ "nextPhraseID":"guynmart_drunkard5_200", "text":"N" }]
+  },
+  {
+    "id":"guynmart_drunkard5_200",
+    "message":"Never will I forget this useless journey. Often I see this again in a nightmare and then I seek the forgetfulness of a friendly inn. When once there was a little girl, probably the daughter of the landlord.",
+    "replies":[{ "nextPhraseID":"guynmart_drunkard5_210", "text":"N" }]
+  },
+  {
+    "id":"guynmart_drunkard5_210",
+    "replies":[ { "nextPhraseID":"guynmart_drunkard5_212", "requires":[{ "requireType":"inventoryRemove", "requireID":"guynmart_wine", "value":"1" }] },
+				{ "nextPhraseID":"guynmart_drunkard5_14" }]
+  },
+  {
+    "id":"guynmart_drunkard5_212",
+    "message":"[Yet another bottle]\nShe got some wine for an old bearded guest and asked for a tale, and he began: Oh yes, I remember well ... It was a dark and stormy night up in the mountains.",
+    "replies":[{ "nextPhraseID":"guynmart_drunkard5_110", "text":"N" }]
+  },
+
+
+  {
+    "id":"guynmart_lovis_10",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis_100", 
+				  "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":"132" }] },
+				{ "nextPhraseID":"guynmart_lovis_20" }]
+  },
+  {
+    "id":"guynmart_lovis_20",
+    "message":"What are you - a spy? Or just another prisoner?",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis_22", 
+				  "text":"I am a prisoner too. What is your name?" },
+				{ "nextPhraseID":"guynmart_lovis_30", 
+				  "text":"I am $playername. Lady Hannah asked me to look for someone called Lovis." }]
+  },
+  {
+    "id":"guynmart_lovis_22",
+    "message":"No, you must tell me your name first.",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis_22", 
+				  "text":"No, first you will tell me your name." },
+				{ "nextPhraseID":"X", 
+				  "text":"If you are so rude, I say nothing at all." },
+				{ "nextPhraseID":"guynmart_lovis_30", 
+				  "text":"I am $playername. Lady Hannah asked me to look for someone called Lovis." }]
+  },
+  {
+    "id":"guynmart_lovis_30",
+    "message":"You come from Hannah? I must be sure. Prove it!",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis_40",
+				  "requires":[{ "requireType":"inventoryRemove", "requireID":"guynmart_flute", "value":"1" }],
+				  "text":"Here, I should give you this." },
+				{ "nextPhraseID":"X",
+				  "requires":[{ "requireType":"inventoryKeep", "requireID":"guynmart_flute", "value":"1", "negate":true }],
+				  "text":"Oh dear - I forgot to bring your flute!" }]
+  },
+  {
+    "id":"guynmart_lovis_40",
+    "rewards":[ { "rewardType":"questProgress",  "rewardID":"guynmart", "value":132 },
+				{ "rewardType":"questProgress",  "rewardID":"guynmart_nondisplay", "value":6 },
+				{ "rewardType":"createTimer",  "rewardID":"guynmart_flute" }],
+	"message":"My flute! How I missed it! I believe you now.",
+    "replies":[{ "nextPhraseID":"X", "text":"This is settled then. Let us look for an exit now." }]
+  },
+  {
+    "id":"guynmart_lovis_100",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis_200", 
+				  "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":"134" }] },
+				{ "nextPhraseID":"guynmart_lovis_104", 
+				  "requires":[{ "requireType":"timerElapsed", "requireID":"guynmart_flute", "value":"5" }] }, 
+				{ "nextPhraseID":"guynmart_lovis_102" }]
+  },
+  {
+    "id":"guynmart_lovis_102",
+    "message":"What a dreadful place. Time seems endless here.",
+    "replies":[	{ "nextPhraseID":"X", "text":"Yes. But we must not give up hope." }]
+  },
+  {
+    "id":"guynmart_lovis_104",
+    "message":"I will play something on my flute. Maybe this will give us some hope.",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis_110", 
+				  "text":"Please do. Maybe a song you used to play for Lady Hannah?" },
+				{ "nextPhraseID":"X", 
+				  "text":"Is that a good idea? We might disturb someone." }]
+  },
+  {
+    "id":"guynmart_lovis_110",
+    "message":"(fluting)",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis_120", 
+				  "text":"What a lovely tune! I almost seem to understand the words." },
+				{ "nextPhraseID":"X", 
+				  "text":"Eh, nice, thank you for trying." }]
+  },
+  {
+    "id":"guynmart_lovis_120",
+    "message":"(fluting)",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis_130", 
+				  "text":"... do me wrong ..." }]
+  },
+  {
+    "id":"guynmart_lovis_130",
+    "message":"(fluting)",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis_190", 
+				  "text":"... all my joy ... my delight ..." }]
+  },
+  {
+    "id":"guynmart_lovis_190",
+	"message":"Hush - I hear footsteps.",
+    "replies":[{ "nextPhraseID":"guynmart_lovis_200", 
+				 "text":"Maybe some friendly soul will let us out? We are completely innocent after all." }]
+  },
+  {
+    "id":"guynmart_lovis_200",
+    "rewards":[ { "rewardType":"questProgress",  "rewardID":"guynmart", "value":134 },
+				{ "rewardType":"spawnAll", "rewardID":"guynmart_tort1", "mapName":"guynmart_tower_0" },
+				{ "rewardType":"removeSpawnArea", "mapName":"guynmart_tower_0", "rewardID":"guynmart_lovis" }],
+	"message":"Oh dear! Look, the torturer! I will run around him and find Guynmarts personal guards outside in the wood. They will help us. I hope Guynmart himself is with them too.",
+    "replies":[	{ "nextPhraseID":"R", "text":"Ok, we will see us later." },
+				{ "nextPhraseID":"R", "text":"I try to be still alive then." }]
+  },
+
+  {
+    "id":"guynmart_lovis2_10",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis2_450", 
+				  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart", "value":"210" },
+								{ "requireType":"questProgress", "requireID":"guynmart_quest_wizard", "value":"1" }] },
+				{ "nextPhraseID":"guynmart_lovis2_12", 
+				  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart", "value":"210" },
+								{ "requireType":"questProgress", "requireID":"guynmart", "value":"200", "negate":true }] },
+				{ "nextPhraseID":"guynmart_lovis2_14", 
+				  "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":"210" }] },
+				{ "nextPhraseID":"guynmart_lovis2_20", 
+				  "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":"190", "negate":true }] },
+				{ "nextPhraseID":"guynmart_lovis2_120", 
+				  "requires":[{ "requireType":"questProgress", "requireID":"guynmart_nondisplay", "value":"32" }] },
+				{ "nextPhraseID":"guynmart_lovis2_30" }]
+  },
+  {
+    "id":"guynmart_lovis2_12",
+    "message":"Hello $playername."
+  },
+  {
+    "id":"guynmart_lovis2_14",
+    "message":"$playername - what a joy to see you again.",
+    "replies":[	{ "nextPhraseID":"X", "text":"Oh yes, I'm happy too." }]
+  },
+  {
+    "id":"guynmart_lovis2_20",
+    "message":"Welcome $playername - you helped us in greatest needs. But let Lady Hannah speak first.",
+    "replies":[	{ "nextPhraseID":"guynmart_hannah2_30", "text":"N" }]
+  },
+  {
+    "id":"guynmart_lovis2_30",
+	"switchToNPC":"guynmart_lovis2",
+    "message":"We are deeply in your debt, indeed.",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis2_40", "text":"N" }]
+  },
+
+
+
+
+
+  {
+    "id":"guynmart_lovis2_40",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis2_50", 
+				  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_quest_wizard", "value":1 }] },
+				{ "nextPhraseID":"guynmart_lovis2_70" }]
+  },
+  {
+    "id":"guynmart_lovis2_50",
+    "message":"We also have good news for you.",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis2_52", "text":"N" }]
+  },
+  {
+    "id":"guynmart_lovis2_52",
+    "message":"Rorthron, the ringmaker, behaved rather strange, and so we questioned him. It came to light that he seem to have damaged one of your rings.",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis2_54", "text":"N" }]
+  },
+  {
+    "id":"guynmart_lovis2_54",
+    "message":"Until he admitted he secretly exchanged your ring against a worthless ring.",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis2_56", "text":"N" }]
+  },
+  {
+    "id":"guynmart_lovis2_56",
+    "message":"He promised never to do such things again and handed over to us the real ring. We want to leave it at that.",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis2_60", "text":"N" }]
+  },
+  {
+    "id":"guynmart_lovis2_60",
+    "rewards":[	{ "rewardType":"giveItem", "rewardID":"ring_shadow0", "value":1 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"guynmart_quest_wizard", "value":1 }],
+    "message":"So here take your precious ring back.",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis2_70", "text":"Oh, I can not believe it yet. Is it really true?" }]
+  },
+  {
+    "id":"guynmart_lovis2_70",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis2_200", 
+				  "requires":[	{ "requireType":"killedMonster", "requireID":"guynmart_sheep", "value":1 },
+								{ "requireType":"questProgress", "requireID":"guynmart_nondisplay", "value":33, "negate":true }] },
+				{ "nextPhraseID":"guynmart_lovis2_100" }]
+  },
+   
+  {
+    "id":"guynmart_lovis2_100",
+    "rewards":[ { "rewardType":"questProgress",  "rewardID":"guynmart", "value":200 },
+				{ "rewardType":"spawnAll", "rewardID":"guynmart_tguard2", "mapName":"guynmart_main_1" },
+				{ "rewardType":"removeSpawnArea", "mapName":"guynmart_main_1", "rewardID":"guynmart_tguard" }],
+    "message":"You have earned your reward. Go now into our treasury."
+  },
+
+  {
+    "id":"guynmart_lovis2_120",
+    "rewards":[ { "rewardType":"spawnAll", "rewardID":"guynmart_tguard", "mapName":"guynmart_main_1" },
+				{ "rewardType":"removeSpawnArea", "mapName":"guynmart_main_1", "rewardID":"guynmart_tguard2" }],
+    "message":"So you found something you like, good.",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis2_130", "text":"Oh yes - I am overwhelmed by your generosity!" }]
+  },
+  {
+    "id":"guynmart_lovis2_130",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis2_141", 
+				  "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":181 }] },
+				{ "nextPhraseID":"guynmart_lovis2_140" }]
+  },
+  {
+    "id":"guynmart_lovis2_140",
+    "rewards":[ { "rewardType":"questProgress",  "rewardID":"guynmart", "value":210 },
+				{ "rewardType":"questProgress",  "rewardID":"guynmart_nondisplay", "value":36 },
+				{ "rewardType":"spawnAll", "rewardID":"guynmart_hero", "mapName":"guynmart_wood_9" }],
+    "replies":[	{ "nextPhraseID":"guynmart_lovis2_150" }]
+  },
+  {
+    "id":"guynmart_lovis2_141",
+    "rewards":[ { "rewardType":"questProgress",  "rewardID":"guynmart", "value":211 }],
+    "replies":[	{ "nextPhraseID":"guynmart_lovis2_151" }]
+  },
+  {
+    "id":"guynmart_lovis2_150",
+    "message":"At last we prepared a surprise for you. Go and look west of the castle near the sheep pasture. Farewell until we meet again!",
+    "replies":[	{ "nextPhraseID":"X", "text":"Goodbye" }]
+  },
+  {
+    "id":"guynmart_lovis2_151",
+    "message":"At last we have to part. Farewell until we meet again! When you will find your brother, tell him that he is always welcome.",
+    "replies":[	{ "nextPhraseID":"X", "text":"Goodbye" }]
+  },
+
+  {
+    "id":"guynmart_lovis2_200",
+    "rewards":[ { "rewardType":"spawnAll", "rewardID":"guynmart_shephard2", "mapName":"guynmart_main_1" }],
+    "message":"Regrettably, we still have to sort out a bad thing. Let our shephard speak.",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis2_210", "text":"N" }]
+  },
+  {
+    "id":"guynmart_lovis2_210",
+	"switchToNPC":"guynmart_shephard2",
+    "message":"Grumble ... grumble ...",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis2_220", "text":"N" }]
+  },
+  {
+    "id":"guynmart_lovis2_220",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis2_220b", 
+				  "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":181 }] },
+				{ "nextPhraseID":"guynmart_lovis2_220a" }]
+  },
+  { "id":"guynmart_lovis2_220a", "switchToNPC":"guynmart_lovis2", "replies":[{ "nextPhraseID":"guynmart_lovis2_220c" }]
+  },
+  { "id":"guynmart_lovis2_220b", "switchToNPC":"guynmart_steward5", "replies":[{ "nextPhraseID":"guynmart_lovis2_220c" }]
+  },
+  {
+    "id":"guynmart_lovis2_220c",
+    "message":"Now, sheep were killed by your hand. Our sheep to be precise.",
+    "replies":[{ "nextPhraseID":"guynmart_lovis2_221", "text":"N" }]
+  },
+  {
+    "id":"guynmart_lovis2_221",
+    "message":"You will be fined 100 gold per sheep. Do you accept this judgment?",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis2_300", "text":"Yes, a stupid thing that I did." },
+				{ "nextPhraseID":"guynmart_lovis2_222", "text":"Lies! All lies!" },
+				{ "nextPhraseID":"guynmart_lovis2_222", "text":"I can explain - it was an accident ..." }]
+  },
+  {
+    "id":"guynmart_lovis2_222",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis2_231", 
+				  "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":181 }] },
+				{ "nextPhraseID":"guynmart_lovis2_230" }]
+  },
+  {
+    "id":"guynmart_lovis2_230",
+    "message":"As you wish. I already regret, that we prepared a surprise for you next to the sheep pastures. I am very disappointed with you - go now.",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis2_220", "text":"No, sorry, I didn't meant it." },
+				{ "nextPhraseID":"guynmart_lovis2_240", "text":"I will go. Bye." }]
+  },
+  {
+    "id":"guynmart_lovis2_231",
+    "message":"As you wish. I am very disappointed with you - go now.",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis2_220", "text":"No, sorry, I didn't meant it." },
+				{ "nextPhraseID":"guynmart_lovis2_241", "text":"I will go. Bye." }]
+  },
+  {
+    "id":"guynmart_lovis2_240",
+    "rewards":[ { "rewardType":"questProgress",  "rewardID":"guynmart", "value":210 },
+				{ "rewardType":"questProgress",  "rewardID":"guynmart_nondisplay", "value":36 },
+				{ "rewardType":"removeSpawnArea", "mapName":"guynmart_main_1", "rewardID":"guynmart_shephard2" },
+				{ "rewardType":"spawnAll", "rewardID":"guynmart_hero", "mapName":"guynmart_wood_9" }]
+  },
+  {
+    "id":"guynmart_lovis2_241",
+    "rewards":[ { "rewardType":"questProgress",  "rewardID":"guynmart", "value":211 },
+				{ "rewardType":"removeSpawnArea", "mapName":"guynmart_main_1", "rewardID":"guynmart_shephard2" }]
+  },
+  {
+    "id":"guynmart_lovis2_300",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis2_325", "requires":[{ "requireType":"killedMonster", "requireID":"guynmart_sheep", "value":25 }] },
+				{ "nextPhraseID":"guynmart_lovis2_320", "requires":[{ "requireType":"killedMonster", "requireID":"guynmart_sheep", "value":20 }] },
+				{ "nextPhraseID":"guynmart_lovis2_315", "requires":[{ "requireType":"killedMonster", "requireID":"guynmart_sheep", "value":15 }] },
+				{ "nextPhraseID":"guynmart_lovis2_310", "requires":[{ "requireType":"killedMonster", "requireID":"guynmart_sheep", "value":10 }] },
+				{ "nextPhraseID":"guynmart_lovis2_309", "requires":[{ "requireType":"killedMonster", "requireID":"guynmart_sheep", "value":9 }] },
+				{ "nextPhraseID":"guynmart_lovis2_308", "requires":[{ "requireType":"killedMonster", "requireID":"guynmart_sheep", "value":8 }] },
+				{ "nextPhraseID":"guynmart_lovis2_307", "requires":[{ "requireType":"killedMonster", "requireID":"guynmart_sheep", "value":7 }] },
+				{ "nextPhraseID":"guynmart_lovis2_306", "requires":[{ "requireType":"killedMonster", "requireID":"guynmart_sheep", "value":6 }] },
+				{ "nextPhraseID":"guynmart_lovis2_305", "requires":[{ "requireType":"killedMonster", "requireID":"guynmart_sheep", "value":5 }] },
+				{ "nextPhraseID":"guynmart_lovis2_304", "requires":[{ "requireType":"killedMonster", "requireID":"guynmart_sheep", "value":4 }] },
+				{ "nextPhraseID":"guynmart_lovis2_303", "requires":[{ "requireType":"killedMonster", "requireID":"guynmart_sheep", "value":3 }] },
+				{ "nextPhraseID":"guynmart_lovis2_302", "requires":[{ "requireType":"killedMonster", "requireID":"guynmart_sheep", "value":2 }] },
+				{ "nextPhraseID":"guynmart_lovis2_301", "requires":[{ "requireType":"killedMonster", "requireID":"guynmart_sheep", "value":1 }] }]
+  },
+  { "id":"guynmart_lovis2_301", 
+	"message":"100 gold for the killed sheep.", 
+	"replies":[	{ "nextPhraseID":"guynmart_lovis2_360", "text":"Here is the gold.", "requireType":"inventoryRemove", "requireID":"gold", "value":100 },
+				{ "nextPhraseID":"guynmart_lovis2_350", "text":"I don't have enough gold." }]
+  },
+  { "id":"guynmart_lovis2_302", 
+	"message":"200 gold for 2 killed sheep.", 
+	"replies":[	{ "nextPhraseID":"guynmart_lovis2_360", "text":"Here is the gold.", "requireType":"inventoryRemove", "requireID":"gold", "value":200 },
+				{ "nextPhraseID":"guynmart_lovis2_350", "text":"I don't have enough gold." }]
+  },
+  { "id":"guynmart_lovis2_303", 
+	"message":"300 gold for 3 killed sheep.", 
+	"replies":[	{ "nextPhraseID":"guynmart_lovis2_360", "text":"Here is the gold.", "requireType":"inventoryRemove", "requireID":"gold", "value":300 },
+				{ "nextPhraseID":"guynmart_lovis2_350", "text":"I don't have enough gold." }]
+  },
+  { "id":"guynmart_lovis2_304", 
+	"message":"400 gold for 4 killed sheep.", 
+	"replies":[	{ "nextPhraseID":"guynmart_lovis2_360", "text":"Here is the gold.", "requireType":"inventoryRemove", "requireID":"gold", "value":400 },
+				{ "nextPhraseID":"guynmart_lovis2_350", "text":"I don't have enough gold." }]
+  },
+  { "id":"guynmart_lovis2_305", 
+	"message":"500 gold for 5 killed sheep.", 
+	"replies":[	{ "nextPhraseID":"guynmart_lovis2_360", "text":"Here is the gold.", "requireType":"inventoryRemove", "requireID":"gold", "value":500 },
+				{ "nextPhraseID":"guynmart_lovis2_350", "text":"I don't have enough gold." }]
+  },
+  { "id":"guynmart_lovis2_306", 
+	"message":"600 gold for 6 killed sheep.", 
+	"replies":[	{ "nextPhraseID":"guynmart_lovis2_360", "text":"Here is the gold.", "requireType":"inventoryRemove", "requireID":"gold", "value":600 },
+				{ "nextPhraseID":"guynmart_lovis2_350", "text":"I don't have enough gold." }]
+  },
+  { "id":"guynmart_lovis2_307", 
+	"message":"700 gold for 7 killed sheep.", 
+	"replies":[	{ "nextPhraseID":"guynmart_lovis2_360", "text":"Here is the gold.", "requireType":"inventoryRemove", "requireID":"gold", "value":700 },
+				{ "nextPhraseID":"guynmart_lovis2_350", "text":"I don't have enough gold." }]
+  },
+  { "id":"guynmart_lovis2_308", 
+	"message":"800 gold for 8 killed sheep.", 
+	"replies":[	{ "nextPhraseID":"guynmart_lovis2_360", "text":"Here is the gold.", "requireType":"inventoryRemove", "requireID":"gold", "value":800 },
+				{ "nextPhraseID":"guynmart_lovis2_350", "text":"I don't have enough gold." }]
+  },
+  { "id":"guynmart_lovis2_309", 
+	"message":"900 gold for 9 killed sheep.", 
+	"replies":[	{ "nextPhraseID":"guynmart_lovis2_360", "text":"Here is the gold.", "requireType":"inventoryRemove", "requireID":"gold", "value":900 },
+				{ "nextPhraseID":"guynmart_lovis2_350", "text":"I don't have enough gold." }]
+  },
+  { "id":"guynmart_lovis2_310", 
+	"message":"1000 gold for 10 or even more killed sheep.", 
+	"replies":[	{ "nextPhraseID":"guynmart_lovis2_360", "text":"Here is the gold.", "requireType":"inventoryRemove", "requireID":"gold", "value":1000 },
+				{ "nextPhraseID":"guynmart_lovis2_350", "text":"I don't have enough gold." }]
+  },
+  { "id":"guynmart_lovis2_315", 
+	"message":"1500 gold for 15 or even more killed sheep.", 
+	"replies":[	{ "nextPhraseID":"guynmart_lovis2_360", "text":"Here is the gold.", "requireType":"inventoryRemove", "requireID":"gold", "value":1500 },
+				{ "nextPhraseID":"guynmart_lovis2_350", "text":"I don't have enough gold." }]
+  },
+  { "id":"guynmart_lovis2_320", 
+	"message":"2000 gold for 20 or even more killed sheep.", 
+	"replies":[	{ "nextPhraseID":"guynmart_lovis2_360", "text":"Here is the gold.", "requireType":"inventoryRemove", "requireID":"gold", "value":2000 },
+				{ "nextPhraseID":"guynmart_lovis2_350", "text":"I don't have enough gold." }]
+  },
+  { "id":"guynmart_lovis2_325", 
+	"message":"2500 gold for 25 or even more killed sheep.", 
+	"replies":[	{ "nextPhraseID":"guynmart_lovis2_360", "text":"Here is the gold.", "requireType":"inventoryRemove", "requireID":"gold", "value":2500 },
+				{ "nextPhraseID":"guynmart_lovis2_350", "text":"I don't have enough gold." }]
+  },
+
+  {
+    "id":"guynmart_lovis2_350",
+	"message":"You will find a way to get the missing gold. Then come back and pay the rest.",
+    "replies":[	{ "nextPhraseID":"X", "text":"Ok." }]
+  },
+  {
+    "id":"guynmart_lovis2_360",
+	"rewards":[	{ "rewardType":"questProgress",  "rewardID":"guynmart_nondisplay", "value":33 },
+				{ "rewardType":"removeSpawnArea", "mapName":"guynmart_main_1", "rewardID":"guynmart_shephard2" }],
+	"message":"[Gold taken]\nAll killed sheeps are payed, we will forget the whole thing now.",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis2_100", "text":"I am relieved." }]
+  },
+
+  {
+    "id":"guynmart_lovis2_450",
+    "message":"We have good news for you.",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis2_452", "text":"N" }]
+  },
+  {
+    "id":"guynmart_lovis2_452",
+    "message":"Rorthron, the ringmaker, behaved rather strange, and so we questioned him. It came to light that he seem to have damaged one of your rings.",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis2_454", "text":"N" }]
+  },
+  {
+    "id":"guynmart_lovis2_454",
+    "message":"Until he admitted he secretly exchanged your ring against a worthless ring.",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis2_456", "text":"N" }]
+  },
+  {
+    "id":"guynmart_lovis2_456",
+    "message":"He promised never to do such things again and handed over to us the real ring. We want to leave it at that.",
+    "replies":[	{ "nextPhraseID":"guynmart_lovis2_460", "text":"N" }]
+  },
+  {
+    "id":"guynmart_lovis2_460",
+    "rewards":[	{ "rewardType":"giveItem", "rewardID":"ring_shadow0", "value":1 },
+				{ "rewardType":"removeQuestProgress", "rewardID":"guynmart_quest_wizard", "value":1 }],
+    "message":"So here take your precious ring back.",
+    "replies":[	{ "nextPhraseID":"X", "text":"Oh, I can not believe it yet. Is it really true?" }]
+  },
+  
+  
+  {
+    "id":"guynmart_skeleton2_10",
+	"message":"The ring. This human wears the ring of bone. Let him pass.",
+    "replies":[	{ "nextPhraseID":"X", "text":"A bit scary - but really useful, this ring." },
+				{ "nextPhraseID":"F", "text":"You are in my way. Attack!" }]
+  },  
+
+  {
+    "id":"guynmart_10",
+    "replies":[	{ "nextPhraseID":"guynmart_200", "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":"162" }] },
+				{ "nextPhraseID":"guynmart_250", "requires":[{ "requireType":"questProgress", "requireID":"guynmart", "value":"161" }] },
+				{ "nextPhraseID":"guynmart_12" }]
+  },
+  {
+    "id":"guynmart_12",
+	"message":"Who is there?",
+    "replies":[	{ "nextPhraseID":"guynmart_20", "text":"A friend." }]
+  },
+  {
+    "id":"guynmart_20",
+	"message":"Good, at last. Go and get Norgothla here.",
+    "replies":[	{ "nextPhraseID":"guynmart_30", "text":"Norgothla is out in the woods and awaits you there with his men. Unkorh made him believe you commanded that." }]
+  },
+  {
+    "id":"guynmart_30",
+	"message":"Unkorh! I curse the day when I made him my steward.",
+    "replies":[	{ "nextPhraseID":"guynmart_40", "text":"How can I help you now? Shall I search for the keys to your cell?" }]
+  },
+  {
+    "id":"guynmart_40",
+	"message":"No time for that. I am too weak to be of great help. We need Norgothla now.",
+    "replies":[	{ "nextPhraseID":"guynmart_50", "text":"Lovis is on the way to him. Probably he can pusuade Norgothla to come." }]
+  },
+  {
+    "id":"guynmart_50",
+	"message":"Good. Norgothla knows and trusts him. Tell me - is the main gate shut?",
+    "replies":[	{ "nextPhraseID":"guynmart_100", "text":"Yes. I came through the garden door." }]
+  },
+  {
+    "id":"guynmart_100",
+	"rewards":[	{ "rewardType":"questProgress", "rewardID":"guynmart", "value":160 },
+				{ "rewardType":"spawnAll", "rewardID":"guynmart_steward4", "mapName":"guynmart_main_0" },
+				{ "rewardType":"removeSpawnArea", "rewardID":"guynmart_rob4", "mapName":"guynmart_tower_2" }],
+	"message":"Then you must open the gate! Go to the gate house and open it, so that my men could come in. Be quick.\nAnd after that go to the farm south of here. I expect a feroucious battle.",
+    "replies":[	{ "nextPhraseID":"guynmart_110", "text":"Ok." }]
+  },
+  {
+    "id":"guynmart_110",
+	"switchToNPC":"guynmart_steward4",
+    "message":"YOU AGAIN!",
+    "replies":[{ "nextPhraseID":"guynmart_steward4_120", "text":"Yikes! The steward!" }]
+  },
+  {
+    "id":"guynmart_200",
+	"switchToNPC":"guynmart",
+    "message":"(groaning) ... open the gate ...",
+    "replies":[{ "nextPhraseID":"guynmart_210", "text":"N" }]
+  },
+  {
+    "id":"guynmart_210",
+	"switchToNPC":"guynmart",
+    "message":"... then go ... to Rhodita ..."
+  },
+  {
+    "id":"guynmart_250",
+	"switchToNPC":"guynmart",
+    "message":"(groaning)"
+  },
+
+  {
+    "id":"guynmart_herold_10",
+    "message":"-",
+    "replies":[{ "nextPhraseID":"X", "text":"You don't talk too much, do you?" }]
+  },
+  
+  {
+    "id":"guynmart_s_herold_out",
+	"rewards":[{ "rewardType":"removeQuestProgress", "rewardID":"guynmart_nondisplay", "value":31 }]
+  },
+  {
+    "id":"guynmart_s_herold",
+    "replies":[	{ "nextPhraseID":"guynmart_s_herold_12", 
+				  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_nondisplay", "value":31, "negate":true },
+								{ "requireType":"questProgress", "requireID":"guynmart_nondisplay", "value":30, "negate":true }] }, 
+				{ "nextPhraseID":"guynmart_s_herold_10", 
+				  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_nondisplay", "value":31, "negate":true }] }, 
+				{ "nextPhraseID":"guynmart_s_herold_30", 
+				  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_nondisplay", "value":32 },
+								{ "requireType":"questProgress", "requireID":"guynmart_nondisplay", "value":36, "negate":true },
+								{ "requireType":"questProgress", "requireID":"guynmart", "value":181 }] }, 
+				{ "nextPhraseID":"guynmart_s_herold_20", 
+				  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_nondisplay", "value":32 },
+								{ "requireType":"questProgress", "requireID":"guynmart_nondisplay", "value":36, "negate":true }] }]
+  },
+  {
+    "id":"guynmart_s_herold_10",
+	"rewards":[{ "rewardType":"questProgress", "rewardID":"guynmart_nondisplay", "value":31 }],
+	"switchToNPC":"guynmart_herold",
+    "message":"$playername enters!"
+  },
+  {
+    "id":"guynmart_s_herold_12",
+	"switchToNPC":"guynmart_herold",
+    "message":"Who may I please announce?",
+    "replies":[{ "nextPhraseID":"guynmart_s_herold_14", "text":"$playername, please" }]
+  },
+  {
+    "id":"guynmart_s_herold_14",
+	"rewards":[{ "rewardType":"questProgress", "rewardID":"guynmart_nondisplay", "value":30 }],
+	"replies":[{ "nextPhraseID":"guynmart_s_herold_10" }]
+  },
+  {
+    "id":"guynmart_s_herold_20",
+	"switchToNPC":"guynmart_herold",
+    "message":"(whispering) You should talk again to Lovis."
+  },
+  {
+    "id":"guynmart_s_herold_30",
+	"switchToNPC":"guynmart_herold",
+    "message":"(whispering) You should talk again to Unkorh."
+  },
+  
+  {
+    "id":"guynmart_tguard_10",
+    "message":"No entry!"
+  },
+  {
+    "id":"guynmart_tguard2_10",
+    "replies":[	{ "nextPhraseID":"guynmart_tguard2_30", 
+				  "requires":[	{ "requireType":"questProgress", "requireID":"guynmart_nondisplay", "value":32 }] }, 
+				{ "nextPhraseID":"guynmart_tguard2_20" }]
+  },
+  {
+    "id":"guynmart_tguard2_20",
+    "message":"Come in, and take your time! One of three things you may select."
+  },
+  {
+    "id":"guynmart_tguard2_30",
+    "message":"You made a good choice."
+  },
+
+  
+  {	"id":"guynmart_reward1_10",
+	"message":"On the table are 5000 shining gold coins.",
+	"replies":[{	"nextPhraseID":"guynmart_reward1_20", 
+					"requires":[{ "requireType":"questProgress", "requireID":"guynmart_nondisplay", "value":32, "negate":true }],
+					"text":"You decide for the gold." }]
+  },
+  {	"id":"guynmart_reward1_20",
+	"message":"You feel the pleasant weight of the gold in your bag.",
+    "rewards":[	{ "rewardType":"questProgress", "rewardID":"guynmart_nondisplay", "value":32 },
+				{ "rewardType":"questProgress", "rewardID":"guynmart", "value":201 },
+				{ "rewardType":"giveItem",  "rewardID":"gold", "value":5000 },
+				{ "rewardType":"removeSpawnArea", "mapName":"guynmart_main_1", "rewardID":"guynmart_reward1" }]
+  },
+
+  {	"id":"guynmart_reward2_10",
+	"message":"On the table you see a scroll with texts of wise men.",
+	"replies":[{	"nextPhraseID":"guynmart_reward2_20", 
+					"requires":[{ "requireType":"questProgress", "requireID":"guynmart_nondisplay", "value":32, "negate":true }],
+					"text":"You decide for the scroll." }]
+  },
+  {	"id":"guynmart_reward2_20",
+	"message":"You are sure you will benefit from the experience of others.",
+    "rewards":[	{ "rewardType":"questProgress", "rewardID":"guynmart_nondisplay", "value":32 },
+				{ "rewardType":"questProgress", "rewardID":"guynmart", "value":202 },
+				{ "rewardType":"giveItem",  "rewardID":"guynmart_scroll", "value":1 },
+				{ "rewardType":"removeSpawnArea", "mapName":"guynmart_main_1", "rewardID":"guynmart_reward2" }]
+  },
+
+  {	"id":"guynmart_reward3_10",
+	"message":"On the table lays a beautifully crafted shield.",
+	"replies":[{	"nextPhraseID":"guynmart_reward3_20", 
+					"requires":[{ "requireType":"questProgress", "requireID":"guynmart_nondisplay", "value":32, "negate":true }],
+					"text":"You decide for the shield." }]
+  },
+  {	"id":"guynmart_reward3_20",
+	"message":"This shield does feel good in your hands.",
+    "rewards":[	{ "rewardType":"questProgress", "rewardID":"guynmart_nondisplay", "value":32 },
+				{ "rewardType":"questProgress", "rewardID":"guynmart", "value":203 },
+				{ "rewardType":"giveItem",  "rewardID":"guynmart_shield", "value":1 },
+				{ "rewardType":"removeSpawnArea", "mapName":"guynmart_main_1", "rewardID":"guynmart_reward3" }]
+  },
+
+  {
+    "id":"guynmart_cguard2_10",
+    "message":"Ho $playername - great to meet you again!",
+    "replies":[	{ "nextPhraseID":"guynmart_cguard2_20", "text":"Norgothla! So you made it here." }]
+  },
+  {
+    "id":"guynmart_cguard2_20",
+    "message":"Yeah. Unkorh is running still, my men behind him. Thanks to you.",
+    "replies":[	{ "nextPhraseID":"X", "text":"It was you who did all the dirty work, I just helped a bit." },
+				{ "nextPhraseID":"X", "text":"I really would like to hunt him down." }]
+  }
+
+  
+
+]
