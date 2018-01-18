@@ -381,7 +381,16 @@
 		{ "nextPhraseID":"guynmart_player_30", "text":"Eh, could you explain once more?" }]
   },
   
-  { "id":"guynmart_player_80",
+  {	"id":"guynmart_player_80",
+	"replies":[	{ "nextPhraseID":"guynmart_player_80_2", 
+				  "requires":[{ "requireType":"inventoryKeep", "requireID":"gold", "value":100 }] },
+				{ "nextPhraseID":"guynmart_player_80_1" }]
+  },
+  { "id":"guynmart_player_80_1", 
+	"message":"Hey, you look like you have no money left.",
+	"replies":[{ "nextPhraseID":"X", "text":"Yes indeed, I'm broke. Sorry, I have to leave then." }]
+  },
+  { "id":"guynmart_player_80_2",
 	 "message":"Ok. I have drawn a card. Which color is it?",
 	 "replies":[	{ "nextPhraseID":"guynmart_player_84", "text":"Red" },
 					{ "nextPhraseID":"guynmart_player_86", "text":"Black" },
@@ -408,7 +417,6 @@
 		"replies":[	{ "nextPhraseID":"guynmart_player_90" } ]
 	},
  	{	"id":"guynmart_player_90",
-		"rewards":[	{ "requireType":"inventoryRemove", "requireID":"gold", "value":100 }],
 		"replies":[	{ "nextPhraseID":"guynmart_player_112", "requires":[{ "requireType":"questProgress", "requireID":"guynmart_q2", "value":12 }] },
 					{ "nextPhraseID":"guynmart_player_111", "requires":[{ "requireType":"questProgress", "requireID":"guynmart_q2", "value":11 }] },
 					{ "nextPhraseID":"guynmart_player_110", "requires":[{ "requireType":"questProgress", "requireID":"guynmart_q2", "value":10 }] },
