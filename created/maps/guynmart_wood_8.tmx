@@ -208,7 +208,7 @@
  </layer>
  <layer name="Walkable" width="30" height="30" visible="0">
   <data encoding="base64" compression="zlib">
-   eJy1VMsNxSAM6xTdfwU2fNcKxd8HkTg0BMemJut9nvVZe6z3zpqwp74NF1Wb4qs95zzTe5JryuGfu0Remb6n+m9disV4IK2sJu094aMzipsK1kNxVJgIv/WHE+4dIv3q/ameKOd6zPWfc0bxcrS6XnM5of1Gd8pJ9U3xnXeL6qc805B4k51l98C0srzrEcS9CWeeqFqHxwn/Mr+kOp3ezv92w/FzomHPO31Z7lZM9z7xuMGH/cO9rsVO9k/pbWeNg8t6KczmPaBvVt+ebWYN65HMj3SusPUDz2pUig==
+   eJy1lMENxSAMQztF91+BDf+1QrHznA9IHBqCY6cm632e9dn7Wu+dXWFXdSdcutwUvzsj953ek1xTDv/0Unml+q7yv3lKm8JyPJRWl5PocH1xuJ3GVAfh2GEq/Kk/yKI9VPq799fVVDHqMeo/cqfjRbRSr1FO6nyiO+XU1U3xybtV+VXcaUi86e66PjitLk49orhPFpknXS7hccK/zi+pTlKb/G+6iJ8TDXuc1HWxW6vqe8XjBh/3D/e8KXZyfkrvdNYQXFerw5y8B/Xt8qd3J7PG1UjmRzpX3P4BvT9VUQ==
   </data>
  </layer>
  <layer name="Walkable_1" width="30" height="30" visible="0">
