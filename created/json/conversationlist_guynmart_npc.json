@@ -19,7 +19,7 @@
     },
     {
         "id":"guynmart_guard_guide_20",
-        "message":"Great choice, you won't regret. Adults 20 gold, kids 12 gold. Bilingual guide would be 3 gold extra.",
+        "message":"Great choice, you won't regret it. Adults 20 gold, kids 12 gold. Bilingual guide would be 3 gold extra.",
         "replies":[
             {
                 "text":"Ok, one kid, without guide, please.",
@@ -33,7 +33,7 @@
                 ]
             },
             {
-                "text":"One kid and this guide, please.",
+                "text":"One kid and a guide, please.",
                 "nextPhraseID":"guynmart_guard_guide_32",
                 "requires":[
                     {
@@ -91,7 +91,7 @@
     },
     {
         "id":"guynmart_guard_guide_40",
-        "message":"[Gold taken]\nHAHAHA! Again some stupid with more money than brain! HAHAHA!",
+        "message":"[Gold taken]\nHAHAHA! Once again some stupid person with more money than brains! HAHAHA!",
         "replies":[
             {
                 "text":"Hey!",
@@ -147,7 +147,7 @@
         "message":"No trespassing! Especially for kids!",
         "replies":[
             {
-                "text":"Here are 100 gold.",
+                "text":"Here is 100 gold.",
                 "nextPhraseID":"guynmart_gguard_900",
                 "requires":[
                     {
@@ -175,7 +175,7 @@
                 "nextPhraseID":"guynmart_gguard_22"
             },
             {
-                "text":"May I pick some rose?",
+                "text":"May I pick a rose?",
                 "nextPhraseID":"guynmart_gguard_50"
             }
         ]
@@ -185,7 +185,7 @@
         "message":"I am not allowed to let anyone in or out. And I am incorruptable below 100 pieces of gold.",
         "replies":[
             {
-                "text":"Here are 100 gold.",
+                "text":"Here is 100 gold.",
                 "nextPhraseID":"guynmart_gguard_900",
                 "requires":[
                     {
@@ -196,11 +196,11 @@
                 ]
             },
             {
-                "text":"Well, I think I will look for another entrance.",
+                "text":"Well, I think I'll look for another entrance.",
                 "nextPhraseID":"X"
             },
             {
-                "text":"I'm sorry, I don't have so much gold with me.",
+                "text":"Sorry, I don't have that much gold with me.",
                 "nextPhraseID":"guynmart_gguard_930"
             }
         ]
@@ -221,10 +221,10 @@
     },
     {
         "id":"guynmart_gguard_40",
-        "message":"I stand my legs in the stomach and answer stupid questions.",
+        "message":"I am standing around kicking my heels and answering stupid questions.",
         "replies":[
             {
-                "text":"Here are 100 gold.",
+                "text":"Here is 100 gold.",
                 "nextPhraseID":"guynmart_gguard_900",
                 "requires":[
                     {
@@ -252,31 +252,31 @@
                 "nextPhraseID":"guynmart_gguard_22"
             },
             {
-                "text":"May I pick some rose?",
+                "text":"May I pick a rose?",
                 "nextPhraseID":"guynmart_gguard_50"
             }
         ]
     },
     {
         "id":"guynmart_gguard_50",
-        "message":"Pick? A rose? You?? No way! All flowers in this garden are personal property of Lady Hannah.",
+        "message":"Pick? A rose? You? No way! All flowers in this garden are the personal property of Lady Hannah.",
         "replies":[
             {
                 "text":"Who is Lady Hannah?",
                 "nextPhraseID":"guynmart_gguard_60"
             },
             {
-                "text":"Come on. In so many plants she will not miss a single flower.",
+                "text":"Come on. With so many plants she will not miss a single flower.",
                 "nextPhraseID":"guynmart_gguard_70"
             }
         ]
     },
     {
         "id":"guynmart_gguard_60",
-        "message":"Hannah is Guynmarts daughter.",
+        "message":"Hannah is Guynmart's daughter.",
         "replies":[
             {
-                "text":"May I pick some rose?",
+                "text":"May I pick a rose?",
                 "nextPhraseID":"guynmart_gguard_50"
             },
             {
@@ -291,7 +291,7 @@
     },
     {
         "id":"guynmart_gguard_70",
-        "message":"Hannah knows every single plant in her garden. Nobody but herself and the old Nuik may touch the plants.",
+        "message":"Hannah knows every single plant in her garden. Nobody but herself and old Nuik may touch the plants.",
         "replies":[
             {
                 "text":"Who is Nuik again?",
@@ -301,7 +301,7 @@
     },
     {
         "id":"guynmart_gguard_80",
-        "message":"Nuik is a gardener here since I can think. And now disappear!",
+        "message":"Nuik is a gardener here. And now disappear!",
         "replies":[
             {
                 "text":"I have another question.",
@@ -315,7 +315,7 @@
     },
     {
         "id":"guynmart_gguard_90",
-        "message":"What do you actually know? Guynmart has been Lord on Guynmart Keep for countless years. His wife died early, at the birth of her daughter.",
+        "message":"Don't you lnow anything? Guynmart has been Lord of Guynmart castle for as long as I remember. His wife died early, during the birth of their daughter.",
         "replies":[
             {
                 "text":"Guynmart has a daughter?",
@@ -336,28 +336,28 @@
                 "nextPhraseID":"guynmart_gguard_110"
             },
             {
-                "text":"It's getting boring.",
+                "text":"This is getting boring.",
                 "nextPhraseID":"guynmart_gguard_110"
             }
         ]
     },
     {
         "id":"guynmart_gguard_110",
-        "message":"Lovis is a good boy. I have not seen him yet for a while.",
+        "message":"Lovis is a good boy. I have not seen him for a while.",
         "replies":[
             {
-                "text":"So so.",
+                "text":"Whatever.",
                 "nextPhraseID":"guynmart_gguard_120"
             },
             {
-                "text":"La la la ...  I don't listen anymore ...",
+                "text":"La la la ...  I'm not listening anymore ...",
                 "nextPhraseID":"guynmart_gguard_120"
             }
         ]
     },
     {
         "id":"guynmart_gguard_120",
-        "message":"But when Lovis is back, I am sure he will marry Hannah on the spot.",
+        "message":"But when Lovis is back, I am sure he will marry Hannah immediately.",
         "replies":[
             {
                 "text":"This is all very interesting. Are you letting me through now?",
@@ -392,7 +392,7 @@
                 "nextPhraseID":"guynmart_gguard_250"
             },
             {
-                "text":"May I pick some rose?",
+                "text":"May I pick a rose?",
                 "nextPhraseID":"guynmart_gguard_350",
                 "requires":[
                     {
@@ -423,10 +423,10 @@
     },
     {
         "id":"guynmart_gguard_244",
-        "message":"So what is now? Do you want to go through or not?",
+        "message":"So do you want to go through or not?",
         "replies":[
             {
-                "text":"Outrages! But ok, here are 200 gold.",
+                "text":"Outrageous! But OK, here is 200 gold.",
                 "nextPhraseID":"guynmart_gguard_900",
                 "requires":[
                     {
@@ -447,7 +447,7 @@
         "message":"Well, everything is getting more expensive nowadays. So 200 pieces of gold, please.",
         "replies":[
             {
-                "text":"Here are 200 gold.",
+                "text":"Here is 200 gold.",
                 "nextPhraseID":"guynmart_gguard_900",
                 "requires":[
                     {
@@ -468,7 +468,7 @@
         "message":"I am not allowed to let anyone in or out. And I am incorruptable below 200 pieces of gold.",
         "replies":[
             {
-                "text":"Here are 200 gold.",
+                "text":"Here is 200 gold.",
                 "nextPhraseID":"guynmart_gguard_900",
                 "requires":[
                     {
@@ -479,7 +479,7 @@
                 ]
             },
             {
-                "text":"Well, I will look for another entrance really now.",
+                "text":"Well, I will really look for another entrance now.",
                 "nextPhraseID":"X"
             },
             {
@@ -487,17 +487,17 @@
                 "nextPhraseID":"guynmart_gguard_248"
             },
             {
-                "text":"I'm sorry, I don't have so much gold with me.",
+                "text":"Sorry, I don't have that much gold with me.",
                 "nextPhraseID":"guynmart_gguard_930"
             }
         ]
     },
     {
         "id":"guynmart_gguard_350",
-        "message":"Pick? A rose? You?? No way! All flowers in this garden are personal property of Lady Hannah.",
+        "message":"Pick? A rose? You? No way! All flowers in this garden are the personal property of Lady Hannah.",
         "replies":[
             {
-                "text":"Come on. In so many plants she will not miss a single flower.",
+                "text":"Come on. With so many plants she will not miss a single flower.",
                 "nextPhraseID":"guynmart_gguard_70"
             },
             {
@@ -516,7 +516,7 @@
     },
     {
         "id":"guynmart_gguard_360",
-        "message":"Anyone could say so. But maybe ...",
+        "message":"Anyone could say that. But maybe ...",
         "replies":[
             {
                 "text":"Yes?",
@@ -544,7 +544,7 @@
     },
     {
         "id":"guynmart_gguard_364",
-        "message":"Nothing. You seem to have not enough money. Forget it.",
+        "message":"Nothing. You don't seem to have enough money. Forget it.",
         "replies":[
             {
                 "text":"Oh.",
@@ -575,14 +575,14 @@
     },
     {
         "id":"guynmart_gguard_380",
-        "message":"And here is the rose. Don't tell anybody that you have it from me.",
+        "message":"And here is the rose. Don't tell anybody that you got it from me.",
         "replies":[
             {
                 "text":"Ok.",
                 "nextPhraseID":"X"
             },
             {
-                "text":"Hm, we will see.",
+                "text":"Hmm, we will see.",
                 "nextPhraseID":"X"
             }
         ],
@@ -621,10 +621,10 @@
     },
     {
         "id":"guynmart_gguard_420",
-        "message":"Ah, that is why. Ok. I am not allowed to let anyone in or out. And I am incorruptable below 2 pieces of gold.",
+        "message":"Ah, that is why. OK. I am not allowed to let anyone in or out. And I am incorruptable below 2 pieces of gold.",
         "replies":[
             {
-                "text":"Here are 2 gold.",
+                "text":"Here is 2 gold.",
                 "nextPhraseID":"guynmart_gguard_900",
                 "requires":[
                     {
@@ -635,7 +635,7 @@
                 ]
             },
             {
-                "text":"You'll never give up, do you?",
+                "text":"You never give up, do you?",
                 "nextPhraseID":"X"
             }
         ]
@@ -679,7 +679,7 @@
     },
     {
         "id":"guynmart_gguard_902",
-        "message":"[Gold taken]\nVery good. Before you enter maybe you should also know the family names: Lord Guynmart, his beautiful but complicate daughter Hannah and his annoying son Rob. Got it?",
+        "message":"[Gold taken]\nVery good. Before you enter maybe you should also know the family names: Lord Guynmart, his beautiful but complicated daughter Hannah and his annoying son Rob. Got it?",
         "replies":[
             {
                 "text":"N",
@@ -699,14 +699,14 @@
         "message":"Rob is always playing some stupid game, and Hannah is always having problems. See?",
         "replies":[
             {
-                "text":"Aha.",
+                "text":"Ah.",
                 "nextPhraseID":"guynmart_gguard_906"
             }
         ]
     },
     {
         "id":"guynmart_gguard_906",
-        "message":"Now enough talk. No trespassing! I close my eyes now and count to 10.",
+        "message":"Enough talk. No trespassing! I will close my eyes now and count to 10.",
         "replies":[
             {
                 "text":"N",
@@ -716,7 +716,7 @@
     },
     {
         "id":"guynmart_gguard_910",
-        "message":"[Gold taken]\nVery good. I close my eyes now and count to 10.",
+        "message":"[Gold taken]\nVery good. I will close my eyes now and count to 10.",
         "replies":[
             {
                 "text":"N",
@@ -816,14 +816,14 @@
     },
     {
         "id":"guynmart_gguard_930",
-        "message":"Hm, you may have not enough money. But you have some nice things with you, I might give you a good price.",
+        "message":"Hmm, you may have not enough money, but you have some nice things with you. I might give you a good price.",
         "replies":[
             {
                 "text":"We'll see. Let's have a look at my belongings.",
                 "nextPhraseID":"S"
             },
             {
-                "text":"I rather starve here on the spot than give you a single thing.",
+                "text":"I would rather starve here on the spot than sell you a single thing.",
                 "nextPhraseID":"X"
             }
         ]
@@ -850,7 +850,7 @@
     },
     {
         "id":"guynmart_player_10",
-        "message":"Hi kid! Like some game?",
+        "message":"Hi kid! Would you like to play a card game?",
         "replies":[
             {
                 "text":"Sure!",
@@ -861,14 +861,14 @@
                 "nextPhraseID":"X"
             },
             {
-                "text":"No, thanks, I really should not start such bad habits.",
+                "text":"No thanks. My father warned me that certain card games can become a bad habit.",
                 "nextPhraseID":"X"
             }
         ]
     },
     {
         "id":"guynmart_player_20",
-        "message":"We always play card color guessing. Dou you have money?",
+        "message":"We always play card color guessing. Do you have enough money?",
         "replies":[
             {
                 "text":"Of course I have.",
@@ -893,7 +893,7 @@
     },
     {
         "id":"guynmart_player_30",
-        "message":"I will draw a card, and you should guess whether it is Red or Black.",
+        "message":"I will draw a card, and you have to guess whether it is Red or Black.",
         "replies":[
             {
                 "text":"N",
@@ -903,7 +903,7 @@
     },
     {
         "id":"guynmart_player_32",
-        "message":"If you have it right, I will give you 100 coins. If your guess is wrong, you owe me 100.",
+        "message":"If you get it right, I will give you gold 100 coins. If your guess is wrong, you owe me 100.",
         "replies":[
             {
                 "text":"Ok, got it.",
@@ -938,7 +938,7 @@
         "message":"Hey, you look like you have no money left.",
         "replies":[
             {
-                "text":"Yes indeed, I'm broke. Sorry, I have to leave then.",
+                "text":"Yes indeed, I'm broke. Sorry,then I have to leave.",
                 "nextPhraseID":"X"
             }
         ]
@@ -991,7 +991,7 @@
     },
     {
         "id":"guynmart_player_82",
-        "message":"Oh dear. Just Red or Black. Please try to remember. Sigh.",
+        "message":"Oh dear. Just Red or Black. Please try to remember. *Sigh*",
         "replies":[
             {
                 "text":"Yes. Sorry.",
@@ -1775,7 +1775,7 @@
     },
     {
         "id":"guynmart_player_151",
-        "message":"I have Black! Sorry for you, kid. I get 100 now.\n[Gold taken]\nLet's have another card.",
+        "message":"I have Black! Sorry for you, kid. I get 100 now.\n[Gold taken]\nLet's try another card.",
         "replies":[
             {
                 "text":"N",
@@ -1785,7 +1785,7 @@
     },
     {
         "id":"guynmart_player_152",
-        "message":"I have Red! Sorry for you, kid. I get 100.\n[Gold taken]\nLet's have another card.",
+        "message":"I have Red! Sorry for you, kid. I get 100.\n[Gold taken]\nLet's try another card.",
         "replies":[
             {
                 "text":"N",
@@ -1795,7 +1795,7 @@
     },
     {
         "id":"guynmart_player_161",
-        "message":"Red! How did you know? Here you have 100 again.\n[Gold received]\nCan you do this again?",
+        "message":"Red! How did you know? Here you get 100 again.\n[Gold received]\nCan you do this again?",
         "replies":[
             {
                 "text":"N",
@@ -1805,7 +1805,7 @@
     },
     {
         "id":"guynmart_player_162",
-        "message":"Black! You guessed it right again. Here you have 100 gold.\n[Gold received]\nLet's have another card.",
+        "message":"Black! You guessed it right again. Here you get 100 gold.\n[Gold received]\nLet's try another card.",
         "replies":[
             {
                 "text":"N",
@@ -1815,7 +1815,7 @@
     },
     {
         "id":"guynmart_guard_arms_10",
-        "message":"You are too young to be here. Sharp swords are storaged in this room."
+        "message":"You are too young to be here. Sharp swords are stored in this room."
     },
     {
         "id":"guynmart_hannah_10",
@@ -6011,7 +6011,7 @@
     },
     {
         "id":"guynmart_tguard2_20",
-        "message":"Come in, and take your time! One of three things you may select."
+        "message":"Come in, and take your time! You may choose one of three things. "
     },
     {
         "id":"guynmart_tguard2_30",
@@ -6151,7 +6151,7 @@
     },
     {
         "id":"guynmart_cguard2_10",
-        "message":"Ho $playername - great to meet you again!",
+        "message":"Hello $playername - great to meet you again!",
         "replies":[
             {
                 "text":"Norgothla! So you made it here.",
@@ -6161,10 +6161,10 @@
     },
     {
         "id":"guynmart_cguard2_20",
-        "message":"Yeah. Unkorh is running still, my men behind him. Thanks to you.",
+        "message":"Yes. Unkorh is still on the run, but my men are behind him, thanks to you.",
         "replies":[
             {
-                "text":"It was you who did all the dirty work, I just helped a bit.",
+                "text":"It was you who did all the hard work, I just helped a bit.",
                 "nextPhraseID":"X"
             },
             {

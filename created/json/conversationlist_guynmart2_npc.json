@@ -19,14 +19,14 @@
     },
     {
         "id":"guynmart_robber1_12",
-        "message":"I am the new Feygard bridge guard. Har har. We do not let beggars through; understand? Come back, but only if you have more gold with you."
+        "message":"I am the new Feygard bridge guard. Har har. We do not let beggars through. Understand? Come back, but only if you have more gold with you."
     },
     {
         "id":"guynmart_robber1_20",
         "message":"I am the new Feygard bridge guard. Har har. Give me your gold.",
         "replies":[
             {
-                "text":"Ok, here you have 50 pieces of gold. Let me pass now.",
+                "text":"OK. Here, you can have 50 pieces of gold. Let me pass now.",
                 "nextPhraseID":"guynmart_robber1_30",
                 "requires":[
                     {
@@ -41,7 +41,7 @@
                 "nextPhraseID":"F"
             },
             {
-                "text":"Hm, I will think about your offer.",
+                "text":"Hmm, I will think about your offer.",
                 "nextPhraseID":"X"
             }
         ]
@@ -51,7 +51,7 @@
         "message":"[Gold taken]\nVery good. But I need more.",
         "replies":[
             {
-                "text":"Of course. Here you have another 50 pieces of gold.",
+                "text":"Of course. Here, you can have another 50 pieces of gold.",
                 "nextPhraseID":"guynmart_robber1_30",
                 "requires":[
                     {
@@ -62,7 +62,7 @@
                 ]
             },
             {
-                "text":"Enough now!",
+                "text":"Enough!",
                 "nextPhraseID":"F"
             },
             {
@@ -83,7 +83,7 @@
     },
     {
         "id":"guynmart_roadguard_20",
-        "message":"Yes. Several men got lost already and never reappeared. There is no way through."
+        "message":"Yes. Several men already got lost and never reappeared. There is no way through."
     },
     {
         "id":"guynmart_farmer_10",
@@ -139,14 +139,14 @@
     },
     {
         "id":"guynmart_farmer_16",
-        "message":"Good morning! Did you here the music last night? I think it came from the castle."
+        "message":"Good morning! Did you hear the music last night? I think it came from the castle."
     },
     {
         "id":"guynmart_farmer_20",
-        "message":"What does a kid like you doing all alone on the road?",
+        "message":"What is a kid like you doing all alone on the road?",
         "replies":[
             {
-                "text":"I am looking for my brother Andor. You have not seen him by chance?",
+                "text":"I am looking for my brother Andor. Have you seen him by any chance?",
                 "nextPhraseID":"guynmart_farmer_30"
             },
             {
@@ -164,7 +164,7 @@
         "message":"No, sorry. We seldom see strangers in the area. But you could ask at Guynmart Castle. Just follow the road to the north, you can't miss it.",
         "replies":[
             {
-                "text":"Guynmart Castle? I never heard of it yet. Please tell me more.",
+                "text":"Guynmart Castle? I have never heard of it. Please tell me more.",
                 "nextPhraseID":"guynmart_farmer_40"
             }
         ]
@@ -191,10 +191,10 @@
     },
     {
         "id":"guynmart_farmer_60",
-        "message":"I have too much work to do now. But maybe you could have a look if everything is in order with her?",
+        "message":"I have too much work to do now. But maybe you could check if everything is OK with her?",
         "replies":[
             {
-                "text":"Yes, of course. I will come back and tell you.",
+                "text":"Yes, of course. I will come back and tell you what I find out.",
                 "nextPhraseID":"X"
             },
             {
@@ -229,7 +229,7 @@
         "message":"Hi! Any news from Guynmart castle?",
         "replies":[
             {
-                "text":"Oh yes, it is a long story. Maybe I could stay overnight and tell you all in detail ...",
+                "text":"Oh yes, it is a long story. Maybe I could stay overnight and tell you all about it in detail?",
                 "nextPhraseID":"guynmart_farmer_110",
                 "requires":[
                     {
@@ -240,7 +240,7 @@
                 ]
             },
             {
-                "text":"Yes, but I want to know more of it before I start to tell you.",
+                "text":"Yes, but I want to learn more about what is going on before I am willing to discuss it.",
                 "nextPhraseID":"X",
                 "requires":[
                     {
@@ -255,7 +255,7 @@
     },
     {
         "id":"guynmart_farmer_110",
-        "message":"With pleasure. Just go inside and make yourself comfortable in the corner behind the oven. We will talk when my work is done.",
+        "message":"With pleasure. Just go inside and make yourself comfortable on the cushions in the corner behind the oven. We will talk when my work is done.",
         "replies":[
             {
                 "text":"Great. Thank you.",
@@ -446,7 +446,7 @@
     },
     {
         "id":"guynmart_pguard3_22",
-        "message":"They have all gone and forgot me here. Sigh.",
+        "message":"They have all gone, and forgotten me here. *Sigh*",
         "replies":[
             {
                 "text":"Oh my.",
