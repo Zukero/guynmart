@@ -22,7 +22,7 @@
         "message":"Great choice, you won't regret it. Adults 20 gold, kids 12 gold. Bilingual guide would be 3 gold extra.",
         "replies":[
             {
-                "text":"Ok, one kid, without guide, please.",
+                "text":"OK, one kid, without guide, please.",
                 "nextPhraseID":"guynmart_guard_guide_30",
                 "requires":[
                     {
@@ -301,7 +301,7 @@
     },
     {
         "id":"guynmart_gguard_80",
-        "message":"Nuik is a gardener here. And now disappear!",
+        "message":"Nuik has been a gardener here for as long as I can remember. And now disappear!",
         "replies":[
             {
                 "text":"I have another question.",
@@ -315,7 +315,7 @@
     },
     {
         "id":"guynmart_gguard_90",
-        "message":"Don't you lnow anything? Guynmart has been Lord of Guynmart castle for as long as I remember. His wife died early, during the birth of their daughter.",
+        "message":"Don't you know anything? Guynmart has been Lord of Guynmart castle for as long as I remember. His wife died early, during the birth of their daughter.",
         "replies":[
             {
                 "text":"Guynmart has a daughter?",
@@ -868,7 +868,7 @@
     },
     {
         "id":"guynmart_player_20",
-        "message":"We always play card color guessing. Do you have enough money?",
+        "message":"We always play card color guessing. Do you have any money?",
         "replies":[
             {
                 "text":"Of course I have.",
@@ -938,7 +938,7 @@
         "message":"Hey, you look like you have no money left.",
         "replies":[
             {
-                "text":"Yes indeed, I'm broke. Sorry,then I have to leave.",
+                "text":"Yes indeed, I'm broke. Sorry, then I have to leave.",
                 "nextPhraseID":"X"
             }
         ]
@@ -3205,7 +3205,7 @@
     },
     {
         "id":"guynmart_steward_20",
-        "message":"Hello - I am Unkorh, Steward of Guynmart Castle. I have never seen you here before. What do you look for?",
+        "message":"Hello - I am Unkorh, Steward of Guynmart Castle. I have never seen you here before. Are you looking for something?",
         "replies":[
             {
                 "text":"I would like to buy something to eat.",
@@ -3227,7 +3227,7 @@
     },
     {
         "id":"guynmart_steward_22",
-        "message":"Stop stuttering, kid. What do you look for?",
+        "message":"Stop stuttering, kid. What do you want?",
         "replies":[
             {
                 "text":"I would like to buy something to eat.",
@@ -3245,7 +3245,7 @@
     },
     {
         "id":"guynmart_steward_30",
-        "message":"The cook shall give you some bread. And he will provide you with further proviant, if you can pay for it.",
+        "message":"The cook shall give you some bread. And he can provide you with further provisions, if you can pay for them.",
         "replies":[
             {
                 "text":"N",
@@ -3262,7 +3262,7 @@
     },
     {
         "id":"guynmart_steward_32",
-        "message":"Take the left stairways and ask for Hofala, our cook.",
+        "message":"Take the left stairway and ask for Hofala, our cook.",
         "replies":[
             {
                 "text":"Thank you. I will go upstairs.",
@@ -3282,7 +3282,7 @@
     },
     {
         "id":"guynmart_steward_42",
-        "message":"Lord Guynmart is uproad in urgent affairs. I expect him back tomorrow.",
+        "message":"Lord Guynmart is uproad tending to urgent affairs. I expect him back tomorrow.",
         "replies":[
             {
                 "text":"N",
@@ -3292,21 +3292,21 @@
     },
     {
         "id":"guynmart_steward_44",
-        "message":"Deliver your message to me. I will pass it to Lord Guynmart when he comes back.",
+        "message":"Deliver your message to me. I will pass it to Lord Guynmart when he returns.",
         "replies":[
             {
                 "text":"Eh, Guynmart shall ... he ...",
                 "nextPhraseID":"guynmart_steward_45"
             },
             {
-                "text":"I have order to give it directly to Lord Guynmart.",
+                "text":"I have orders to give it directly to Lord Guynmart.",
                 "nextPhraseID":"guynmart_steward_46"
             }
         ]
     },
     {
         "id":"guynmart_steward_45",
-        "message":"I don't believe a single word. Don't waste my time. I have important things to do."
+        "message":"I don't believe a single word you say. Don't waste my time. I have important things to do."
     },
     {
         "id":"guynmart_steward_46",
@@ -3374,7 +3374,7 @@
     },
     {
         "id":"guynmart_steward3_22",
-        "message":"I Saw You On The Tower! What Did You Do There?",
+        "message":"I Saw You On The Tower! What Were You Doing There?",
         "replies":[
             {
                 "text":"I just talked to Lady Hannah.",
@@ -3384,7 +3384,7 @@
     },
     {
         "id":"guynmart_steward3_24",
-        "message":"Don't You Dare To Defile Her Lovely Name By Using It!",
+        "message":"Don't You Dare Defile Her Lovely Name By Using It!",
         "replies":[
             {
                 "text":"But ...",
@@ -3461,7 +3461,7 @@
     },
     {
         "id":"guynmart_steward4_20",
-        "message":"I have enough of you. This will be your end!",
+        "message":"I have had enough of you. This will be your end!",
         "replies":[
             {
                 "text":"Oh dear. Have mercy, please. I am just a little kid.",
@@ -3475,7 +3475,7 @@
     },
     {
         "id":"guynmart_steward4_30",
-        "message":"Now you will get what you earned!",
+        "message":"Now you will get what you deserve!",
         "replies":[
             {
                 "text":"No, please, please don't hurt me!",
@@ -3485,28 +3485,28 @@
     },
     {
         "id":"guynmart_steward4_32",
-        "message":"Disgusting. Then run, and never get under my eyes again!"
+        "message":"Pathetic. So run, and never let me set eyes on you again!"
     },
     {
         "id":"guynmart_steward4_50",
-        "message":"How did you call me? I'll beat you until you whine for mercy.",
+        "message":"What did you call me? I'll beat you until you whine for mercy.",
         "replies":[
             {
-                "text":"Ha! So come and try to do! No? I will put an end to you now.",
+                "text":"Ha! So come on and try! No? I will put an end to you now!",
                 "nextPhraseID":"guynmart_steward4_60"
             },
             {
-                "text":"Oh dear, please forgive my rush words.",
+                "text":"Oh dear, please forgive my rash words.",
                 "nextPhraseID":"guynmart_steward4_30"
             }
         ]
     },
     {
         "id":"guynmart_steward4_60",
-        "message":"Ok. I go for now. But I will not forget you - fear my revenge! But before I leave, I will stab your beloved Guynmart down ...",
+        "message":"Ok. I will go now. But I will not forget you - fear my revenge! And before I leave, I will stab your beloved Guynmart ...",
         "replies":[
             {
-                "text":"Nooo! What did you do?! Stay, you coward!",
+                "text":"Nooo! What did you do? Stay and face me, you coward!",
                 "nextPhraseID":"guynmart_200"
             }
         ],
@@ -3535,10 +3535,10 @@
     },
     {
         "id":"guynmart_steward4_122",
-        "message":"I wanted to keep you out of all this. Surely you have many questions now. I will tell you all now.",
+        "message":"I wanted to keep you out of all this. I'm sure you now have many questions. I will tell you everything.",
         "replies":[
             {
-                "text":"I hope you come up with a good reason.",
+                "text":"I hope you have a good explanation.",
                 "nextPhraseID":"guynmart_steward4_130"
             },
             {
@@ -3549,21 +3549,21 @@
     },
     {
         "id":"guynmart_steward4_124",
-        "message":"Please be patient still for a minute. It may be important for you.",
+        "message":"Please be patient, and give me one minute. This may be important to you.",
         "replies":[
             {
-                "text":"No. Never will I believe you unless you let Guynmart go!",
+                "text":"No. I will never believe you unless you let Guynmart go!",
                 "nextPhraseID":"guynmart_steward4_20"
             },
             {
-                "text":"Ok. One minute.",
+                "text":"OK. One minute.",
                 "nextPhraseID":"guynmart_steward4_130"
             }
         ]
     },
     {
         "id":"guynmart_steward4_130",
-        "message":"Until a while ago, everything was fine. Guynmart was a righteous man, open-minded and tolerant. And Hannah was supposed to marry me when she was old enough.",
+        "message":"Until recently, everything was fine. Guynmart was a righteous man, open-minded and tolerant. And Hannah was supposed to marry me when she was old enough.",
         "replies":[
             {
                 "text":"N",
@@ -3583,7 +3583,7 @@
     },
     {
         "id":"guynmart_steward4_142",
-        "message":"He kept on playing on his probably magical flute and thus stole Hannah's heart.",
+        "message":"He kept playing on his probably magical flute and thus stole Hannah's heart.",
         "replies":[
             {
                 "text":"N",
@@ -3593,7 +3593,7 @@
     },
     {
         "id":"guynmart_steward4_144",
-        "message":"Likewise, he began to influence Guynmart more and more. Until Guynmart did not make a single decision without Lovis.",
+        "message":"He also began to influence Guynmart more and more, until Guynmart would not make a single decision without hearing from Lovis.",
         "replies":[
             {
                 "text":"N",
@@ -3603,7 +3603,7 @@
     },
     {
         "id":"guynmart_steward4_150",
-        "message":"Shadow meetings were banned. Likewise, the use of bonemeal potions was prohibited.",
+        "message":"Shadow meetings were banned, and the use of bonemeal potions was prohibited.",
         "replies":[
             {
                 "text":"N",
@@ -3613,7 +3613,7 @@
     },
     {
         "id":"guynmart_steward4_152",
-        "message":"People had to hand over all supplies so they would be destroyed. The farms, their inhabitants and even visitors were searched.",
+        "message":"People had to hand over all their bonemeal supplies so that they could be destroyed. The farms, their inhabitants, and even visitors were searched.",
         "replies":[
             {
                 "text":"N",
@@ -3623,7 +3623,7 @@
     },
     {
         "id":"guynmart_steward4_160",
-        "message":"A young man, who was my guest that time, gave me his bonemeal potion box and asked me to take care of it. Otherwise it would have been destroyed too.",
+        "message":"A young man, who was my guest at that time, gave me his bonemeal potion box and asked me to take care of it. Otherwise it would have been destroyed too.",
         "replies":[
             {
                 "text":"N",
@@ -3633,7 +3633,7 @@
     },
     {
         "id":"guynmart_steward4_162",
-        "message":"Then I took it to me. Look here.",
+        "message":"So I took it for safekeeping. Look here.",
         "replies":[
             {
                 "text":"I know this box - it belongs to my brother Andor!",
@@ -3730,7 +3730,7 @@
     },
     {
         "id":"guynmart_steward4_220",
-        "message":"Guynmart tried to get at you from behind. I had to do something quick, but it wasn't necessary. Obviously he stumbled and fell into his own knife.",
+        "message":"Guynmart tried to get at you from behind. I felt I had to do something quick, but it seems that it wasn't necessary. Obviously he stumbled and fell into his own knife.",
         "replies":[
             {
                 "text":"Thank you. Really, I didn't expect this from Lord Guynmart.",
@@ -3740,10 +3740,10 @@
     },
     {
         "id":"guynmart_steward4_230",
-        "message":"Yes, Guynmart had changed much lately. Here, take Andors bonemeal potions box and give it back to him.",
+        "message":"Yes, Guynmart had changed a lot recently. Here, please take Andor's bonemeal potion box and return it to him.",
         "replies":[
             {
-                "text":"If only I had finally found him.",
+                "text":"If only I had finally found my brother.",
                 "nextPhraseID":"guynmart_steward4_290"
             }
         ],
@@ -3772,7 +3772,7 @@
     },
     {
         "id":"guynmart_steward4_292",
-        "message":"Then go to the farm south of here and stay for the night. May The Shadow be with you!",
+        "message":"Then go to the farm south of here and stay there for the night. May The Shadow be with you!",
         "replies":[
             {
                 "text":"Thank you.",
@@ -3936,14 +3936,14 @@
     },
     {
         "id":"guynmart_cook_14",
-        "message":"I am  glad the feast is over. Hard work it was."
+        "message":"I am glad the feast is over. It was hard work."
     },
     {
         "id":"guynmart_cook_20",
-        "message":"What do you want? Be quick - I am preparing the meals for a wedding and have little time.",
+        "message":"What do you want? Be quick - I am preparing the meal for a wedding and I have little time.",
         "replies":[
             {
-                "text":"Hannahs maiden asked me to bring her the lunch.",
+                "text":"Hannah's maid asked me to take her lunch to her.",
                 "nextPhraseID":"guynmart_cook_60",
                 "requires":[
                     {
@@ -3960,7 +3960,7 @@
                 ]
             },
             {
-                "text":"The steward told me you could give me a piece of bread.",
+                "text":"The steward told me you could give me some bread.",
                 "nextPhraseID":"guynmart_cook_30",
                 "requires":[
                     {
@@ -3983,21 +3983,21 @@
                 ]
             },
             {
-                "text":"Could I buy some proviant?",
+                "text":"Can I buy some provisions?",
                 "nextPhraseID":"guynmart_cook_50"
             }
         ]
     },
     {
         "id":"guynmart_cook_22",
-        "message":"You already bring the herbs for Hannahs lunch?",
+        "message":"Did you bring the herbs for Hannah's lunch?",
         "replies":[
             {
-                "text":"Oh, I knew that I had forgotten something...",
+                "text":"Oh. I knew that I had forgotten something...",
                 "nextPhraseID":"X"
             },
             {
-                "text":"The steward told me you could give me a piece of bread.",
+                "text":"The steward told me you could give me some bread.",
                 "nextPhraseID":"guynmart_cook_30",
                 "requires":[
                     {
@@ -4008,7 +4008,7 @@
                 ]
             },
             {
-                "text":"Could I buy some proviant?",
+                "text":"Could I buy some provisions?",
                 "nextPhraseID":"guynmart_cook_50"
             }
         ]
@@ -4033,7 +4033,7 @@
     },
     {
         "id":"guynmart_cook_32",
-        "message":"Do you think I am stupid? You have already two fine loafs of bread! Out of my kitchen, you scum!",
+        "message":"Do you think I am stupid? I already gave you two fine loaves of bread, for free! Out of my kitchen, you scum!",
         "replies":[
             {
                 "text":"It was worth a try.",
@@ -4064,7 +4064,7 @@
                 "nextPhraseID":"guynmart_cook_40"
             },
             {
-                "text":"Could I also buy some proviant?",
+                "text":"Could I also buy some provisions?",
                 "nextPhraseID":"guynmart_cook_50"
             }
         ],
@@ -4083,14 +4083,14 @@
     },
     {
         "id":"guynmart_cook_40",
-        "message":"Hm, she might be in her room upstairs. Or maybe on the tower again. But you can't see her of course, so it is all the same.",
+        "message":"Hmm. She might be in her room upstairs, or maybe on the top of the tower again. But of course you can't see her, so it doesn't really matter.",
         "replies":[
             {
                 "text":"Yes, sure. I will leave now.",
                 "nextPhraseID":"X"
             },
             {
-                "text":"The steward told me that you could give me a piece of bread.",
+                "text":"The steward told me that you could give me some bread.",
                 "nextPhraseID":"guynmart_cook_30",
                 "requires":[
                     {
@@ -4101,7 +4101,7 @@
                 ]
             },
             {
-                "text":"Could I buy some proviant?",
+                "text":"Could I buy some provisions?",
                 "nextPhraseID":"guynmart_cook_50"
             }
         ]
@@ -4111,14 +4111,14 @@
         "message":"Yes, of course. But be quick, I still have a lot of work to do.",
         "replies":[
             {
-                "text":"Ok, show me what you have.",
+                "text":"OK, show me what you have.",
                 "nextPhraseID":"S"
             }
         ]
     },
     {
         "id":"guynmart_cook_60",
-        "message":"Good idea! You carry the lunch the long way up to the tower top, and I have more time to prepare the wedding meal.",
+        "message":"Good idea! You can carry her lunch up all those stairs to the tower top, and I'll have more time to prepare the wedding meal.",
         "replies":[
             {
                 "text":"N",
@@ -4128,7 +4128,7 @@
     },
     {
         "id":"guynmart_cook_70",
-        "message":"Oh no, I am running out of Lady Hannahs special herbs. And these are essentiel for her lunch.",
+        "message":"Oh no! I am running out of Lady Hannahs special herbs, and these are essential for her lunch.",
         "replies":[
             {
                 "text":"N",
@@ -4138,14 +4138,14 @@
     },
     {
         "id":"guynmart_cook_72",
-        "message":"Quick, run to Nuik, the old gardener. He will give you a fresh portion of the herbs.",
+        "message":"Quick, run to Nuik, the old gardener. He will give you some fresh herbs.",
         "replies":[
             {
                 "text":"Ok. I will get the herbs.",
                 "nextPhraseID":"X"
             },
             {
-                "text":"That's enough! Do it yourself.",
+                "text":"I've had enough! Do it yourself.",
                 "nextPhraseID":"X"
             }
         ],
@@ -4159,7 +4159,7 @@
     },
     {
         "id":"guynmart_cook_100",
-        "message":"Ah, the herbs - good. You are not completely useless. I add them to Lady Hannahs food ...",
+        "message":"Ah, the herbs. Good. You are not completely useless. I will add them to Lady Hannah's meal ...",
         "replies":[
             {
                 "text":"N",
@@ -4205,7 +4205,7 @@
     },
     {
         "id":"guynmart_cook_106",
-        "message":"But you should have brought just 1 portion. These herbs must be used fresh. Nevertheless I take all the herbs.\n[all herb portions taken]",
+        "message":"You should have brought just 1 portion. These herbs must be used fresh. Nevertheless I will take all the herbs.\n[all herb portions taken]",
         "replies":[
             {
                 "text":"Eh, yes of course.",
@@ -4233,17 +4233,17 @@
     },
     {
         "id":"guynmart_cook_112",
-        "message":"Of course you won't get another lunch packet.",
+        "message":"Of course you won't get another serving of lunch!",
         "replies":[
             {
-                "text":"Eh, yes of course.",
+                "text":"Eh, yes, of course.",
                 "nextPhraseID":"X"
             }
         ]
     },
     {
         "id":"guynmart_cook_120",
-        "message":"... and now it is worthy for her. Hurry now, as long it is still hot!",
+        "message":"... and now it is worthy of her. Hurry now, while it is still hot!",
         "replies":[
             {
                 "text":"Ouch! It is really hot!",
@@ -4914,7 +4914,7 @@
     },
     {
         "id":"guynmart_lovis2_52",
-        "message":"Rorthron, the ringmaker, behaved rather strange, and so we questioned him. It came to light that he seem to have damaged one of your rings.",
+        "message":"Rorthron, the ringmaker, was behaving rather strangely, and so we questioned him. It came to light that he seems to have damaged one of your rings.",
         "replies":[
             {
                 "text":"N",
@@ -4924,7 +4924,7 @@
     },
     {
         "id":"guynmart_lovis2_54",
-        "message":"Until he admitted he secretly exchanged your ring against a worthless ring.",
+        "message":"He eventually admitted that he secretly exchanged your ring for a worthless ring.",
         "replies":[
             {
                 "text":"N",
@@ -4934,7 +4934,7 @@
     },
     {
         "id":"guynmart_lovis2_56",
-        "message":"He promised never to do such things again and handed over to us the real ring. We want to leave it at that.",
+        "message":"He promised never to do such things again and handed the real ring over to us. We want to leave it at that.",
         "replies":[
             {
                 "text":"N",
@@ -4944,10 +4944,10 @@
     },
     {
         "id":"guynmart_lovis2_60",
-        "message":"So here take your precious ring back.",
+        "message":"So here, take your precious ring back.",
         "replies":[
             {
-                "text":"Oh, I can not believe it yet. Is it really true?",
+                "text":"Oh! I can't believe it! Is it really true?",
                 "nextPhraseID":"guynmart_lovis2_70"
             }
         ],
@@ -5011,7 +5011,7 @@
     },
     {
         "id":"guynmart_lovis2_120",
-        "message":"So you found something you like, good.",
+        "message":"So you found something you like. Good.",
         "replies":[
             {
                 "text":"Oh yes - I am overwhelmed by your generosity!",
@@ -5091,7 +5091,7 @@
     },
     {
         "id":"guynmart_lovis2_150",
-        "message":"At last we prepared a surprise for you. Go and look west of the castle near the sheep pasture. Farewell until we meet again!",
+        "message":"We prepared a surprise for you. Go and look west of the castle near the sheep pasture. Farewell until we meet again!",
         "replies":[
             {
                 "text":"Goodbye",
@@ -5111,7 +5111,7 @@
     },
     {
         "id":"guynmart_lovis2_200",
-        "message":"Regrettably, we still have to sort out a bad thing. Let our shephard speak.",
+        "message":"Regrettably, we still have to sort out an unpleasant thing. Let our shepherd speak.",
         "replies":[
             {
                 "text":"N",
@@ -5175,7 +5175,7 @@
     },
     {
         "id":"guynmart_lovis2_220c",
-        "message":"Now, sheep were killed by your hand. Our sheep to be precise.",
+        "message":"It seems sheep were killed by your hand. Guynmart's sheep, to be precise.",
         "replies":[
             {
                 "text":"N",
@@ -5185,10 +5185,10 @@
     },
     {
         "id":"guynmart_lovis2_221",
-        "message":"You will be fined 100 gold per sheep. Do you accept this judgment?",
+        "message":"You will be fined 100 gold for each sheep you killed. Do you accept this judgment?",
         "replies":[
             {
-                "text":"Yes, a stupid thing that I did.",
+                "text":"Yes, what I did was stupid.",
                 "nextPhraseID":"guynmart_lovis2_300"
             },
             {
@@ -5221,10 +5221,10 @@
     },
     {
         "id":"guynmart_lovis2_230",
-        "message":"As you wish. I already regret, that we prepared a surprise for you next to the sheep pastures. I am very disappointed with you - go now.",
+        "message":"As you wish. I already regret that we prepared a surprise for you next to the sheep pastures. I am very disappointed in you. Go now.",
         "replies":[
             {
-                "text":"No, sorry, I didn't meant it.",
+                "text":"No, sorry, I didn't mean it.",
                 "nextPhraseID":"guynmart_lovis2_220"
             },
             {
@@ -5238,7 +5238,7 @@
         "message":"As you wish. I am very disappointed with you - go now.",
         "replies":[
             {
-                "text":"No, sorry, I didn't meant it.",
+                "text":"No, sorry, I didn't mean it.",
                 "nextPhraseID":"guynmart_lovis2_220"
             },
             {
@@ -5550,7 +5550,7 @@
     },
     {
         "id":"guynmart_lovis2_310",
-        "message":"1000 gold for 10 or even more killed sheep.",
+        "message":"1000 gold for 10 or perhaps even more killed sheep.",
         "replies":[
             {
                 "text":"Here is the gold.",
@@ -5564,7 +5564,7 @@
     },
     {
         "id":"guynmart_lovis2_315",
-        "message":"1500 gold for 15 or even more killed sheep.",
+        "message":"1500 gold for 15 or perhaps even more killed sheep.",
         "replies":[
             {
                 "text":"Here is the gold.",
@@ -5578,7 +5578,7 @@
     },
     {
         "id":"guynmart_lovis2_320",
-        "message":"2000 gold for 20 or even more killed sheep.",
+        "message":"2000 gold for 20 or perhaps even more killed sheep.",
         "replies":[
             {
                 "text":"Here is the gold.",
@@ -5592,7 +5592,7 @@
     },
     {
         "id":"guynmart_lovis2_325",
-        "message":"2500 gold for 25 or even more killed sheep.",
+        "message":"2500 gold for 25 or perhaps even more killed sheep.",
         "replies":[
             {
                 "text":"Here is the gold.",
@@ -5609,14 +5609,14 @@
         "message":"You will find a way to get the missing gold. Then come back and pay the rest.",
         "replies":[
             {
-                "text":"Ok.",
+                "text":"OK.",
                 "nextPhraseID":"X"
             }
         ]
     },
     {
         "id":"guynmart_lovis2_360",
-        "message":"[Gold taken]\nAll killed sheeps are payed, we will forget the whole thing now.",
+        "message":"[Gold taken]\nAll the sheep you killed are paid for, so now we will forget the whole thing.",
         "replies":[
             {
                 "text":"I am relieved.",
@@ -5648,7 +5648,7 @@
     },
     {
         "id":"guynmart_lovis2_452",
-        "message":"Rorthron, the ringmaker, behaved rather strange, and so we questioned him. It came to light that he seem to have damaged one of your rings.",
+        "message":"Rorthron, the ringmaker, was behaving rather strangely, and so we questioned him. It came to light that he seems to have damaged one of your rings.",
         "replies":[
             {
                 "text":"N",
@@ -5658,7 +5658,7 @@
     },
     {
         "id":"guynmart_lovis2_454",
-        "message":"Until he admitted he secretly exchanged your ring against a worthless ring.",
+        "message":"He eventually admitted that he secretly exchanged your ring for a worthless ring.",
         "replies":[
             {
                 "text":"N",
@@ -5668,7 +5668,7 @@
     },
     {
         "id":"guynmart_lovis2_456",
-        "message":"He promised never to do such things again and handed over to us the real ring. We want to leave it at that.",
+        "message":"He promised never to do such things again and handed the real ring over to us. We want to leave it at that.",
         "replies":[
             {
                 "text":"N",
@@ -5678,10 +5678,10 @@
     },
     {
         "id":"guynmart_lovis2_460",
-        "message":"So here take your precious ring back.",
+        "message":"So here, take your precious ring back.",
         "replies":[
             {
-                "text":"Oh, I can not believe it yet. Is it really true?",
+                "text":"Oh! I can't believe it! Is it really true?",
                 "nextPhraseID":"X"
             }
         ],
@@ -6161,7 +6161,7 @@
     },
     {
         "id":"guynmart_cguard2_20",
-        "message":"Yes. Unkorh is still on the run, but my men are behind him, thanks to you.",
+        "message":"Yes. Unkorh is still on the run, but my men are close behind him, thanks to you.",
         "replies":[
             {
                 "text":"It was you who did all the hard work, I just helped a bit.",

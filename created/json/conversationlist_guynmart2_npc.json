@@ -272,34 +272,34 @@
         "message":"Hello stranger. Who are you and where are you going?",
         "replies":[
             {
-                "text":"I am $playername and come from the castle.",
+                "text":"I am $playername, and come from the castle.",
                 "nextPhraseID":"guynmart_cguard_12"
             }
         ]
     },
     {
         "id":"guynmart_cguard_12",
-        "message":"From the castle? You are not using the normal way.",
+        "message":"From the castle? You did not come here the usual way.",
         "replies":[
             {
-                "text":"You are right. I had a misunderstanding with Unkorh the steward and he threw me out from the north wall. Just now I am looking for a way back.",
+                "text":"You are right. I had a misunderstanding with Unkorh the steward and he threw me off the north wall. Now I am looking for a way back.",
                 "nextPhraseID":"guynmart_cguard_20"
             }
         ]
     },
     {
         "id":"guynmart_cguard_20",
-        "message":"You have been kicked out? And still want to go back? You must explain that.",
+        "message":"You were kicked out? And still want to go back? You must explain that.",
         "replies":[
             {
-                "text":"I spoke to Lady Hannah there. She bade me to find her betrothed who is missed for a week already.",
+                "text":"I spoke to Lady Hannah there. She bade me to find her betrothed, who has been missing for a week now.",
                 "nextPhraseID":"guynmart_cguard_30"
             }
         ]
     },
     {
         "id":"guynmart_cguard_30",
-        "message":"Lovis is missed? That is bad news.\nBut where are my manners? I am questioning you and didn't even introduce myself. I am Norgothla, chief of Guynmarts personal garde. And these are my men.",
+        "message":"Lovis is missing? That is bad news.\nBut where are my manners? I am questioning you and haven't even introduced myself. I am Norgothla, head of Guynmart's personal guard, and these are my men.",
         "replies":[
             {
                 "text":"Nice to meet you, Norgothla.",
@@ -309,7 +309,7 @@
     },
     {
         "id":"guynmart_cguard_40",
-        "message":"Well, you say Lovis is missed? I wonder if we should have a look at the castle? But we are ordered to stay here.",
+        "message":"You say Lovis is missing? I would like to look around the castle, but we are ordered to stay here.",
         "replies":[
             {
                 "text":"Ordered?",
@@ -319,17 +319,17 @@
     },
     {
         "id":"guynmart_cguard_50",
-        "message":"I take orders only from my Lord Guynmart himself. And he told me and my men to get to this clearing and wait for him.",
+        "message":"I take orders only from Lord Guynmart himself. He told me and my men to go to this clearing and wait for him.",
         "replies":[
             {
-                "text":"That is strange. I heard at the castle that Lord Guynmart was uproad for a week now. And I heard other things I dare not tell.",
+                "text":"That is strange. I heard at the castle that Lord Guynmart was uproad for a week now. I also heard other things that I dare not tell.",
                 "nextPhraseID":"guynmart_cguard_60"
             }
         ]
     },
     {
         "id":"guynmart_cguard_60",
-        "message":"You must tell me all that you know or think to know. I promise you have nothing to fear.",
+        "message":"You must tell me all that you know or think you  know. I promise that you have nothing to fear.",
         "replies":[
             {
                 "text":"I heard Unkorh saying that Guynmart is imprisoned in the dungeons. And Unkorh also wants to marry Lady Hannah.",
@@ -339,20 +339,20 @@
     },
     {
         "id":"guynmart_cguard_70",
-        "message":"Indeed! These are serious accusations. I hope you can prove it.",
+        "message":"Indeed? These are serious accusations. I hope you can prove them.",
         "replies":[
             {
-                "text":"How can I? You may go to the castle and look for yourself.",
+                "text":"How can I? You may go to the castle and check for yourself.",
                 "nextPhraseID":"guynmart_cguard_72"
             }
         ]
     },
     {
         "id":"guynmart_cguard_72",
-        "message":"Now I am really curious what is going on in the castle. But unfortunately Guynmarts order was very clear - I myself and all my men should be wait for him on this clearing.\nI can't leave just for the words of a kid.",
+        "message":"Now I am really curious what is going on in the castle. But unfortunately Guynmart's order was very clear. Myself and all my men should wait for him in this clearing.\nI can't leave just based on the words of a kid.",
         "replies":[
             {
-                "text":"And let Unkorhs dark plans be fulfilled? Let Guynmart probably die?",
+                "text":"And let Unkorhs dark plans be fulfilled? Leave Guynmart to probably die?",
                 "nextPhraseID":"guynmart_cguard_74"
             },
             {
@@ -366,17 +366,17 @@
         "message":"Maybe you could go back to the castle and bring some evidence?",
         "replies":[
             {
-                "text":"With pleasure, if this helps to believe me.",
+                "text":"With pleasure, if this means you will believe me.",
                 "nextPhraseID":"guynmart_cguard_80"
             }
         ]
     },
     {
         "id":"guynmart_cguard_80",
-        "message":"By doing this, you take a great burden from my heart. So I get to know the doings at the castle but don't have to disobey my lords order.\nJust go on, the path is not difficult to find.",
+        "message":"By doing this, you take a great burden from my heart. I get to know what is happening at the castle, but don't have to disobey my lords order. Please hurry, the path is not difficult to find.",
         "replies":[
             {
-                "text":"Ok, I will hurry.",
+                "text":"OK, I will be as quick as I can.",
                 "nextPhraseID":"X"
             }
         ],
