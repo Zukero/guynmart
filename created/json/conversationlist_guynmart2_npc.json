@@ -458,16 +458,6 @@
         "id":"guynmart_rob5_10",
         "replies":[
             {
-                "nextPhraseID":"guynmart_rob5_59",
-                "requires":[
-                    {
-                        "requireType":"questProgress",
-                        "requireID":"guynmart_nondisplay",
-                        "value":59
-                    }
-                ]
-            },
-            {
                 "nextPhraseID":"guynmart_rob5_55",
                 "requires":[
                     {
@@ -524,7 +514,7 @@
     },
     {
         "id":"guynmart_rob5_20",
-        "message":"Hey! You are the first one that found the way to my clearing!",
+        "message":"Hey! You are the first one that has found the way to my clearing!",
         "replies":[
             {
                 "text":"N",
@@ -549,7 +539,7 @@
     },
     {
         "id":"guynmart_rob5_52",
-        "message":"This way I like the clearing best."
+        "message":"I like the clearing best this way."
     },
     {
         "id":"guynmart_rob5_53",
@@ -557,11 +547,11 @@
     },
     {
         "id":"guynmart_rob5_54",
-        "message":"I do not know what that means?"
+        "message":"This is strange!"
     },
     {
         "id":"guynmart_rob5_55",
-        "message":"Strange this."
+        "message":"Back to normal!"
     },
     {
         "id":"guynmart_rob5_59",

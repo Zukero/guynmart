@@ -2397,11 +2397,11 @@
     },
     {
         "id":"guynmart_rob_12",
-        "message":"Hey - you found me at last! That was fun!",
+        "message":"Hey - you found me at last! That was fun!\nI am Robalyrius, Guynmart's son, but please call me Rob. Who are you?\nWait, I will open the shutters, so that we can see each other.",
         "replies":[
             {
-                "text":"N",
-                "nextPhraseID":"guynmart_rob_14"
+                "text":"Hi, I am $playername. I am glad that you are not really a ghost.",
+                "nextPhraseID":"X"
             }
         ],
         "rewards":[
@@ -2418,29 +2418,15 @@
         ]
     },
     {
-        "id":"guynmart_rob_14",
-        "message":"I am Robalyrius, Guynmarts son. But please just call me Rob. And who are you?",
-        "replies":[
-            {
-                "text":"Hi, I am $playername. I am glad that you are not really a ghost.",
-                "nextPhraseID":"guynmart_rob_16"
-            }
-        ]
-    },
-    {
-        "id":"guynmart_rob_16",
-        "message":"Wait, I will open the shutters, so we can see each other."
-    },
-    {
         "id":"guynmart_rob_50",
-        "message":"Hi $playername! We could play together in the tower. It is so boring here as only kid.",
+        "message":"Hi $playername! We could play together in the tower. It is so boring here as the only kid.",
         "replies":[
             {
-                "text":"Hm, maybe later. I must go now.",
+                "text":"Hmm. Maybe later. I have to go now.",
                 "nextPhraseID":"X"
             },
             {
-                "text":"O dear. I am too old to play childish games. Leave me alone.",
+                "text":"Sorry. I am too old to play childish games. Please leave me alone.",
                 "nextPhraseID":"guynmart_rob_52"
             },
             {
@@ -2465,7 +2451,7 @@
     },
     {
         "id":"guynmart_rob_60",
-        "message":"I don't know myself. He is uproad for a week now. But this is not unusual, he often is. I hope that he will take me with him on such missions.",
+        "message":"I don't know myself. He has been uproad for a week now. But he often is, so this is not unusual. I hope that he will take me with him on such missions.",
         "replies":[
             {
                 "text":"And where is Hannah?",
@@ -2475,7 +2461,7 @@
     },
     {
         "id":"guynmart_rob_70",
-        "message":"My sister is not in her room. Probably she is on the tower platform again, watching for a sign of Lovis.",
+        "message":"My sister is not in her room. She is probably at the top of the tower again, watching for a sign of Lovis.",
         "replies":[
             {
                 "text":"N",
@@ -2485,7 +2471,7 @@
     },
     {
         "id":"guynmart_rob_72",
-        "message":"They want to marry but some days ago he vanished and did not return. Hannah weeps now all the time. I hope for Lovis that he has a good reason to make my sister so sad.",
+        "message":"They want to marry, but a few days ago he vanished and has not returned. Hannah now weeps all the time. I hope for Lovis that he has a good reason for making my sister so sad.",
         "replies":[
             {
                 "text":"N",
@@ -2495,18 +2481,18 @@
     },
     {
         "id":"guynmart_rob_80",
-        "message":"Maybe you want to speak to Hannahs maiden? She is in the next room."
+        "message":"Maybe you should speak to Hannah's maiden? She is in the next room."
     },
     {
         "id":"guynmart_rob2_10",
-        "message":"I am throwing little pebbles at the guard down there. You want to try too?",
+        "message":"I am throwing little pebbles at the guard down there. Do you want to try too?",
         "replies":[
             {
-                "text":"You shouldn't do that, naughty boy.",
+                "text":"You shouldn't do that, you naughty boy.",
                 "nextPhraseID":"X"
             },
             {
-                "text":"Here, take a few bigger rocks. The guard earns it.",
+                "text":"Here, take a few bigger rocks. That guard has earned it.",
                 "nextPhraseID":"guynmart_rob2_12",
                 "requires":[
                     {
@@ -2520,14 +2506,14 @@
     },
     {
         "id":"guynmart_rob2_12",
-        "message":"[6 rocks taken]\nGreat! Let's see if I get his helmet off ..."
+        "message":"[6 rocks taken]\nGreat! Let's see if I can knock his helmet off ..."
     },
     {
         "id":"guynmart_rob3_10",
         "message":"What shall we play now?",
         "replies":[
             {
-                "text":"I want to go into the dungeon.",
+                "text":"I want to go to the dungeon.",
                 "nextPhraseID":"guynmart_rob3_20"
             }
         ]
@@ -2544,7 +2530,7 @@
     },
     {
         "id":"guynmart_rob3_30",
-        "message":"I will distract the guards, while you slip down the stairways, ok?",
+        "message":"I will distract the guards, while you slip down the stairway, OK?",
         "replies":[
             {
                 "text":"Great idea.",
@@ -2557,7 +2543,7 @@
         "message":"Follow me in a minute - but make no noise.",
         "replies":[
             {
-                "text":"Ok.",
+                "text":"OK.",
                 "nextPhraseID":"R"
             }
         ],
@@ -3993,7 +3979,7 @@
         "message":"Did you bring the herbs for Hannah's lunch?",
         "replies":[
             {
-                "text":"Oh. I knew that I had forgotten something...",
+                "text":"Oh. I knew I had forgotten something...",
                 "nextPhraseID":"X"
             },
             {
@@ -4243,7 +4229,7 @@
     },
     {
         "id":"guynmart_cook_120",
-        "message":"... and now it is worthy of her. Hurry now, while it is still hot!",
+        "message":"... and now it is suitable for her. Hurry now, while it is still hot!",
         "replies":[
             {
                 "text":"Ouch! It is really hot!",
@@ -4273,11 +4259,11 @@
         "message":"Hey, get us some bottles of wine and then take a seat. I could tell you things you wouldn't believe!",
         "replies":[
             {
-                "text":"I go for the wine, wait a minute.",
+                "text":"I'll go for the wine, wait a minute.",
                 "nextPhraseID":"X"
             },
             {
-                "text":"Ok, I just sit down.",
+                "text":"OK, I'll sit down.",
                 "nextPhraseID":"X"
             },
             {
@@ -4293,7 +4279,7 @@
                 "nextPhraseID":"guynmart_drunkard5_100",
                 "requires":[
                     {
-                        "requireType":"inventoryRemove",
+                        "requireType":"inventoryKeep",
                         "requireID":"guynmart_wine",
                         "value":1
                     }
@@ -4316,10 +4302,10 @@
     },
     {
         "id":"guynmart_drunkard5_14",
-        "message":"Oh, the wine is out. Could you get some more?",
+        "message":"Oh. The wine bottles are all empty. Could you get some more?",
         "replies":[
             {
-                "text":"Oh, yes, of course, I will get some more bottles.",
+                "text":"Yes, of course. I will get some more bottles.",
                 "nextPhraseID":"X"
             }
         ]
@@ -4329,7 +4315,7 @@
         "message":"Let's have a sip, then I will tell you my story.",
         "replies":[
             {
-                "text":"Ok.",
+                "text":"OK.",
                 "nextPhraseID":"guynmart_drunkard5_102",
                 "requires":[
                     {
@@ -4340,14 +4326,14 @@
                 ]
             },
             {
-                "text":"I better let the bottles in my bag.",
+                "text":"I think I had better keep the bottles in my bag.",
                 "nextPhraseID":"guynmart_drunkard5_14"
             }
         ]
     },
     {
         "id":"guynmart_drunkard5_102",
-        "message":"[He empties a bottle]\nOh yes, I remember well ... It was a dark and stormy night up in the mountains.",
+        "message":"[Fjoerkard empties a bottle]\nOh yes, I remember it well ... It was a dark and stormy night up in the mountains.",
         "replies":[
             {
                 "text":"N",
@@ -4357,7 +4343,7 @@
     },
     {
         "id":"guynmart_drunkard5_110",
-        "message":"My men and I had been on the road for hours, without a break and without the slightest sign of getting closer to the goal.",
+        "message":"My men and I had been on the road for hours, without a break and without the slightest sign of getting closer to our goal.",
         "replies":[
             {
                 "text":"N",
@@ -4367,7 +4353,7 @@
     },
     {
         "id":"guynmart_drunkard5_120",
-        "message":"We silently trotted one by one the tortuous path up the steep slope, always beware of the treacherous shadows of the bushes on both sides, and always listening for signs of danger.",
+        "message":"We silently trudged one by one up the tortuous path that led up the steep slope, always wary of the treacherous shadows of the bushes on either side, and always listening for signs of danger.",
         "replies":[
             {
                 "text":"N",
@@ -4391,14 +4377,14 @@
                 ]
             },
             {
-                "text":"Not again another bottle?",
+                "text":"Again? Another bottle?",
                 "nextPhraseID":"guynmart_drunkard5_14"
             }
         ]
     },
     {
         "id":"guynmart_drunkard5_132",
-        "message":"[He empties the bottle]\nGornauds are said to be roaming in these mountains. We have not seen any, by the shadow, but already crossed several times their traces.\nAnd there were rumors about even more dangerous creatures - I better name them not.",
+        "message":"[Fjoerkard empties the bottle]\nGornauds were said to be roaming in those mountains. We had not seen any, by the shadow, but we had already crossed their traces several times.\nAnd there were rumors about even more dangerous creatures - I will not even name them.",
         "replies":[
             {
                 "text":"N",
@@ -4415,7 +4401,7 @@
     },
     {
         "id":"guynmart_drunkard5_140",
-        "message":"A lonely hut came into sight. A friendly light in the midst of this wilderness. There we would ask for a camp for the night. New forces flowed through us, when suddenly the hell broke loose before us.",
+        "message":"A lonely hut came into sight. A friendly light in the midst of the wilderness. There we would ask to camp for the night. New strength flowed through us, when suddenly all hell broke loose.",
         "replies":[
             {
                 "text":"N",
@@ -4425,7 +4411,7 @@
     },
     {
         "id":"guynmart_drunkard5_150",
-        "message":"Gornauds jumped out behind the rocks, so close that we could clearly see the facial features. Some terrible seconds, I thought, that would be our last seconds.",
+        "message":"Gornauds jumped out from behind the rocks, so close that we could clearly see their facial features. For a few terrible seconds I thought that those would be our last seconds.",
         "replies":[
             {
                 "text":"N",
@@ -4453,7 +4439,7 @@
     },
     {
         "id":"guynmart_drunkard5_162",
-        "message":"[Another bottle]\nBut then we realized that the monsters were looking for an even easier prey. A small figure in front of us on the way - a child? Alone up here?",
+        "message":"[Another bottle]\nBut then we realized that the monsters were after an easier prey. A small figure was in front of us on the path. A child? Alone up there?",
         "replies":[
             {
                 "text":"N",
@@ -4463,7 +4449,7 @@
     },
     {
         "id":"guynmart_drunkard5_170",
-        "message":"Shaken, I closed my eyes, despite the great danger. I did not want to look at this slaughter. The dreadful noise took only a few seconds.",
+        "message":"Shaken, I closed my eyes, despite the great danger. I did not want to look at the slaughter. The dreadful noise lasted only a few seconds.",
         "replies":[
             {
                 "text":"N",
@@ -4473,7 +4459,7 @@
     },
     {
         "id":"guynmart_drunkard5_180",
-        "message":"The ground was soaked with red blood. But - it came from the Gornauds! The child just wiped the weapon clean from blood, gave us a quick glance, and disappeared up the path.",
+        "message":"The ground was soaked with red blood. But - it came from the Gornauds! The child just wiped the weapon clean of blood, gave us a quick glance, and disappeared up the path.",
         "replies":[
             {
                 "text":"N",
@@ -4501,7 +4487,7 @@
     },
     {
         "id":"guynmart_drunkard5_192",
-        "message":"[Another bottle]\nWe had enough of this cursed march. Panicked, we ran back the way. Tired as we were, we ran without even once, to the inn in the valley, from which we had broken in the morning. ",
+        "message":"[Another bottle]\nWe had had enough of that cursed march. Panicked, we ran back down the path. Tired as we were, we ran without stopping even once, to the inn in the valley, from which we had departed in the morning. ",
         "replies":[
             {
                 "text":"N",
@@ -4511,7 +4497,7 @@
     },
     {
         "id":"guynmart_drunkard5_200",
-        "message":"Never will I forget this useless journey. Often I see this again in a nightmare and then I seek the forgetfulness of a friendly inn. When once there was a little girl, probably the daughter of the landlord.",
+        "message":"Never will I forget that useless journey. Often I see it again in a nightmare and then I seek the memory of a friendly inn. Where once there was a little girl, probably the daughter of the landlord.",
         "replies":[
             {
                 "text":"N",
@@ -4539,7 +4525,7 @@
     },
     {
         "id":"guynmart_drunkard5_212",
-        "message":"[Yet another bottle]\nShe got some wine for an old bearded guest and asked for a tale, and he began: Oh yes, I remember well ... It was a dark and stormy night up in the mountains.",
+        "message":"[Yet another bottle]\nShe got some wine for an old bearded guest and asked for a tale, and he began: Oh yes, I remember it well ... It was a dark and stormy night up in the mountains.",
         "replies":[
             {
                 "text":"N",
@@ -5175,7 +5161,7 @@
     },
     {
         "id":"guynmart_lovis2_220c",
-        "message":"It seems sheep were killed by your hand. Guynmart's sheep, to be precise.",
+        "message":"It seems sheep were killed by your hand. Our sheep, to be precise.",
         "replies":[
             {
                 "text":"N",
