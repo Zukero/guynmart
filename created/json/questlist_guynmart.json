@@ -414,11 +414,11 @@
             },
             {
                 "progress":11,
-                "logText":"11=innen"
+                "logText":"11=inside"
             },
             {
                 "progress":12,
-                "logText":"12=außen"
+                "logText":"12=outside"
             },
             {
                 "progress":100,
@@ -596,6 +596,14 @@
                 "logText":"3=Dungeonhole ok"
             },
             {
+                "progress":4,
+                "logText":"4=Fjoerkard asked for wine"
+            },
+            {
+                "progress":5,
+                "logText":"5=Seated next to Fjoerkard"
+            },
+            {
                 "progress":30,
                 "logText":"30=Hero introduced"
             },
@@ -665,7 +673,11 @@
             },
             {
                 "progress":55,
-                "logText":"55=Clearing_normal"
+                "logText":"55=Clearing_inverted"
+            },
+            {
+                "progress":59,
+                "logText":"59=Clearing_normal"
             },
             {
                 "progress":60,

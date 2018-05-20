@@ -26,6 +26,24 @@
 	  "switchToNPC":"guynmart_cook",
 	  "message":"The tower is no playground. Keep away from there, kid." 
 	},
+  	{ "id":"guynmart_seat1", 
+ 	  "replies":[{ "nextPhraseID":"guynmart_drunkard5_10" }],
+	  "rewards":[{ "rewardType":"questProgress",  "rewardID":"guynmart_nondisplay", "value":5 }]
+	},
+  	{ "id":"guynmart_seat2",
+	  "rewards":[{ "rewardType":"removeQuestProgress",  "rewardID":"guynmart_nondisplay", "value":5 }]
+	},
+  	{ "id":"guynmart_seat3",
+ 	  "replies":[{ "nextPhraseID":"guynmart_drunkard5_10" }],
+	  "rewards":[{ "rewardType":"questProgress",  "rewardID":"guynmart_nondisplay", "value":5 }]
+	},
+  	{ "id":"guynmart_seat4",
+	  "rewards":[{ "rewardType":"removeQuestProgress",  "rewardID":"guynmart_nondisplay", "value":5 }]
+	},
+  	{ "id":"guynmart_seat5",
+ 	  "replies":[{ "nextPhraseID":"guynmart_drunkard5_10" }],
+	  "rewards":[{ "rewardType":"questProgress",  "rewardID":"guynmart_nondisplay", "value":5 }]
+	},
 
 	{ "id":"guynmart_key_olav", 
 	  "switchToNPC":"guynmart_steward3",

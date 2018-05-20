@@ -458,6 +458,16 @@
         "id":"guynmart_rob5_10",
         "replies":[
             {
+                "nextPhraseID":"guynmart_rob5_59",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"guynmart_nondisplay",
+                        "value":59
+                    }
+                ]
+            },
+            {
                 "nextPhraseID":"guynmart_rob5_55",
                 "requires":[
                     {
@@ -547,11 +557,11 @@
     },
     {
         "id":"guynmart_rob5_54",
-        "message":"This is strange!"
+        "message":"I do not know what that means?"
     },
     {
         "id":"guynmart_rob5_55",
-        "message":"Back to normal!"
+        "message":"This is strange!"
     },
     {
         "id":"guynmart_rob5_59",

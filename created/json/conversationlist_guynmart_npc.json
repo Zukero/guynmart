@@ -4256,27 +4256,9 @@
     },
     {
         "id":"guynmart_drunkard1_10",
-        "message":"Hey, get us some bottles of wine and then take a seat. I could tell you things you wouldn't believe!",
         "replies":[
             {
-                "text":"I'll go for the wine, wait a minute.",
-                "nextPhraseID":"X"
-            },
-            {
-                "text":"OK, I'll sit down.",
-                "nextPhraseID":"X"
-            },
-            {
-                "text":"You should drink less.",
-                "nextPhraseID":"X"
-            }
-        ]
-    },
-    {
-        "id":"guynmart_drunkard5_10",
-        "replies":[
-            {
-                "nextPhraseID":"guynmart_drunkard5_100",
+                "nextPhraseID":"guynmart_drunkard1_30",
                 "requires":[
                     {
                         "requireType":"inventoryKeep",
@@ -4286,16 +4268,117 @@
                 ]
             },
             {
-                "nextPhraseID":"guynmart_drunkard5_12"
+                "nextPhraseID":"guynmart_drunkard1_20"
+            }
+        ]
+    },
+    {
+        "id":"guynmart_drunkard1_20",
+        "message":"Hey, get us some bottles of wine and then take a seat. I could tell you things you wouldn't believe!",
+        "replies":[
+            {
+                "text":"I'll go for the wine, wait a minute.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"You should drink less.",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"guynmart_nondisplay",
+                "value":4
+            }
+        ]
+    },
+    {
+        "id":"guynmart_drunkard1_30",
+        "message":"Hey, why don't you take a seat and open one of those bottles of wine you have. I could tell you things you wouldn't believe!",
+        "replies":[
+            {
+                "text":"OK, I'll sit down.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"You should drink less.",
+                "nextPhraseID":"X"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"guynmart_nondisplay",
+                "value":4
+            }
+        ]
+    },
+    {
+        "id":"guynmart_drunkard5_10", 
+        "replies":[
+            {
+                "nextPhraseID":"guynmart_drunkard5_100",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"guynmart_wine",
+                        "value":1
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"guynmart_nondisplay",
+                        "value":5
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"guynmart_drunkard5_20",
+                "requires":[
+                    {
+                        "requireType":"inventoryKeep",
+                        "requireID":"guynmart_wine",
+                        "value":1
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"guynmart_drunkard5_12",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"guynmart_nondisplay",
+                        "value":4
+                    }
+                ]
+            },
+            {
+                "nextPhraseID":"guynmart_drunkard5_13"
             }
         ]
     },
     {
         "id":"guynmart_drunkard5_12",
+		"switchToNPC":"guynmart_drunkard5",
         "message":"I think you have forgotten something...?",
         "replies":[
             {
                 "text":"Oh, yes, of course, I will get some bottles of wine.",
+                "nextPhraseID":"X"
+            }
+        ]
+    },
+    {
+        "id":"guynmart_drunkard5_13",
+		"switchToNPC":"guynmart_drunkard5",
+        "message":"Hey, get us some bottles of wine! I could tell you things you wouldn't believe!",
+        "replies":[
+            {
+                "text":"Good idea! I'll go for the wine, wait a minute.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"You should drink less.",
                 "nextPhraseID":"X"
             }
         ]
@@ -4311,7 +4394,13 @@
         ]
     },
     {
+        "id":"guynmart_drunkard5_20",
+		"switchToNPC":"guynmart_drunkard5",
+        "message":"Do not be so uncomfortable. Take a seat next to me first."
+    },
+    {
         "id":"guynmart_drunkard5_100",
+		"switchToNPC":"guynmart_drunkard5",
         "message":"Let's have a sip, then I will tell you my story.",
         "replies":[
             {
@@ -5414,7 +5503,14 @@
         "replies":[
             {
                 "text":"Here is the gold.",
-                "nextPhraseID":"guynmart_lovis2_360"
+                "nextPhraseID":"guynmart_lovis2_360",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"gold",
+                        "value":100
+                    }
+                ]
             },
             {
                 "text":"I don't have enough gold.",
@@ -5428,7 +5524,14 @@
         "replies":[
             {
                 "text":"Here is the gold.",
-                "nextPhraseID":"guynmart_lovis2_360"
+                "nextPhraseID":"guynmart_lovis2_360",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"gold",
+                        "value":200
+                    }
+                ]
             },
             {
                 "text":"I don't have enough gold.",
@@ -5442,7 +5545,14 @@
         "replies":[
             {
                 "text":"Here is the gold.",
-                "nextPhraseID":"guynmart_lovis2_360"
+                "nextPhraseID":"guynmart_lovis2_360",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"gold",
+                        "value":300
+                    }
+                ]
             },
             {
                 "text":"I don't have enough gold.",
@@ -5456,7 +5566,14 @@
         "replies":[
             {
                 "text":"Here is the gold.",
-                "nextPhraseID":"guynmart_lovis2_360"
+                "nextPhraseID":"guynmart_lovis2_360",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"gold",
+                        "value":400
+                    }
+                ]
             },
             {
                 "text":"I don't have enough gold.",
@@ -5470,7 +5587,14 @@
         "replies":[
             {
                 "text":"Here is the gold.",
-                "nextPhraseID":"guynmart_lovis2_360"
+                "nextPhraseID":"guynmart_lovis2_360",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"gold",
+                        "value":500
+                    }
+                ]
             },
             {
                 "text":"I don't have enough gold.",
@@ -5484,7 +5608,14 @@
         "replies":[
             {
                 "text":"Here is the gold.",
-                "nextPhraseID":"guynmart_lovis2_360"
+                "nextPhraseID":"guynmart_lovis2_360",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"gold",
+                        "value":600
+                    }
+                ]
             },
             {
                 "text":"I don't have enough gold.",
@@ -5498,7 +5629,14 @@
         "replies":[
             {
                 "text":"Here is the gold.",
-                "nextPhraseID":"guynmart_lovis2_360"
+                "nextPhraseID":"guynmart_lovis2_360",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"gold",
+                        "value":700
+                    }
+                ]
             },
             {
                 "text":"I don't have enough gold.",
@@ -5512,7 +5650,14 @@
         "replies":[
             {
                 "text":"Here is the gold.",
-                "nextPhraseID":"guynmart_lovis2_360"
+                "nextPhraseID":"guynmart_lovis2_360",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"gold",
+                        "value":800
+                    }
+                ]
             },
             {
                 "text":"I don't have enough gold.",
@@ -5526,7 +5671,14 @@
         "replies":[
             {
                 "text":"Here is the gold.",
-                "nextPhraseID":"guynmart_lovis2_360"
+                "nextPhraseID":"guynmart_lovis2_360",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"gold",
+                        "value":900
+                    }
+                ]
             },
             {
                 "text":"I don't have enough gold.",
@@ -5540,7 +5692,14 @@
         "replies":[
             {
                 "text":"Here is the gold.",
-                "nextPhraseID":"guynmart_lovis2_360"
+                "nextPhraseID":"guynmart_lovis2_360",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"gold",
+                        "value":1000
+                    }
+                ]
             },
             {
                 "text":"I don't have enough gold.",
@@ -5554,7 +5713,14 @@
         "replies":[
             {
                 "text":"Here is the gold.",
-                "nextPhraseID":"guynmart_lovis2_360"
+                "nextPhraseID":"guynmart_lovis2_360",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"gold",
+                        "value":1500
+                    }
+                ]
             },
             {
                 "text":"I don't have enough gold.",
@@ -5568,7 +5734,14 @@
         "replies":[
             {
                 "text":"Here is the gold.",
-                "nextPhraseID":"guynmart_lovis2_360"
+                "nextPhraseID":"guynmart_lovis2_360",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"gold",
+                        "value":2000
+                    }
+                ]
             },
             {
                 "text":"I don't have enough gold.",
@@ -5582,7 +5755,14 @@
         "replies":[
             {
                 "text":"Here is the gold.",
-                "nextPhraseID":"guynmart_lovis2_360"
+                "nextPhraseID":"guynmart_lovis2_360",
+                "requires":[
+                    {
+                        "requireType":"inventoryRemove",
+                        "requireID":"gold",
+                        "value":2500
+                    }
+                ]
             },
             {
                 "text":"I don't have enough gold.",
