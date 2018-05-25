@@ -557,7 +557,7 @@
     },
     {
         "id":"guynmart_rob5_54",
-        "message":"I do not know what that means?"
+        "message":"I don't even know what this is supposed to be!"
     },
     {
         "id":"guynmart_rob5_55",
@@ -569,24 +569,24 @@
     },
     {
         "id":"guynmart_rob6_10",
-        "message":"I see you are coming around. Do you want to climb up to me?",
+        "message":"Hello $playername. Do you wish to climb up to me?",
         "replies":[
             {
-                "text":"Oh yes. Could you let the rope down?",
+                "text":"Yes. Could you drop the rope down?",
                 "nextPhraseID":"guynmart_rob6_30"
             },
             {
-                "text":"No, thank you.",
+                "text":"No thanks.",
                 "nextPhraseID":"X"
             }
         ]
     },
     {
         "id":"guynmart_rob6_30",
-        "message":"Of course. There. But I must leave now in a hurry.",
+        "message":"Of course. There. But I am in a hurry and must leave now.",
         "replies":[
             {
-                "text":"Great! I'll get up now.",
+                "text":"Great! I'll climb up now.",
                 "nextPhraseID":"X"
             }
         ],

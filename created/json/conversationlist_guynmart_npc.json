@@ -1864,7 +1864,7 @@
     },
     {
         "id":"guynmart_hannah_12",
-        "message":"Go away, kid. I want to be alone. I can not think clearly without the smell of another fresh, fragrant rose.",
+        "message":"Go away, kid. I want to be alone. I cannot think clearly without the smell of another fresh, fragrant rose.",
         "replies":[
             {
                 "text":"I will bring your rose now.",
@@ -1885,7 +1885,7 @@
     },
     {
         "id":"guynmart_hannah_20",
-        "message":"I can not think clearly ... I need a rose! A fresh, fragrant rose! Please bring me a rose of my garden ...",
+        "message":"I cannot think clearly ... I need a rose! A fresh, fragrant rose! Please bring me a rose from my garden ...",
         "replies":[
             {
                 "text":"I have some delicious lunch for you.",
@@ -1899,7 +1899,7 @@
                 ]
             },
             {
-                "text":"I am going to ask Nuik.",
+                "text":"I will go and ask Nuik.",
                 "nextPhraseID":"X"
             }
         ],
@@ -2000,7 +2000,7 @@
     },
     {
         "id":"guynmart_hannah_122",
-        "message":"Did you find him already?",
+        "message":"Have you found Lovis yet?",
         "replies":[
             {
                 "text":"No, sorry. Not yet.",
@@ -2010,21 +2010,21 @@
     },
     {
         "id":"guynmart_hannah_140",
-        "message":"I would like to give you Lovis flute. He used to play for me on it every day. When you find Lovis, show the flute as a token that I sent you.",
+        "message":"I would like to give you Lovis flute. He used to play on it every day for me. When you find Lovis, show the flute as a token that I sent you.",
         "replies":[
             {
                 "text":"I will not disappoint you.",
                 "nextPhraseID":"guynmart_hannah_150"
             },
             {
-                "text":"No, I changed my mind. Bye.",
+                "text":"No, I do not feel like running back and forth.",
                 "nextPhraseID":"X"
             }
         ]
     },
     {
         "id":"guynmart_hannah_150",
-        "message":"So take this flute and take care of it.",
+        "message":"So take this flute and take good care of it.",
         "replies":[
             {
                 "text":"I will.",
@@ -2150,7 +2150,7 @@
     },
     {
         "id":"guynmart_hannah2_40",
-        "message":"If it wasn't for you, Guynmart castle would look different today: dark and gloomy and no place you want to live.",
+        "message":"If it wasn't for you, Guynmart castle would look different today: dark and gloomy and no place you would want to live.",
         "switchToNPC":"guynmart_hannah2",
         "replies":[
             {
@@ -2161,7 +2161,7 @@
     },
     {
         "id":"guynmart_hannah2_50",
-        "message":"Take this rose as a token of deepest thanks. May its lovely fragrance lasts forever.",
+        "message":"Take this rose as a token of my deepest thanks. May its lovely fragrance last forever.",
         "replies":[
             {
                 "text":"Thank you, Lady.",
@@ -2571,17 +2571,17 @@
     },
     {
         "id":"guynmart_servant_10",
-        "message":"What do you do in my lords rooms?",
+        "message":"What are you doing in my lords rooms?",
         "replies":[
             {
-                "text":"You lie in bed in bright daylight?",
+                "text":"You are lying around in bed in broad daylight?",
                 "nextPhraseID":"guynmart_servant_20"
             }
         ]
     },
     {
         "id":"guynmart_servant_20",
-        "message":"I am checking if the bed of young Robalyrius is still in order."
+        "message":"I am checking that the bed of young Robalyrius is still in order."
     },
     {
         "id":"guynmart_maid_10",
@@ -2623,7 +2623,7 @@
     },
     {
         "id":"guynmart_maid_11",
-        "message":"Since Lady Hannah is married, she never sings anymore.",
+        "message":"Since Lady Hannah was married, she never sings anymore.",
         "replies":[
             {
                 "text":"So she's finally grown up.",
@@ -2637,7 +2637,7 @@
     },
     {
         "id":"guynmart_maid_12",
-        "message":"Since Lady Hannah is married, she is singing all day long. Thank you for your help.",
+        "message":"Since Lady Hannah was married, she is singing all day long. Thank you for your help.",
         "replies":[
             {
                 "text":"It is nice that she is happy again.",
@@ -2654,7 +2654,7 @@
         "message":"Could you already help Lady Hannah?",
         "replies":[
             {
-                "text":"I'm not finished yet.",
+                "text":"I haven't finished yet.",
                 "nextPhraseID":"X"
             },
             {
@@ -2665,24 +2665,24 @@
     },
     {
         "id":"guynmart_maid_20",
-        "message":"Hello. What are you doing in Lady Hannahs room?",
+        "message":"Hello. What are you doing in Lady Hannah's room?",
         "replies":[
             {
-                "text":"Oh, sorry, I better go again.",
+                "text":"Oh, sorry, I had better leave.",
                 "nextPhraseID":"X"
             },
             {
-                "text":"I would like to see Lady Hannah. I heard she has problems. Maybe I could help her.",
+                "text":"I would like to see Lady Hannah. I heard she has some problems. Maybe I could help her.",
                 "nextPhraseID":"guynmart_maid_50"
             }
         ]
     },
     {
         "id":"guynmart_maid_50",
-        "message":"You have heard of Lovis? Where is he? We miss him for almost a week.",
+        "message":"You have heard something of Lovis? Where is he? He has been missing for almost a week.",
         "replies":[
             {
-                "text":"I could go and find Lovis for her.",
+                "text":"Perhaps I could go and find Lovis for her.",
                 "nextPhraseID":"guynmart_maid_60"
             }
         ]
@@ -2709,7 +2709,7 @@
     },
     {
         "id":"guynmart_maid_64",
-        "message":"Hm, probably the guard will stop you. Let me think ...",
+        "message":"Hmm, probably the guard will stop you. Let me think ...",
         "replies":[
             {
                 "text":"N",
@@ -2778,18 +2778,18 @@
     },
     {
         "id":"guynmart_nuik_20",
-        "message":"Hello $playername! It's a loveley day, isn't it?"
+        "message":"Hello $playername! It's a lovely day, isn't it?"
     },
     {
         "id":"guynmart_nuik_30",
-        "message":"Hi Kid. Don't you love flowers as much as I do?",
+        "message":"Hi Kid. Do you love flowers as much as I do?",
         "replies":[
             {
-                "text":"Oh yes, I do! Maybe I become a gardener myself.",
+                "text":"Oh yes, I do! Maybe I will become a gardener myself.",
                 "nextPhraseID":"guynmart_nuik_40"
             },
             {
-                "text":"Lady Hannah asked me to bring her a rose. Please give me the most beautiful one.",
+                "text":"Lady Hannah asked me to bring her a rose. Please give me the most beautiful one you have.",
                 "nextPhraseID":"guynmart_nuik_50",
                 "requires":[
                     {
@@ -2821,7 +2821,7 @@
     },
     {
         "id":"guynmart_nuik_50",
-        "message":"No, sorry, anyone could say so. I can not give you any flowers.",
+        "message":"No, sorry, anyone could come to me and ask this. I can not give you any flowers.",
         "replies":[
             {
                 "text":"May I pick the rose myself?",
@@ -2849,14 +2849,14 @@
     },
     {
         "id":"guynmart_nuik_70",
-        "message":"Are you kidding? These flowers are priceless! You can not pay for them!",
+        "message":"Are you kidding? These flowers are priceless! You can't pay for them!",
         "replies":[
             {
                 "text":"May I pick the rose myself?",
                 "nextPhraseID":"guynmart_nuik_60"
             },
             {
-                "text":"Lady Hannah asked me to bring her a rose. Please give me the most beautiful one.",
+                "text":"Lady Hannah asked me to bring her a rose. Please give me the most beautiful one you have.",
                 "nextPhraseID":"guynmart_nuik_50",
                 "requires":[
                     {
@@ -2877,7 +2877,7 @@
         "message":"Hi kid, where are you going in such a hurry?",
         "replies":[
             {
-                "text":"Sorry, I have just no time for a talk.",
+                "text":"Sorry, I have no time for small talk.",
                 "nextPhraseID":"X"
             }
         ]
@@ -2894,7 +2894,7 @@
     },
     {
         "id":"guynmart_nuik_110",
-        "message":"You are lucky! I just have gathered wonderful fresh herbs. Take these and bring them to Hofala.",
+        "message":"You are lucky! I have just gathered some wonderful fresh herbs. Take these to Hofala.",
         "replies":[
             {
                 "text":"Thanks a lot!",
@@ -2971,21 +2971,21 @@
     },
     {
         "id":"guynmart_wizard_21",
-        "message":"Be welcome, $playername. I am Rorthron, world most famous ringmaker. I used to know Andor, your brother. He sometimes consulted me about newly found rings.",
+        "message":"Welcome, $playername. I am Rorthron, the world's most famous ringmaker. I know Andor, your brother. He sometimes consulted me about newly found rings.",
         "replies":[
             {
-                "text":"I never met a ringmaker.",
+                "text":"I have never met a ringmaker.",
                 "nextPhraseID":"guynmart_wizard_24"
             },
             {
-                "text":"Andor! Do you know where he was bound to?",
+                "text":"Andor! Do you know where he was bound?",
                 "nextPhraseID":"guynmart_wizard_28"
             }
         ]
     },
     {
         "id":"guynmart_wizard_22",
-        "message":"A lot. If ever you find one of the strong old rings, come and show me. I might enhance it for you, like I already did for Andor. Don't forget to bring some bonemeal potions as a sign of friendship.",
+        "message":"A lot. If ever you find one of the strong, old, rings, come and show it to me. I might be able to enhance it for you, as I already did for Andor. Don't forget to bring some bonemeal potions as a sign of friendship.",
         "replies":[
             {
                 "text":"Thank you. I will remember.",
@@ -2998,21 +2998,21 @@
         "message":"Maybe you want to look at my fine collection of rings? Unfortunately I have no ring of real power available just now. But I sell them for a good price.",
         "replies":[
             {
-                "text":"Oh, gladly. Show me your rings.",
+                "text":"Certainly. Show me your rings.",
                 "nextPhraseID":"S"
             },
             {
-                "text":"Not at the moment, thanks.",
+                "text":"Not right now, thanks.",
                 "nextPhraseID":"X"
             }
         ]
     },
     {
         "id":"guynmart_wizard_28",
-        "message":"No, sorry. I tend not to ask too personal things.",
+        "message":"No, sorry. I tend not to ask about things that are personal .",
         "replies":[
             {
-                "text":"What a pity. I am trailing my big brother for quite a while now.",
+                "text":"That's a pity. I have been trailing my big brother for quite some time.",
                 "nextPhraseID":"guynmart_wizard_42",
                 "requires":[
                     {
@@ -3033,14 +3033,14 @@
         "message":"Ah - just one thing: I know the power some rings can have, and I would prefer you took yours off in my presence.",
         "replies":[
             {
-                "text":"Ok, just a second.",
+                "text":"OK, just a second.",
                 "nextPhraseID":"X"
             }
         ]
     },
     {
         "id":"guynmart_wizard_40",
-        "message":"Be welcome, $playername. I am Rorthron, world most famous ringmaker. I used to know Andor, your brother. He sometimes consulted me about newly found rings.",
+        "message":"Be welcome, $playername. I am Rorthron, world most famous ringmaker. I know Andor, your brother. He sometimes consulted me about newly found rings.",
         "replies":[
             {
                 "text":"You know me? And my brother?",
@@ -3051,14 +3051,14 @@
                 "nextPhraseID":"guynmart_wizard_24"
             },
             {
-                "text":"Andor! Do you know where he was bound to?",
+                "text":"Andor! Do you know where he was bound?",
                 "nextPhraseID":"guynmart_wizard_28"
             }
         ]
     },
     {
         "id":"guynmart_wizard_42",
-        "message":"You are different than Andor. You will be legendary. Well do I know your deeds! And I even heard rumors that you gained the legends of legends, this mighty Ring of the Lesser Shadows!",
+        "message":"You and Andor are different. You will be legendary. Well do I know your deeds! And I even heard rumors that you gained the legends of legends, the mighty Ring of lesser Shadow!",
         "replies":[
             {
                 "text":"N",
@@ -3068,7 +3068,7 @@
     },
     {
         "id":"guynmart_wizard_50",
-        "message":"With the help of some bonemeal potions I could evolve it to even greater force. The powers will be similar but greater. It will become the\n  ** Ring of Far Lesser Shadows **\nYou are lucky indeed.",
+        "message":"With the help of some bonemeal potions I could improve it to be an even greater ring. The powers will be similar but greater. It will become the\n  ** Ring of far lesser Shadow **\nYou are lucky indeed.",
         "replies":[
             {
                 "text":"Really?",
@@ -3081,22 +3081,22 @@
         "message":"Really. When my work is done, your ring will be stronger than ever.",
         "replies":[
             {
-                "text":"Great! I didn't know that the ring lore is not totally forgotten.",
+                "text":"Great! I didn't know that the ring lore has not been totally forgotten.",
                 "nextPhraseID":"guynmart_wizard_56"
             },
             {
-                "text":"Hm, I like my ring the way it is.",
+                "text":"Hmm, I like my ring the way it is.",
                 "nextPhraseID":"X"
             },
             {
-                "text":"Do you have any rings on stock?",
+                "text":"Do you have any rings in stock?",
                 "nextPhraseID":"guynmart_wizard_24"
             }
         ]
     },
     {
         "id":"guynmart_wizard_56",
-        "message":"Eleven should be ok.",
+        "message":"Eleven should be OK.",
         "replies":[
             {
                 "text":"Eleven what?",
@@ -3119,7 +3119,7 @@
         "message":"Now to work - put the ring into the golden vessel here.",
         "replies":[
             {
-                "text":"Thank you, Rorthron, for your offer. Here is The Ring - be careful with it.",
+                "text":"Thank you for your offer Rorthron. Here is the ring - be careful with it.",
                 "nextPhraseID":"guynmart_wizard_70",
                 "requires":[
                     {
@@ -3130,7 +3130,7 @@
                 ]
             },
             {
-                "text":"No, never would I give you my ring.",
+                "text":"No, I would never give you my ring.",
                 "nextPhraseID":"X"
             }
         ]
@@ -3140,7 +3140,7 @@
         "message":"Oops!",
         "replies":[
             {
-                "text":"Oops? What is oops? Anything went wrong??",
+                "text":"Oops? What does \"oops\" mean? Something went wrong?",
                 "nextPhraseID":"guynmart_wizard_72"
             }
         ],
@@ -3922,7 +3922,17 @@
     },
     {
         "id":"guynmart_cook_14",
-        "message":"I am glad the feast is over. It was hard work."
+        "message":"I am glad the feast is over. It was hard work.",
+        "replies":[
+            {
+                "text":"It's a pity that I couldn't attend the wedding.",
+                "nextPhraseID":"X"
+            },
+            {
+                "text":"Could I buy some provisions?",
+                "nextPhraseID":"S"
+            }
+        ]
     },
     {
         "id":"guynmart_cook_20",
@@ -4315,7 +4325,7 @@
         ]
     },
     {
-        "id":"guynmart_drunkard5_10", 
+        "id":"guynmart_drunkard5_10",
         "replies":[
             {
                 "nextPhraseID":"guynmart_drunkard5_100",
@@ -4359,8 +4369,8 @@
     },
     {
         "id":"guynmart_drunkard5_12",
-		"switchToNPC":"guynmart_drunkard5",
         "message":"I think you have forgotten something...?",
+        "switchToNPC":"guynmart_drunkard5",
         "replies":[
             {
                 "text":"Oh, yes, of course, I will get some bottles of wine.",
@@ -4370,8 +4380,8 @@
     },
     {
         "id":"guynmart_drunkard5_13",
-		"switchToNPC":"guynmart_drunkard5",
         "message":"Hey, get us some bottles of wine! I could tell you things you wouldn't believe!",
+        "switchToNPC":"guynmart_drunkard5",
         "replies":[
             {
                 "text":"Good idea! I'll go for the wine, wait a minute.",
@@ -4395,13 +4405,13 @@
     },
     {
         "id":"guynmart_drunkard5_20",
-		"switchToNPC":"guynmart_drunkard5",
-        "message":"Do not be so uncomfortable. Take a seat next to me first."
+        "message":"You look uncomfortable. Take a seat next to me first.",
+        "switchToNPC":"guynmart_drunkard5"
     },
     {
         "id":"guynmart_drunkard5_100",
-		"switchToNPC":"guynmart_drunkard5",
         "message":"Let's have a sip, then I will tell you my story.",
+        "switchToNPC":"guynmart_drunkard5",
         "replies":[
             {
                 "text":"OK.",
@@ -4645,11 +4655,11 @@
         "message":"What are you - a spy? Or just another prisoner?",
         "replies":[
             {
-                "text":"I am a prisoner too. What is your name?",
+                "text":"I'm a prisoner too. What is your name?",
                 "nextPhraseID":"guynmart_lovis_22"
             },
             {
-                "text":"I am $playername. Lady Hannah asked me to look for someone called Lovis.",
+                "text":"I'm $playername. Lady Hannah asked me to look for someone called Lovis.",
                 "nextPhraseID":"guynmart_lovis_30"
             }
         ]
@@ -4663,7 +4673,7 @@
                 "nextPhraseID":"guynmart_lovis_22"
             },
             {
-                "text":"If you are so rude, I say nothing at all.",
+                "text":"If you are going to be so rude, I have nothing to say.",
                 "nextPhraseID":"X"
             },
             {
@@ -4703,10 +4713,10 @@
     },
     {
         "id":"guynmart_lovis_40",
-        "message":"My flute! How I missed it! I believe you now.",
+        "message":"My flute! How I have missed it! I believe you now.",
         "replies":[
             {
-                "text":"This is settled then. Let us look for an exit now.",
+                "text":"This is settled then. Let us now look for an exit.",
                 "nextPhraseID":"X"
             }
         ],
@@ -4760,7 +4770,7 @@
         "message":"What a dreadful place. Time seems endless here.",
         "replies":[
             {
-                "text":"Yes. But we must not give up hope.",
+                "text":"Yes, but we must not give up hope.",
                 "nextPhraseID":"X"
             }
         ]
@@ -4770,7 +4780,7 @@
         "message":"I will play something on my flute. Maybe this will give us some hope.",
         "replies":[
             {
-                "text":"Please do. Maybe a song you used to play for Lady Hannah?",
+                "text":"Please do. Maybe a tune you used to play for Lady Hannah?",
                 "nextPhraseID":"guynmart_lovis_110"
             },
             {
@@ -4784,7 +4794,7 @@
         "message":"(fluting)",
         "replies":[
             {
-                "text":"What a lovely tune! I almost seem to understand the words.",
+                "text":"What a lovely tune! I almost seem to understand the meaning.",
                 "nextPhraseID":"guynmart_lovis_120"
             },
             {
@@ -4818,21 +4828,21 @@
         "message":"Hush - I hear footsteps.",
         "replies":[
             {
-                "text":"Maybe some friendly soul will let us out? We are completely innocent after all.",
+                "text":"Maybe some friendly soul will let us out? After all, we are completely innocent.",
                 "nextPhraseID":"guynmart_lovis_200"
             }
         ]
     },
     {
         "id":"guynmart_lovis_200",
-        "message":"Oh dear! Look, the torturer! I will run around him and find Guynmarts personal guards outside in the wood. They will help us. I hope Guynmart himself is with them too.",
+        "message":"Oh no! Look! The torturer! I will run around him and look for Guynmarts personal guards outside in the wood. They will help us. I hope Guynmart himself is also with them.",
         "replies":[
             {
-                "text":"Ok, we will see us later.",
+                "text":"OK, we will see each other later.",
                 "nextPhraseID":"R"
             },
             {
-                "text":"I try to be still alive then.",
+                "text":"I will try to still be alive then.",
                 "nextPhraseID":"R"
             }
         ],
@@ -4940,7 +4950,7 @@
     },
     {
         "id":"guynmart_lovis2_20",
-        "message":"Welcome $playername - you helped us in greatest needs. But let Lady Hannah speak first.",
+        "message":"Welcome $playername - you helped us in our greatest needs. But let Lady Hannah speak first.",
         "replies":[
             {
                 "text":"N",
