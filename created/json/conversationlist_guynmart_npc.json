@@ -2268,7 +2268,7 @@
     },
     {
         "id":"guynmart_s_hannah_61",
-        "message":"You dare to come again! I hate you!",
+        "message":"You dare to come here again! I hate you!",
         "switchToNPC":"guynmart_hannah3",
         "replies":[
             {
@@ -2301,7 +2301,7 @@
     },
     {
         "id":"guynmart_s_hannah_61_3",
-        "message":"No more word! I do not want to hear anything!",
+        "message":"Not one more word! I do not want to hear anything!",
         "replies":[
             {
                 "text":"N",
@@ -2332,7 +2332,7 @@
     },
     {
         "id":"guynmart_s_hannah_63",
-        "message":"You love to watch my misery, don't you? Think I am crazy?",
+        "message":"You love to watch my misery, don't you? Do you think I'm crazy?",
         "switchToNPC":"guynmart_hannah3",
         "replies":[
             {
@@ -6155,7 +6155,7 @@
     },
     {
         "id":"guynmart_s_herold_20",
-        "message":"(whispering) You should talk again to Lovis.",
+        "message":"(whispering) You should talk to Lovis again.",
         "switchToNPC":"guynmart_herold"
     },
     {

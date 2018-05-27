@@ -23,7 +23,7 @@
     },
     {
         "id":"guynmart_s_roadClose_10",
-        "message":"The passage is closed.\nSigned: Unkorh, Steward on Guynmart Castle"
+        "message":"The road is closed.\nSigned: Unkorh, Steward of Guynmart Castle"
     },
     {
         "id":"guynmart_s_wood12_castle",
@@ -862,14 +862,14 @@
     },
     {
         "id":"guynmart_s_rope2_10",
-        "message":"I could tie this rope to the tree stump and climb down.",
+        "message":"I could tie this rope to the tree and climb down.",
         "replies":[
             {
-                "text":"Let's try.",
+                "text":"Let's try it.",
                 "nextPhraseID":"guynmart_s_rope2_20"
             },
             {
-                "text":"Hm, better not.",
+                "text":"Hmm, better not.",
                 "nextPhraseID":"X"
             }
         ]
@@ -1123,15 +1123,15 @@
     },
     {
         "id":"guynmart_s_rob6b_10",
-        "message":"I see you are coming around. Do you want to climb up to me?",
+        "message":"Hello $playername. Do you wish to climb up to me?",
         "switchToNPC":"guynmart_rob6",
         "replies":[
             {
-                "text":"Oh yes. Could you let the rope down?",
+                "text":"Yes. Could you drop the rope down?",
                 "nextPhraseID":"guynmart_rob6_30"
             },
             {
-                "text":"No, thank you.",
+                "text":"No thanks.",
                 "nextPhraseID":"X"
             }
         ]
@@ -1190,7 +1190,7 @@
     },
     {
         "id":"guynmart_s_hero_10",
-        "message":"* Dedicated to $playername * \n Our help in great need"
+        "message":"* Dedicated to $playername * \n Our help in times of great need"
     },
     {
         "id":"guynmart_s_hill1",
