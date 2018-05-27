@@ -185,7 +185,7 @@
   <image source="../drawable/map_window_2.png" width="512" height="256"/>
  </tileset>
  <tileset firstgid="7577" name="map_guynmart" tilewidth="32" tileheight="32">
-  <image source="../../../../../../ATCS Workspace/guynmart/created/spritesheets/map_guynmart.png" width="512" height="256"/>
+  <image source="../drawable/map_guynmart.png" width="512" height="256"/>
  </tileset>
  <layer name="Ground" width="15" height="15">
   <data encoding="base64" compression="zlib">

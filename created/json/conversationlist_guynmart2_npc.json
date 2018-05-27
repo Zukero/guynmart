@@ -636,7 +636,7 @@
         "message":"Grumble ... grumble ...",
         "replies":[
             {
-                "text":"He seem to speak too often to his dogs only.",
+                "text":"He seems to speak mostly to his dogs.",
                 "nextPhraseID":"X"
             }
         ]
@@ -646,7 +646,7 @@
         "message":"Grrumble ... grrrrumble ...",
         "replies":[
             {
-                "text":"Maybe he does not like sheeps beeing killed?",
+                "text":"Maybe he does not like his sheep being killed?",
                 "nextPhraseID":"X"
             }
         ]
@@ -656,7 +656,7 @@
         "message":"GRRRUMMBLE!!!",
         "replies":[
             {
-                "text":"Obviously he does not like sheeps beeing killed.",
+                "text":"Obviously he does not like his sheep being killed.",
                 "nextPhraseID":"X"
             }
         ]
@@ -790,7 +790,7 @@
     },
     {
         "id":"guynmart_child_12",
-        "message":"Sob",
+        "message":"*Sob*",
         "replies":[
             {
                 "text":"Don't cry, little one. What's your name?",
@@ -800,10 +800,10 @@
     },
     {
         "id":"guynmart_child_14",
-        "message":"Sob ... Stuephant ... sob",
+        "message":"*Sob* ... Stuephant ... *sob*",
         "replies":[
             {
-                "text":"There now. What's the matter?",
+                "text":"There there now. What's the matter?",
                 "nextPhraseID":"guynmart_child_20"
             }
         ]
@@ -817,7 +817,7 @@
                 "nextPhraseID":"guynmart_child_30"
             },
             {
-                "text":"Look, here I have a nice Teddy Bear for you.",
+                "text":"Look, here I have a nice teddy bear for you.",
                 "nextPhraseID":"guynmart_child_22",
                 "requires":[
                     {
@@ -845,7 +845,7 @@
     },
     {
         "id":"guynmart_child_30",
-        "message":"I have lost them here in the yard or in the acre over there.",
+        "message":"I have lost them here in the yard or in the field over there.",
         "replies":[
             {
                 "text":"N",
@@ -887,20 +887,20 @@
     },
     {
         "id":"guynmart_child_32",
-        "message":"Five beautiful marbles. Maybe you must look more than once at a place, because they are so small.",
+        "message":"Five beautiful marbles. Maybe you should look more than once in each place. They are so small you could easily miss them.",
         "replies":[
             {
-                "text":"Be happy again, I won't need long.",
+                "text":"Don't be so sad, I will find them soon.",
                 "nextPhraseID":"X"
             }
         ]
     },
     {
         "id":"guynmart_child_50",
-        "message":"Sob ... you don't find my marbles either ... sob",
+        "message":"*Sob* ... so you didn't find my marbles ... *sob*",
         "replies":[
             {
-                "text":"I didn't give up yet. Just you wait",
+                "text":"I haven't given up yet. Please be patient.",
                 "nextPhraseID":"X"
             }
         ]
@@ -1101,10 +1101,10 @@
     },
     {
         "id":"guynmart_marbles_20",
-        "message":"That was it, I found them all. Stuephant will be happy.",
+        "message":"That was the last one. I have found them all. Stuephant will be happy.",
         "replies":[
             {
-                "text":"I will go to him now.",
+                "text":"I will go back to him now.",
                 "nextPhraseID":"R"
             }
         ],
@@ -1153,14 +1153,14 @@
         "message":"Oh, it is you again. I am delighted!",
         "replies":[
             {
-                "text":"De-lighted indeed. You might need anything?",
+                "text":"De-lighted indeed. Might you need anything?",
                 "nextPhraseID":"guynmart_wise_110"
             }
         ]
     },
     {
         "id":"guynmart_wise_20",
-        "message":"It happend in the mines of Mount Galmore. Don't ask any further, I do not want to recall the remembrance. It was horrible.",
+        "message":"It happend in the mines of Mount Galmore. Don't ask any more, I do not wish to recall the memories. It was horrible.",
         "replies":[
             {
                 "text":"N",
@@ -1170,7 +1170,7 @@
     },
     {
         "id":"guynmart_wise_60",
-        "message":"When I came returned here at last, people started to avoid me then, whispering behind my back. I got very lonely.",
+        "message":"When I returned here at last, people started to avoid me, whispering behind my back. I got very lonely.",
         "replies":[
             {
                 "text":"N",
@@ -1180,7 +1180,7 @@
     },
     {
         "id":"guynmart_wise_100",
-        "message":"I got enough of all these anxious, disturbed looks, so I went up here on this lonely hill.",
+        "message":"Eventually I had enough of all the anxious, disturbed looks, so I came up here on this lonely hill.",
         "replies":[
             {
                 "text":"N",
@@ -1190,7 +1190,7 @@
     },
     {
         "id":"guynmart_wise_102",
-        "message":"From time to time a friendly soul brings some food, but no one stays for long. I do notice that uphill their pace is much slower than back downhill.",
+        "message":"From time to time a friendly soul brings me some food, but no one stays for long. I have noticed that their pace uphill is usually much slower than back downhill.",
         "replies":[
             {
                 "text":"N",
@@ -1255,7 +1255,7 @@
     },
     {
         "id":"guynmart_wise_112",
-        "message":"Do you bring bread and wine together with my favorite cheddar?",
+        "message":"Do you bring bread and wine, together with my favorite cheddar?",
         "replies":[
             {
                 "text":"Yes, finally I got it. I hope the cheddar is still fresh after the long journey.",
@@ -1327,10 +1327,10 @@
     },
     {
         "id":"guynmart_wise_118",
-        "message":"Just now my supply of bread is already running out again. And eggs I haven't see for such a long time...",
+        "message":"Just recently my supply of bread has run low again. And I haven't seen eggs for such a long time...",
         "replies":[
             {
-                "text":"That can be helped. I could spare 2 loafs of breads.",
+                "text":"I can help with that. I can spare 2 loaves of bread.",
                 "nextPhraseID":"guynmart_wise_120",
                 "requires":[
                     {
@@ -1406,7 +1406,7 @@
                 "nextPhraseID":"guynmart_wise_900"
             },
             {
-                "text":"Just say it. What can I do for you?",
+                "text":"Just say what you would like. What can I do for you?",
                 "nextPhraseID":"guynmart_wise_130"
             }
         ]
@@ -1458,9 +1458,25 @@
         "message":"Oh yes - you get the best cheese in Charwood, if you don't mind!",
         "replies":[
             {
-                "text":"Charwood? I never heard of.",
+                "text":"Charwood? That's not exactly next door ...",
                 "nextPhraseID":"X",
                 "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"charwood1",
+                        "value":19
+                    }
+                ]
+            },
+            {
+                "text":"I have heard of Charwood, but I don't know where it is.",
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"charwood1",
+                        "value":10
+                    },
                     {
                         "requireType":"questProgress",
                         "requireID":"charwood1",
@@ -1470,15 +1486,25 @@
                 ]
             },
             {
-                "text":"Charwood? That's not right next door ...",
+                "text":"I have heard of Charwood, but I don't know where it is.",
                 "nextPhraseID":"X",
                 "requires":[
                     {
                         "requireType":"questProgress",
                         "requireID":"charwood1",
-                        "value":19
+                        "value":11
+                    },
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"charwood1",
+                        "value":19,
+                        "negate":true
                     }
                 ]
+            },
+            {
+                "text":"Charwood? I have never heard of it.",
+                "nextPhraseID":"X"
             }
         ]
     },
@@ -1539,32 +1565,51 @@
         "message":"now ...",
         "replies":[
             {
-                "text":"Oh dear! Just say it. What's up?",
+                "text":"Oh dear! Just say what is on your mind. What's up?",
                 "nextPhraseID":"guynmart_wise_180"
             }
         ]
     },
     {
         "id":"guynmart_wise_180",
-        "message":"The cheese from Charwood - it was ok. But it was not their best cheese, you know?",
+        "message":"The cheese that you brought - It was OK. But it is not the best cheese, you know? The best cheese is from Charwood",
         "replies":[
             {
-                "text":"Not?",
+                "text":"Oh?",
                 "nextPhraseID":"guynmart_wise_182"
             }
         ]
     },
     {
         "id":"guynmart_wise_182",
-        "message":"Their Cheddar is a dream! But they sell it only, when you ask for it explicitly. Sorry, I should have told you.",
+        "message":"Their Cheddar is a dream! But they sell it only when you explicitly ask for it.",
         "replies":[
             {
-                "text":"No problem. I just go again.",
+                "text":"No problem. I will go and get some.",
                 "nextPhraseID":"guynmart_wise_190"
             },
             {
-                "text":"Yes, you should have told me. Now I won't run all the way again.",
-                "nextPhraseID":"X"
+                "text":"I am not going to go all the way to Charwood for some cheddar.",
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"charwood1",
+                        "value":19
+                    }
+                ]
+            },
+            {
+                "text":"Where is Charwood?",
+                "nextPhraseID":"X",
+                "requires":[
+                    {
+                        "requireType":"questProgress",
+                        "requireID":"charwood1",
+                        "value":19,
+                        "negate":true
+                    }
+                ]
             }
         ],
         "rewards":[
@@ -1577,11 +1622,11 @@
     },
     {
         "id":"guynmart_wise_190",
-        "message":"Great! I will wait for you."
+        "message":"Great! I will wait for your return."
     },
     {
         "id":"guynmart_wise_200",
-        "message":"Cheddar! I still can't belive!",
+        "message":"Cheddar! I can't belive it!",
         "replies":[
             {
                 "text":"N",

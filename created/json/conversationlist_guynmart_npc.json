@@ -2985,7 +2985,7 @@
     },
     {
         "id":"guynmart_wizard_22",
-        "message":"A lot. If ever you find one of the strong, old, rings, come and show it to me. I might be able to enhance it for you, as I already did for Andor. Don't forget to bring some bonemeal potions as a sign of friendship.",
+        "message":"A lot. If ever you find one of the strong, old rings, come and show it to me. I might enhance it for you, as I already did for Andor. Don't forget to bring some bonemeal potions as a sign of friendship.",
         "replies":[
             {
                 "text":"Thank you. I will remember.",
@@ -3489,7 +3489,7 @@
     },
     {
         "id":"guynmart_steward4_60",
-        "message":"Ok. I will go now. But I will not forget you - fear my revenge! And before I leave, I will stab your beloved Guynmart ...",
+        "message":"OK. I will go now. But I will not forget you - fear my revenge! And before I leave, I will stab your beloved Guynmart ...",
         "replies":[
             {
                 "text":"Nooo! What did you do? Stay and face me, you coward!",
@@ -3535,7 +3535,7 @@
     },
     {
         "id":"guynmart_steward4_124",
-        "message":"Please be patient, and give me one minute. This may be important to you.",
+        "message":"Please be patient, and give me a minute. This may be important to you.",
         "replies":[
             {
                 "text":"No. I will never believe you unless you let Guynmart go!",
@@ -3716,7 +3716,7 @@
     },
     {
         "id":"guynmart_steward4_220",
-        "message":"Guynmart tried to get at you from behind. I felt I had to do something quick, but it seems that it wasn't necessary. Obviously he stumbled and fell into his own knife.",
+        "message":"Guynmart tried to get at you from behind. I felt I had to do something quick, but it seems that it wasn't necessary. Obviously he stumbled and fell on his own knife.",
         "replies":[
             {
                 "text":"Thank you. Really, I didn't expect this from Lord Guynmart.",
@@ -4405,7 +4405,7 @@
     },
     {
         "id":"guynmart_drunkard5_20",
-        "message":"You look uncomfortable. Take a seat next to me first.",
+        "message":"You standing over me makes me feel uncomfortable. Take a seat next to me first.",
         "switchToNPC":"guynmart_drunkard5"
     },
     {
@@ -4835,7 +4835,7 @@
     },
     {
         "id":"guynmart_lovis_200",
-        "message":"Oh no! Look! The torturer! I will run around him and look for Guynmarts personal guards outside in the wood. They will help us. I hope Guynmart himself is also with them.",
+        "message":"Oh no! Look! The torturer! I will run around him and look for Guynmart's personal guards outside in the wood. They will help us. I hope Guynmart himself is also with them.",
         "replies":[
             {
                 "text":"OK, we will see each other later.",
@@ -5928,10 +5928,10 @@
     },
     {
         "id":"guynmart_20",
-        "message":"Good, at last. Go and get Norgothla here.",
+        "message":"Good. At last. Go and bring Norgothla here.",
         "replies":[
             {
-                "text":"Norgothla is out in the woods and awaits you there with his men. Unkorh made him believe you commanded that.",
+                "text":"Norgothla is out in the woods and awaits you there with his men. Unkorh persuaded him that you commanded that.",
                 "nextPhraseID":"guynmart_30"
             }
         ]
@@ -5948,10 +5948,10 @@
     },
     {
         "id":"guynmart_40",
-        "message":"No time for that. I am too weak to be of great help. We need Norgothla now.",
+        "message":"No time for that. I am too weak to be of much help. We need Norgothla now.",
         "replies":[
             {
-                "text":"Lovis is on the way to him. Probably he can pusuade Norgothla to come.",
+                "text":"Lovis is on his way to him. He can probably pusuade Norgothla to come to the castle.",
                 "nextPhraseID":"guynmart_50"
             }
         ]
@@ -5968,10 +5968,10 @@
     },
     {
         "id":"guynmart_100",
-        "message":"Then you must open the gate! Go to the gate house and open it, so that my men could come in. Be quick.\nAnd after that go to the farm south of here. I expect a feroucious battle.",
+        "message":"Then you must open the gate! Go to the gatehouse and open it, so that my men can get in. Be quick.\nAfter that go to the farm south of here. I expect a feroucious battle.",
         "replies":[
             {
-                "text":"Ok.",
+                "text":"OK.",
                 "nextPhraseID":"guynmart_110"
             }
         ],
@@ -6195,7 +6195,7 @@
     },
     {
         "id":"guynmart_reward1_10",
-        "message":"On the table are 5000 shining gold coins.",
+        "message":"On the table there are 5000 shining gold coins.",
         "replies":[
             {
                 "text":"You decide for the gold.",
@@ -6239,7 +6239,7 @@
     },
     {
         "id":"guynmart_reward2_10",
-        "message":"On the table you see a scroll with texts of wise men.",
+        "message":"On the table you see a scroll with the texts of wise men.",
         "replies":[
             {
                 "text":"You decide for the scroll.",
@@ -6283,7 +6283,7 @@
     },
     {
         "id":"guynmart_reward3_10",
-        "message":"On the table lays a beautifully crafted shield.",
+        "message":"On the table lies a beautifully crafted shield.",
         "replies":[
             {
                 "text":"You decide for the shield.",
