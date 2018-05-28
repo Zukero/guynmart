@@ -10,7 +10,7 @@
     {
         "id":"guynmart_herbs",
         "iconID":"items_japozero:579",
-        "name":"Hannahs special herbs",
+        "name":"Hannah's special herbs",
 		"displaytype":"quest",
         "hasManualPrice":1,
         "baseMarketCost":0,
@@ -19,7 +19,7 @@
     {
         "id":"guynmart_lunch",
         "iconID":"items_consumables:27",
-        "name":"Hannahs lunch",
+        "name":"Hannah's lunch",
         "hasManualPrice":1,
         "baseMarketCost":100,
         "category":"food",

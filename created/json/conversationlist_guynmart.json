@@ -1459,7 +1459,7 @@
     },
     {
         "id":"guynmart_s_gate1_58",
-        "message":"Done, the gate is open, and Guynmarts personal guard can enter. I should leave quickly now, maybe to the farmhouse south of here.",
+        "message":"Done, the gate is open, and Guynmart's personal guard can enter. I should leave quickly now, maybe to the farmhouse south of here.",
         "rewards":[
             {
                 "rewardType":"questProgress",
