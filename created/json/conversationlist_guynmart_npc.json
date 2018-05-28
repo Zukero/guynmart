@@ -214,7 +214,7 @@
                 "nextPhraseID":"guynmart_gguard_20"
             },
             {
-                "text":"Ok, I'll leave.",
+                "text":"OK, I'll leave.",
                 "nextPhraseID":"X"
             }
         ]
@@ -308,7 +308,7 @@
                 "nextPhraseID":"guynmart_gguard_10"
             },
             {
-                "text":"Ok, ok, I'll leave.",
+                "text":"OK, OK, I'll leave.",
                 "nextPhraseID":"X"
             }
         ]
@@ -578,7 +578,7 @@
         "message":"And here is the rose. Don't tell anybody that you got it from me.",
         "replies":[
             {
-                "text":"Ok.",
+                "text":"OK.",
                 "nextPhraseID":"X"
             },
             {
@@ -906,7 +906,7 @@
         "message":"If you get it right, I will give you gold 100 coins. If your guess is wrong, you owe me 100.",
         "replies":[
             {
-                "text":"Ok, got it.",
+                "text":"OK, got it.",
                 "nextPhraseID":"guynmart_player_80"
             },
             {
@@ -945,7 +945,7 @@
     },
     {
         "id":"guynmart_player_80_2",
-        "message":"Ok. I have drawn a card. Which color is it?",
+        "message":"OK. I have drawn a card. Which color is it?",
         "replies":[
             {
                 "text":"Red",
@@ -4137,7 +4137,7 @@
         "message":"Quick, run to Nuik, the old gardener. He will give you some fresh herbs.",
         "replies":[
             {
-                "text":"Ok. I will get the herbs.",
+                "text":"OK. I will get the herbs.",
                 "nextPhraseID":"X"
             },
             {
