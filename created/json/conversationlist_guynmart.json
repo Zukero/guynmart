@@ -1,5 +1,9 @@
 [
     {
+        "id":"guynmart_haystack",
+        "message":"This is a haystack."
+    },
+    {
         "id":"guynmart_key_gguard",
         "message":"The guard bars your way."
     },
