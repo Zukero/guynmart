@@ -3009,7 +3009,7 @@
     },
     {
         "id":"guynmart_wizard_28",
-        "message":"No, sorry. I tend not to ask about things that are personal .",
+        "message":"No, sorry. I tend not to ask about things that are personal.",
         "replies":[
             {
                 "text":"That's a pity. I have been trailing my big brother for quite some time.",
@@ -5132,6 +5132,13 @@
             {
                 "nextPhraseID":"guynmart_lovis2_140"
             }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"guynmart_nondisplay",
+                "value":36
+            }
         ]
     },
     {
@@ -5146,11 +5153,6 @@
                 "rewardType":"questProgress",
                 "rewardID":"guynmart",
                 "value":210
-            },
-            {
-                "rewardType":"questProgress",
-                "rewardID":"guynmart_nondisplay",
-                "value":36
             },
             {
                 "rewardType":"spawnAll",
@@ -5364,6 +5366,11 @@
                 "rewardType":"questProgress",
                 "rewardID":"guynmart",
                 "value":211
+            },
+            {
+                "rewardType":"questProgress",
+                "rewardID":"guynmart_nondisplay",
+                "value":36
             },
             {
                 "rewardType":"removeSpawnArea",
@@ -6135,6 +6142,13 @@
             {
                 "text":"$playername, please",
                 "nextPhraseID":"guynmart_s_herold_14"
+            }
+        ],
+        "rewards":[
+            {
+                "rewardType":"questProgress",
+                "rewardID":"guynmart_nondisplay",
+                "value":31
             }
         ]
     },

@@ -322,14 +322,24 @@
         "message":"I take orders only from Lord Guynmart himself. He told me and my men to go to this clearing and wait for him.",
         "replies":[
             {
-                "text":"That is strange. I heard at the castle that Lord Guynmart was uproad for a week now. I also heard other things that I dare not tell.",
+                "text":"That is strange. I heard at the castle that Lord Guynmart was uproad for a week now.",
                 "nextPhraseID":"guynmart_cguard_60"
             }
         ]
     },
     {
         "id":"guynmart_cguard_60",
-        "message":"You must tell me all that you know or think you  know. I promise that you have nothing to fear.",
+        "message":"Yes, Lord Guynmart was already on the way. Unkorh directed his order.",
+        "replies":[
+            {
+                "text":"I also heard other things that I dare not tell.",
+                "nextPhraseID":"guynmart_cguard_62"
+            }
+        ]
+    },
+    {
+        "id":"guynmart_cguard_62",
+        "message":"You must tell me all that you know or think you know. I promise that you have nothing to fear.",
         "replies":[
             {
                 "text":"I heard Unkorh saying that Guynmart is imprisoned in the dungeons. And Unkorh also wants to marry Lady Hannah.",
@@ -1572,7 +1582,7 @@
     },
     {
         "id":"guynmart_wise_180",
-        "message":"The cheese that you brought - It was OK. But it is not the best cheese, you know? The best cheese is from Charwood",
+        "message":"The cheese that you brought - It was OK. But it is not the best cheese, you know? The best cheese is from Charwood.",
         "replies":[
             {
                 "text":"Oh?",
